@@ -1,5 +1,42 @@
-﻿/target/
+﻿### GITIGNORE ###
+
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+/target/
 !.mvn/wrapper/maven-wrapper.jar
+
+### Eclipse ###
+.settings/
+RemoteSystemsTempFiles/
+.metadata
+.recommenders
+
+### MAC ###
+
+.DS_Store
+
 
 ### STS ###
 .apt_generated
@@ -11,21 +48,36 @@
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
 *.iws
 *.iml
 *.ipr
+.idea/
+*/target/*
+logs/*
+*/logs/*
 
 ### NetBeans ###
 /nbproject/private/
-/build/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
+nbproject/private/
+# build/
+nbbuild/
 
-.DS_Store
+### VS ###
 
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*auto-config/*
+
+### FRONT END ###
+
+npm-debug.log
+# .vscode
 node_modules/
 npm-debug.log*
 yarn-debug.log*
@@ -34,21 +86,39 @@ yarn-error.log*
 /test/e2e/reports/
 selenium-debug.log
 
+_act*
+*.swp
+*.tmp
+runtime/*
+run/*
+bower_components/
+run.log
+.upload/
+.cache/
 
-### IDEA ###
-.idea/
-*/target/*
-*.log
-logs/*
-*/logs/*
-image/*
+### the dist file ###
 
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
+dist/
+dist.zip
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
 
-*auto-config/*
 
+### Maven ###
+log/
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+### 自定义 ###
+rebel.xml
 __tmp
+upload
+uploads
+out
