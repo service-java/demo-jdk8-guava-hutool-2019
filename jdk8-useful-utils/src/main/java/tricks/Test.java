@@ -8,10 +8,14 @@ public class Test {
     public static void main(String[] args) {
         Th th = new Th();
 
-        th.setJob("teacher").setName("teacher").setCareer("teach");
+        th.setJob("teacher");
+        th.setName("teacher");
+        th.setCareer("teach");
 
         Stu stu = new Stu();
-        stu.setJob("student").setName("stu").setHobby("study");
+        stu.setJob("student");
+        stu.setName("stu");
+        stu.setHobby("study");
 
         Console.log(stu);
         // th copy to -> stu
