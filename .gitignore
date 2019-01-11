@@ -1,0 +1,38 @@
+﻿# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files
+# 调整：允许上传jar、压缩包
+#*.jar
+#*.zip
+#*.rar
+
+*.war
+*.ear
+*.tar.gz
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+bin/
+
+# Eclipse
+*.classpath
+out/
+
+/build/
+/WebContent/WEB-INF/classes
+
+# IDEA
+.idea
+*.iml
+__tmp
