@@ -69,9 +69,32 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.16.18</version>
-            <scope>provided</scope>
+            <!--<scope>provided</scope>-->
         </dependency>
 
+        <!--<dependency>-->
+            <!--<groupId>com.baidu.unbiz</groupId>-->
+            <!--<artifactId>fluent-validator</artifactId>-->
+            <!--<version>1.0.6</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>1.0.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>1.1.0.Final</version>
+        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.hibernate</groupId>-->
+            <!--<artifactId>hibernate-validator</artifactId>-->
+            <!--<version>5.2.2.Final</version>-->
+        <!--</dependency>-->
+
     </dependencies>
-    
+
 </project>
