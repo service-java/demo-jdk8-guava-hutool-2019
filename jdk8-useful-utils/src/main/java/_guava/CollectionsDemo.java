@@ -12,15 +12,20 @@ public class CollectionsDemo {
         Set<Integer> set1 = Sets.newHashSet(1, 2, 3, 4, 5);
         Set<Integer> set2 = Sets.newHashSet(3, 4, 5, 6);
 
-        //交集
+        // 交集
         Sets.SetView<Integer> inter = Sets.intersection(set1, set2);
-        //差集,在A中不在B中
+
+        // 差集,在A中不在B中
         Sets.SetView<Integer> diff = Sets.difference(set1, set2);
         Sets.SetView<Integer> diff2 = Sets.difference(set2, set1);
-        //并集
+
+        // 并集
         Sets.SetView<Integer> union = Sets.union(set1, set2);
 
-        Console.log("{} \n{} {} \n{} ", inter, diff, diff2, union);
+        Console.log("交集 -> {} \n差集 -> {} {} \n并集 -> {} ",
+                inter,
+                diff, diff2,
+                union);
     }
 
 }

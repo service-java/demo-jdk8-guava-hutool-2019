@@ -15,7 +15,7 @@ public class MultiSetDemo {
         set.add("b");
         set.setCount("a", 5);
 
-        Console.log("{} {} {} {}", set.count("a"), set, set.size(), set.elementSet().size());
+        Console.log("a的个数 -> {} \nset -> {} \nset.size -> {} \nset的元素个数 -> {}", set.count("a"), set, set.size(), set.elementSet().size());
         set.clear(); //清空集合
         Console.log(set);
 

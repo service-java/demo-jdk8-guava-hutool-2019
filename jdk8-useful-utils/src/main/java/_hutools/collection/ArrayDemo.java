@@ -12,17 +12,18 @@ public class ArrayDemo {
 
 
         // 判空
-        int[] a = {1, 2};
+        int[] a = { 1, 2 };
         int[] b = null;
         Console.log(
-                "{}\n{}\n{}\n{}\n{}\n{}",
+                "{} {} {} {} {} {}",
                 ArrayUtil.isEmpty(a),
                 ArrayUtil.isNotEmpty(a),
                 ArrayUtil.join(a, "-"),
                 ArrayUtil.isEmpty(b),
-                ArrayUtil.isArray(b),
+                ArrayUtil.isArray(b), // false
                 ArrayUtil.contains(a, 10)
         );
+
 
         // 克隆
         Integer[] c = {1, 2, 3};
@@ -51,6 +52,8 @@ public class ArrayDemo {
 //        Integer[] values = {1, 2, 3};
 //        Map<String, Integer> map = ArrayUtil.zip(keys, values, true);
 //        Console.log(map);
+
+
     }
 
 

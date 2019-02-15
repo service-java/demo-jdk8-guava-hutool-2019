@@ -19,6 +19,7 @@ public class FileUtilsDemo {
         FileWriter writer = new FileWriter("test.properties");
         writer.append("追加内容");
 
+
         FileReader fileReader = new FileReader("test.properties");
         String result = fileReader.readString();
         Console.log(result);

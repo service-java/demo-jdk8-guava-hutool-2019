@@ -12,14 +12,16 @@ public class BeanUtil {
         user.setAge(10).setName("小花");
         Console.log(user);
 
+        @Deprecated
         DynaBean bean = DynaBean.create(user);
         Console.log(bean);
+//        Console.log(bean instanceof Object);
 
         bean.set("name", "李华");
         bean.set("age", 12);
 
-        String name = bean.get("name");//输出“李华”
-        Console.log(name);
+        String name = bean.get("name");
+        Console.log("{} name -> {}", bean, name);
 
         bean.invoke("testMethod");
 
