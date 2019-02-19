@@ -20,6 +20,7 @@ public class ConvertDemo {
         Console.log("抹去尾部的0 -> " + DJ);
 
 
+
         // 小时转换
         String a = "2017-05-06 12:12:00";
         Date value = Convert.toDate(a);
@@ -28,5 +29,14 @@ public class ConvertDemo {
                 value,
                 value.getTime(),
                 value.getHours());
+
+
+        String a1 = "123456789";
+
+        //结果为："１２３４５６７８９"
+        String sbc = Convert.toSBC(a1);
+        Console.log("{} \n{}", sbc, Convert.toDBC(sbc));
+
+
     }
 }

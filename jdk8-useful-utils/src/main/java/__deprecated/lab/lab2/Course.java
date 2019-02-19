@@ -1,6 +1,6 @@
 package __deprecated.lab.lab2;
 
-//import java.util.ArrayList;
+//import java.common.util.ArrayList;
 
 /*
  * < 骆金? >

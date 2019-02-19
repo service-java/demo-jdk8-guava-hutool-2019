@@ -2,8 +2,8 @@ package _tricks;
 
 
 import cn.hutool.core.lang.Console;
-import model.Student;
-import model.Teacher;
+import common.model.Student;
+import common.model.Teacher;
 import org.springframework.beans.BeanUtils;
 
 public class Test {
@@ -19,7 +19,6 @@ public class Test {
         // source -> target
         BeanUtils.copyProperties(teacher, student);
         Console.log(student);
-
 
     }
 }

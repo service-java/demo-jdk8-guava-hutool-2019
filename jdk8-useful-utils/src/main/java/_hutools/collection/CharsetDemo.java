@@ -12,5 +12,7 @@ public class CharsetDemo {
                 EscapeUtil.unescape("1212%u6211"),
                 EscapeUtil.safeUnescape("1212%u6211")
         );
+
+
     }
 }
