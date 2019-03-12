@@ -15,28 +15,31 @@ public class ConvertDemo {
 
 
         // 抹去尾部的0
-        DecimalFormat decimalFormat = new DecimalFormat("#.###########");
-        String DJ = decimalFormat.format(12.09000);
-        Console.log("抹去尾部的0 -> " + DJ);
-
+//        DecimalFormat decimalFormat = new DecimalFormat("#.###########");
+//        String DJ = decimalFormat.format(12.09000);
+//        Console.log("抹去尾部的0 -> " + DJ);
 
 
         // 小时转换
-        String a = "2017-05-06 12:12:00";
-        Date value = Convert.toDate(a);
+//        String a = "2017-05-06 12:12:00";
+//        Date value = Convert.toDate(a);
+//
+//        Console.log("{} {} 小时 -> {}",
+//                value,
+//                value.getTime(),
+//                value.getHours());
 
-        Console.log("{} {} 小时 -> {}",
-                value,
-                value.getTime(),
-                value.getHours());
 
-
-        String a1 = "123456789";
+//        String a1 = "123456789";
 
         //结果为："１２３４５６７８９"
-        String sbc = Convert.toSBC(a1);
-        Console.log("{} \n{}", sbc, Convert.toDBC(sbc));
+//        String sbc = Convert.toSBC(a1);
+//        Console.log("{} \n{}", sbc, Convert.toDBC(sbc));
 
+
+        Console.log("{}\n{}\n",
+                Convert.toInt("123123"),
+                Convert.toLong(123.12d));
 
     }
 }
