@@ -1,4 +1,4 @@
-package _collections.old;
+package _collections;
 
 import java.util.*;
 
