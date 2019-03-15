@@ -1,8 +1,11 @@
-package _hutools.collection;
+package _hutools;
 
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Console;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -25,5 +28,7 @@ public class DateUtilDemo {
         String today = DateUtil.today();
 
         Console.log("{}\n{}\n{}\n{}\n{}\n", date, date2, date3, now, today);
+
+//        Console.log(LocalDateTime.now().format(DateTimeFormatter.ISO_DATE_TIME));
     }
 }
