@@ -17,7 +17,7 @@ import java.util.Set;
  * @email 154040976@qq.com
  * 对象操作
  */
-public class BeanCopyUtil {
+public class BeanCopyUtils {
 
     public static String[] getNullPropertyNames(Object source) {
         final BeanWrapper src = new BeanWrapperImpl(source);

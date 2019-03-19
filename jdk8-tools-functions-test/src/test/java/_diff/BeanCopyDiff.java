@@ -4,7 +4,7 @@ package _diff;
 import cn.hutool.core.lang.Console;
 import model.Student;
 import model.Teacher;
-import util.BeanCopyUtil;
+import util.BeanCopyUtils;
 import org.springframework.beans.BeanUtils;
 
 public class BeanCopyDiff {
@@ -26,7 +26,7 @@ public class BeanCopyDiff {
         Console.log(student);
 
         student = new Student().setJob("student").setHobby("study").setName("student");
-        BeanCopyUtil.copyNotNullBean(teacher, student);
+        BeanCopyUtils.copyNotNullBean(teacher, student);
         Console.log(student);
 
     }
