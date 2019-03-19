@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>添加订单</title>
+</head>
+<body>
+<form action="/javabean/order/save" method="post">
+    <div>
+        订单名称:
+        <input name="order.name"/>
+    </div>
+
+    <div>
+        订单明细1
+        <input name="details[0].name">
+    </div>
+    <div>
+        订单明细2
+        <input name="details[1].name">
+    </div>
+
+    <div>
+        <input type="submit" value="Submit"/>
+    </div>
+</form>
+</body>
+</html>

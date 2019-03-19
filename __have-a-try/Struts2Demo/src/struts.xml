@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+    <!--入门demo-->
+    <package name="First"  extends="struts-default">
+        <action name="first">
+            <result>/success.jsp</result>
+        </action>
+        <action name="login" method="execute" class="action.UserAction">
+            <result name="error">/index.jsp</result>
+            <result name="success">/success.jsp</result>
+        </action>
+    </package>
+
+    <!-- 动态Action -->
+    <package name="User"  extends="struts-default"  >
+        <action name="userAction" class="action.DynamicUserAction">
+            <result name="add">add.jsp</result>
+            <result name="del">del.jsp</result>
+            <result name="update">update.jsp</result>
+            <result name="show">show.jsp</result>
+        </action>
+        <action name="add">
+            <result>/add.jsp</result>
+        </action>
+    </package>
+
+    <package name="Text"  extends="struts-default" >
+        <interceptors>
+            <interceptor name="checkLogin" class="interceptor.MyInterceptor"></interceptor>
+        </interceptors>
+
+        <action name="public" method="execute" class="action.MessageAction">
+            <result name="success">/text-success.jsp</result>
+            <result name="login">/text-index.jsp</result>
+            <interceptor-ref name="defaultStack"></interceptor-ref>
+            <interceptor-ref name="checkLogin"></interceptor-ref>
+        </action>
+    </package>
+
+</struts>

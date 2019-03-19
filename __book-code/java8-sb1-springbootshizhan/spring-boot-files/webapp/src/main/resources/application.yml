@@ -1,0 +1,22 @@
+server:
+  port: 80
+
+neo4j:
+  datasource:
+    url: http://localhost:7474
+    username: neo4j
+    password: 123456
+
+fdfs:
+  soTimeout: 1501
+  connectTimeout: 601
+  thumbImage:
+    width: 150
+    height: 150
+  trackerList:
+    - localhost:22122
+#    - 192.168.1.215:22122
+spring.jmx.enabled: false
+
+file.path.head: http://localhost:84/
+

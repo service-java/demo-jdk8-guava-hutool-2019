@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Hello，Beetl</title>
+</head>
+<body>
+
+姓名 ${name}
+手机 ${phone}
+
+</body>
+</html>
