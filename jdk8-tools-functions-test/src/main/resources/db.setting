@@ -1,0 +1,14 @@
+## db.setting文件
+url = jdbc:mysql://localhost:3306/hutool_db_test
+user = root
+pass = 123456
+
+## 可选配置
+# 是否在日志中显示执行的SQL
+showSql = true
+
+# 是否格式化显示的SQL
+formatSql = false
+
+# 是否显示SQL参数
+showParams = true

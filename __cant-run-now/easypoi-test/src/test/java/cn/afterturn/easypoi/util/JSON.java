@@ -64,4 +64,6 @@ public class JSON {
         return null;
     }
 
+    public static String toJson(Object user) {
+    }
 }
