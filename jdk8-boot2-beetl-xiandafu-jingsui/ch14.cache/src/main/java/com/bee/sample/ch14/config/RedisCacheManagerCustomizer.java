@@ -1,4 +1,4 @@
-package com.bee.sample.ch14.cfg;
+package com.bee.sample.ch14.config;
 
 import java.time.Duration;
 import java.util.HashMap;

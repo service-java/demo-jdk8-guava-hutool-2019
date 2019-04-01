@@ -1,4 +1,4 @@
-package com.bee.sample.ch14.cfg;
+package com.bee.sample.ch14.config;
 
 import java.io.UnsupportedEncodingException;
 import java.util.concurrent.Callable;
@@ -7,7 +7,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cache.Cache;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.cache.RedisCache;
 import org.springframework.data.redis.cache.RedisCacheConfiguration;
 import org.springframework.data.redis.cache.RedisCacheManager;

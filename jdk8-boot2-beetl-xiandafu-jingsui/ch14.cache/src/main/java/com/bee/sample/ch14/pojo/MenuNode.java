@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 public class MenuNode implements java.io.Serializable {
     private Menu menu;
     private List<MenuNode> children = new ArrayList<MenuNode>();
+
     @JsonIgnore
     private MenuNode parent;
 
