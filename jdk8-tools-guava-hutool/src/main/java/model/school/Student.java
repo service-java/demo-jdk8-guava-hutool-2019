@@ -1,4 +1,4 @@
-package model.json;
+package model.school;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import lombok.Data;
  * Time: 11:02
  */
 @Data
-public class Course {
-    private String courseName;
-    private Integer code;
+public class Student {
+    private String studentName;
+    private Integer studentAge;
 }

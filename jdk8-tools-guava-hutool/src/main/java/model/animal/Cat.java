@@ -1,7 +1,7 @@
-package model.animal.impl;
+package model.animal;
 
 import cn.hutool.core.lang.Console;
-import model.animal.IAnimal;
+import model.IAnimal;
 
 public class Cat implements IAnimal {
 

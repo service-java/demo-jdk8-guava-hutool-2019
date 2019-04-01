@@ -1,4 +1,4 @@
-package _str;
+package _str.cases;
 
 import java.util.Scanner;
 

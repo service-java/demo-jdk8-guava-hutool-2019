@@ -1,5 +1,7 @@
 package _oop;
 
+import model.SpecialRectangle;
+
 public class SpecialRectangleTest {
 
     public static void main(String[] args) {

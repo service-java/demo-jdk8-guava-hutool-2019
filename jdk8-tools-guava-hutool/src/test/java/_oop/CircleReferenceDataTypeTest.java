@@ -1,5 +1,7 @@
 package _oop;
 
+import model.Circle;
+
 public class CircleReferenceDataTypeTest {
 
     private static Circle transform(Circle circle, int x, int y) {

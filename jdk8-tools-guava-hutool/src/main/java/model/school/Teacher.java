@@ -1,4 +1,4 @@
-package model.json;
+package model.school;
 
 import lombok.Data;
 

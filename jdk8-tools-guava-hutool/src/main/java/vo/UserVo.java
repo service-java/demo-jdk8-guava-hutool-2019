@@ -9,6 +9,7 @@ import lombok.experimental.Accessors;
  * Date: 2019-03-28
  * Time: 13:27
  */
+
 @Data
 @Accessors(chain = true)
 public class UserVo {

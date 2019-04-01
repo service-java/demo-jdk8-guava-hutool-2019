@@ -1,8 +1,8 @@
 package _hutool.proxy;
 
 import cn.hutool.aop.ProxyUtil;
-import model.animal.impl.Cat;
-import model.animal.IAnimal;
+import model.animal.Cat;
+import model.IAnimal;
 
 public class ProxyTest {
     public static void main(String[] args) {

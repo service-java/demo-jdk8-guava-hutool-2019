@@ -6,7 +6,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import model.Person;
 import model.User;
-import model.json.Student;
+import model.school.Student;
 import org.junit.Before;
 import org.junit.Test;
 import util.BeanCopyUtils;

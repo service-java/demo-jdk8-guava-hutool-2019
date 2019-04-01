@@ -52,6 +52,7 @@ public class SwingAndThread extends JFrame {
     }
 
     public static void main(String[] args) {
-        new SwingAndThread(); // 实例化一个SwingAndThread对象
+        // 实例化一个SwingAndThread对象
+        new SwingAndThread();
     }
 }

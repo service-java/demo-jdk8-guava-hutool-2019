@@ -6,8 +6,10 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 import java.time.LocalDateTime;
 
-@Configuration //1.主要用于标记配置类，兼备Component的效果。
-@EnableScheduling // 2.开启定时任务
+// 1.主要用于标记配置类，兼备Component的效果。
+@Configuration
+// 2.开启定时任务
+@EnableScheduling
 public class SimpleScheduleConfig {
     //3.添加定时任务
     @Scheduled(cron = "0/5 * * * * ?")

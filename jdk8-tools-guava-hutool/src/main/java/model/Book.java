@@ -1,4 +1,4 @@
-package _oop;
+package model;
 
 /**
  * 面向对象的第?个例?

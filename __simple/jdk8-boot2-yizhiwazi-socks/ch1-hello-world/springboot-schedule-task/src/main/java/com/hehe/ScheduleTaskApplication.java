@@ -9,4 +9,5 @@ public class ScheduleTaskApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ScheduleTaskApplication.class, args);
 	}
+
 }

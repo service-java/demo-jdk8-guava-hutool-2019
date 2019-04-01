@@ -1,4 +1,4 @@
-package _oop;
+package model;
 
 /**
  * Rectangle?
