@@ -13,6 +13,7 @@ import lombok.experimental.Accessors;
 public class User {
     String name;
     Integer age;
+    String password;
 
     private void testMethod () {
         Console.log("test----");

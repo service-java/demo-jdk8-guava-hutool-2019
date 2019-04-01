@@ -44,23 +44,23 @@ public class BeanCopyUtils {
         BeanUtils.copyProperties(source, target, getNullPropertyNames(source));
     }
 
-    public static void main(String[] args) {
-
-        Student student = new Student().setJob("student").setHobby("study").setName(null);
-        Teacher teacher = Teacher.builder().build();
-
-        Console.log("无业游民: {}", teacher);
-
-        // student -> teacher
-        BeanUtils.copyProperties(student, teacher);
-        Console.log(teacher);
-
-
-        teacher = Teacher.builder().build();
-        Console.log("失业: {}", teacher);
-        // @attention student -> teacher
-        copyNotNullBean(student, teacher);
-        Console.log(teacher);
-
-    }
+//    public static void main(String[] args) {
+//
+//        Student student = new Student().setJob("student").setHobby("study").setName(null);
+//        Teacher teacher = Teacher.builder().build();
+//
+//        Console.log("无业游民: {}", teacher);
+//
+//        // student -> teacher
+//        BeanUtils.copyProperties(student, teacher);
+//        Console.log(teacher);
+//
+//
+//        teacher = Teacher.builder().build();
+//        Console.log("失业: {}", teacher);
+//        // @attention student -> teacher
+//        copyNotNullBean(student, teacher);
+//        Console.log(teacher);
+//
+//    }
 }
