@@ -99,9 +99,10 @@ public class FileApp {
      * @param args
      */
     public static void main(String[] args) {
-        String filePath = "E:/github-project/luo-Java-Algorithm/tmp";
+        String filePath = "d:/tmp";
+
         String fileName = "test.txt";
-        String txtContent = "骆金参SB";
+        String txtContent = "helo";
         FileInputStream in = null;
         FileOutputStream out = null;
 

@@ -1,4 +1,4 @@
-package _bai.interface_test;
+package model;
 
 public interface ICircle {
     double PI = 3.14159;

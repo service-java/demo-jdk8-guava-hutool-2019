@@ -14,8 +14,9 @@ import java.util.Date;
 public class FileLab3 {
 
     public static void main(String[] args) throws ClassNotFoundException {
-        String filePath = "E:/github-project/luo-Java-Algorithm/tmp";
+        String filePath = "d:/tmp";
         String fileName = "test.dat";
+
         int[] arr = {1, 2, 3, 4, 5};
         double pi = 3.14159;
         Date date = new Date();

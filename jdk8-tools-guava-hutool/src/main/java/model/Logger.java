@@ -1,4 +1,4 @@
-package _bai.file_test;
+package model;
 
 public class Logger {
     private String format;

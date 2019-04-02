@@ -12,8 +12,8 @@ import java.util.zip.ZipOutputStream;
 public class ZipTxtFiles {
 
     public static void main(String[] args) {
-        File root = new File("E:\\java测试文件");// 获得保存txt文件的文件夹
-        File target = new File("E:\\java测试文件.zip");// 创建压缩完成后生成的文件
+        File root = new File("d:\\java测试文件");// 获得保存txt文件的文件夹
+        File target = new File("d:\\java测试文件.zip");// 创建压缩完成后生成的文件
         File[] txtFiles = root.listFiles(new FileFilter() {// 使用匿名内部类进行文件过滤
 
             @Override

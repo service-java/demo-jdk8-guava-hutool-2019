@@ -1,4 +1,4 @@
-package _bai.exception_test;
+package exception;
 
 public class NewException extends Exception {
     /**

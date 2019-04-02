@@ -13,9 +13,9 @@ public class UnzipTxtFiles {
 
     public static void main(String[] args) {
 
-        String zipPath = "E:\\java测试文件.zip";
+        String zipPath = "d:\\java测试文件.zip";
         File root = new File(zipPath);// 获得需要解压缩的zip文件
-        File target = new File("E:\\java测试文件");// 创建保存解压缩后生成文件的文件夹
+        File target = new File("d:\\java测试文件");// 创建保存解压缩后生成文件的文件夹
         if (!target.exists()) {// 如果保存文件的文件夹不存在，则进行创建
             target.mkdir();
         }

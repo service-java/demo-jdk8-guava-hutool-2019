@@ -1,5 +1,7 @@
 package _bai.exception_test;
 
+import exception.NewException;
+
 public class NewExceptionTest {
     public static void showArea(double r) throws NewException { // 创建求圆面积的方?
         if (r <= 20) {

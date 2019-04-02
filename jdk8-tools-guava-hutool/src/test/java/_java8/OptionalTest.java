@@ -1,11 +1,13 @@
-package _guava;
+package _java8;
 
 import cn.hutool.core.lang.Console;
 import com.google.common.base.Optional;
+import org.junit.Test;
 
 public class OptionalTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test1() {
         Integer value1 = null;
         Integer value2 = 10;
 
