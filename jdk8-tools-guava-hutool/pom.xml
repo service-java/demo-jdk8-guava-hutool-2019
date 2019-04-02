@@ -129,6 +129,12 @@
             <version>5.2.2.Final</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.8</version>
+        </dependency>
+
     </dependencies>
 
 </project>
