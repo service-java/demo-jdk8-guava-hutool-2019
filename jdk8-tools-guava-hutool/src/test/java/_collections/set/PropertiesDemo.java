@@ -1,33 +1,34 @@
 package _collections.set;
 
+import cn.hutool.core.lang.Console;
+import org.junit.Test;
+
 import java.util.*;
 
 public class PropertiesDemo {
 
-    public static void main(String args[]) {
-        java.util.Properties capitals = new java.util.Properties();
-        Set<Object> states;
-        String str;
-
+    @Test
+    public void hello () {
+        Properties capitals = new Properties();
         capitals.put("Illinois", "Springfield");
         capitals.put("Missouri", "Jefferson City");
         capitals.put("Washington", "Olympia");
         capitals.put("California", "Sacramento");
         capitals.put("Indiana", "Indianapolis");
 
-        // Show all states and capitals in hashtable.
-        states = capitals.keySet(); // get datatype.set-view of keys
+        Set<Object> states;
+        // 注意 keySet
+        // get datatype.set-view of keys
+        states = capitals.keySet();
         Iterator<Object> itr = states.iterator();
+
+        String str;
         while (itr.hasNext()) {
             str = (String) itr.next();
-            System.out.println("The capital of " +
-                    str + " is " + capitals.getProperty(str) + ".");
+            Console.log("The capital of " + str + " is " + capitals.getProperty(str));
         }
-        System.out.println();
 
-        // look for state not in list -- specify default
         str = capitals.getProperty("Florida", "Not Found");
-        System.out.println("The capital of Florida is "
-                + str + ".");
+        Console.log("The capital of Florida is " + str);
     }
 }

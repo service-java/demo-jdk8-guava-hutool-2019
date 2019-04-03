@@ -1,7 +1,11 @@
 package _hutool.office;
 
+import org.junit.Test;
+
 public class ExcelUtilDemo {
-    public static void main(String[] args) {
+
+    @Test
+    public void hello() {
 
     }
 }

@@ -1,5 +1,7 @@
 package _collections;
 
+import org.junit.Test;
+
 import java.util.Arrays;
 
 /**
@@ -9,7 +11,32 @@ import java.util.Arrays;
  */
 public class ArrayDemo {
 
-    public static void main(String[] args) {
+    /**
+     * 遍历输出一维数组
+     */
+    public static void displayArray(int[] arr) {
+        // 遍历输出数组
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
+    /**
+     * 遍历输出
+     */
+    public static void displayArray2D(int[][] arr) { // 注意二维数组
+        for (int i = 0, iLen = arr.length; i < iLen; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+
+    @Test
+    public void main() {
         // 数组声名
         final int ARRAY_SIZE = 5;
         int[] array = new int[ARRAY_SIZE];
@@ -35,8 +62,8 @@ public class ArrayDemo {
         array2 = Arrays.copyOf(array, array.length);
         if (array == array2) {
             System.out.println("They are same.");
-        } // 地址相同
-        else {
+        } else {
+            // 地址相同
             System.out.println("They are not same.");
         }
 
@@ -78,29 +105,13 @@ public class ArrayDemo {
 
     }
 
-    /**
-     * 遍历输出一维数组
-     */
-    public static void displayArray(int[] arr) {
-        // 遍历输出数组
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
-        System.out.println();
+    @Test
+    public void hello () {
+
     }
 
-    /**
-     * 遍历输出
-     *
-     * @param arr
-     */
-    public static void displayArray2D(int[][] arr) { // 注意二维数组
-        for (int i = 0, iLen = arr.length; i < iLen; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
-            }
-            System.out.println();
-        }
-    }
+
+
+
 
 }

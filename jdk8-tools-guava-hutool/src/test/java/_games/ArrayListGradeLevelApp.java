@@ -1,4 +1,4 @@
-package _collections;
+package _games;
 
 import java.util.ArrayList;
 import java.util.Scanner;

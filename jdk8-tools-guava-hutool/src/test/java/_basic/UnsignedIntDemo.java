@@ -1,4 +1,4 @@
-package _collections;
+package _basic;
 
 public class UnsignedIntDemo {
     public static void main(String[] args) {

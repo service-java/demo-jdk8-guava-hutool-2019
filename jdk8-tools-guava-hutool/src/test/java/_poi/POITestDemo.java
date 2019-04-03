@@ -1,5 +1,6 @@
 package _poi;
 
+import cn.hutool.core.lang.Console;
 import org.apache.poi.hssf.usermodel.*;
 import org.apache.poi.hssf.util.HSSFColor;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
@@ -17,13 +18,15 @@ import java.util.Date;
  */
 public class POITestDemo {
 
+
     @Test
-    public void creatXls() throws IOException {
-        // 获取桌面路径
+    public void createXls() throws IOException {
+        // 1.获取桌面路径
         FileSystemView fsv = FileSystemView.getFileSystemView();
         String desktop = fsv.getHomeDirectory().getPath();
         String filePath = desktop + "/template.xls";
 
+        // 2.创建workbook
         File file = new File(filePath);
         OutputStream outputStream = new FileOutputStream(file);
         HSSFWorkbook workbook = new HSSFWorkbook();
@@ -38,7 +41,9 @@ public class POITestDemo {
         // 设置行的高度
         row.setHeightInPoints(30);
 
+        // 3. 填充数据
         HSSFRow row1 = sheet.createRow(1);
+        // 序号
         row1.createCell(0).setCellValue("1");
         row1.createCell(1).setCellValue("NO00001");
 
@@ -55,14 +60,12 @@ public class POITestDemo {
 
         row1.createCell(3).setCellValue(2);
 
-
         // 保留两位小数
         HSSFCellStyle cellStyle3 = workbook.createCellStyle();
         cellStyle3.setDataFormat(HSSFDataFormat.getBuiltinFormat("0.00"));
         HSSFCell cell4 = row1.createCell(4);
         cell4.setCellStyle(cellStyle3);
         cell4.setCellValue(29.5);
-
 
         // 货币格式化
         HSSFCellStyle cellStyle4 = workbook.createCellStyle();
@@ -76,13 +79,16 @@ public class POITestDemo {
         // 设置计算公式
         cell5.setCellFormula("D2*E2");
 
+
         // 获取计算公式的值
         HSSFFormulaEvaluator e = new HSSFFormulaEvaluator(workbook);
         cell5 = e.evaluateInCell(cell5);
         System.out.println(cell5.getNumericCellValue());
 
-
+        // 设置当前sheet
         workbook.setActiveSheet(0);
+
+        // 4. 输出excel
         workbook.write(outputStream);
         outputStream.close();
     }
@@ -90,27 +96,32 @@ public class POITestDemo {
 
     @Test
     public void readXls() throws IOException {
+        // 1. 读取路径
         FileSystemView fsv = FileSystemView.getFileSystemView();
         String desktop = fsv.getHomeDirectory().getPath();
+        // eg. C:\Users\luo0412\Desktop + xxx
         String filePath = desktop + "/template.xls";
 
+        // 2. 文件流workbook
         FileInputStream fileInputStream = new FileInputStream(filePath);
         BufferedInputStream bufferedInputStream = new BufferedInputStream(fileInputStream);
         POIFSFileSystem fileSystem = new POIFSFileSystem(bufferedInputStream);
         HSSFWorkbook workbook = new HSSFWorkbook(fileSystem);
         HSSFSheet sheet = workbook.getSheet("Sheet1");
 
+        // 3. 读数据
         int lastRowIndex = sheet.getLastRowNum();
-        System.out.println(lastRowIndex);
+        Console.log("共{}行\n", lastRowIndex+1);
         for (int i = 0; i <= lastRowIndex; i++) {
             HSSFRow row = sheet.getRow(i);
             if (row == null) { break; }
-
+            
             short lastCellNum = row.getLastCellNum();
             for (int j = 0; j < lastCellNum; j++) {
                 HSSFCell cell = row.getCell(j);
                 int cellType = cell.getCellType();
 
+                // 类型判断
                 if (HSSFCell.CELL_TYPE_NUMERIC == cellType) {
                     System.out.println(cell.getNumericCellValue());
                 } else {
@@ -119,7 +130,7 @@ public class POITestDemo {
             }
         }
 
-
+        // 4. 关闭流
         bufferedInputStream.close();
     }
 

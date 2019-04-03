@@ -1,8 +1,8 @@
-package _collections;
+package _collections.set;
 
 import java.util.HashSet;
 
-public class DiffHashSet {
+public class HashSetDiff {
     public static void main(String[] args) {
 
         HashSet<String> hs = new HashSet<>();

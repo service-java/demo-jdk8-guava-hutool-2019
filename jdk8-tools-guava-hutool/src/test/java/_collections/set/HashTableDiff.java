@@ -1,11 +1,11 @@
-package _collections;
+package _collections.set;
 
 import cn.hutool.core.lang.Console;
 
 import java.util.HashMap;
 import java.util.Hashtable;
 
-public class DiffHashTable {
+public class HashTableDiff {
 
     public static void main(String[] args) {
         HashMap<String, String> hm = new HashMap<>();

@@ -7,20 +7,17 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ArrayAndListDiff {
+public class ArrayArrayListDiff {
     public static void main(String[] args) {
-
         List arrayList = new ArrayList<String>();
         arrayList.add("1");
         arrayList.add("2");
 
         Object[] objects = arrayList.toArray();
         Console.log(objects);
+        // 存在问题
 //        Console.log("arrayList转数组 -> {}", objects);
-
-
-        String[] arr = {"1", "2"};
-        Console.log("数组转list -> {}", Arrays.asList(arr));
+        Console.log("数组转list -> {}", Arrays.asList(objects));
 
     }
 }

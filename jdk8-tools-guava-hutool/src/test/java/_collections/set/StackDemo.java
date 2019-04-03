@@ -1,38 +1,27 @@
 package _collections.set;
 
+import cn.hutool.core.lang.Console;
+import org.junit.Test;
+
 import java.util.*;
 
 public class StackDemo {
 
-    static void showPush(java.util.Stack<Integer> st, int a) {
-        st.push(new Integer(a));
+    @Test
+    public void hello () {
+        Stack<Integer> st = new Stack<>();
+        Console.log(st);
 
-        System.out.println("push(" + a + ") -> " + "stack: " + st);
-    }
+        st.push(new Integer(41));
+        st.push(new Integer(42));
+        st.push(new Integer(43));
+        Console.log("stack: {}", st);
+        Console.log("{} {} {}", st.pop(), st.pop(), st.pop());
 
-    static void showPop(java.util.Stack<Integer> st) {
-        Integer a = st.pop();
-
-        System.out.println("pop(" + a + ") -> " + "stack: " + st);
-    }
-
-    public static void main(String args[]) {
-        java.util.Stack<Integer> st = new java.util.Stack<Integer>();
-        System.out.println("stack: " + st);
-
-        showPush(st, 42);
-        showPush(st, 66);
-        showPush(st, 99);
-
-        showPop(st);
-        showPop(st);
-        showPop(st);
-
-        // 报错
         try {
-            showPop(st);
+            st.pop();
         } catch (EmptyStackException e) {
-            System.out.println("empty stack");
+            e.printStackTrace();
         }
     }
 }
