@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.itzcn.entity.Admin" table="admin" catalog="ch15">
+        <id name="adminId" type="java.lang.Integer">
+            <column name="adminId" />
+            <generator class="native" />
+        </id>
+        <property name="adminName" type="java.lang.String">
+            <column name="adminName" length="50" not-null="true">
+                <comment>管理员名字</comment>
+            </column>
+        </property>
+        <property name="adminUserName" type="java.lang.String">
+            <column name="adminUserName" length="50" not-null="true" unique="true">
+                <comment>管理员用户名</comment>
+            </column>
+        </property>
+        <property name="adminUserPwd" type="java.lang.String">
+            <column name="adminUserPwd" length="50" not-null="true">
+                <comment>管理员密码</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

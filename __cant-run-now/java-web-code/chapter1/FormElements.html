@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>表单元素示例</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #ACD9F0;
+	font-size: 12px;
+	color: #000000;
+}
+table {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	background-color:#FFFFFF;
+}
+tr th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	background-color:#00509F;
+}
+td A {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #00509F;
+	font-weight: bold;
+}
+.Title {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #00509F;
+	font-weight: bold;
+}
+.f {
+	color:#FF0000;
+	font-weight:bold;
+}
+-->
+</style>
+</head>
+<body >
+<form name="form1" method="post" action="">
+
+  <table width="600" align="center" cellpadding="5" cellspacing="1" >
+    <tr height=20>
+      <th colspan="3" >表 单 元 素 示 例</th>
+    </tr>
+    <tr  >
+      <td width="101" ><span class="f">[1]</span>奥运宣言
+        <input name="textfield" type="text" id="textfield" value="更快、更高、更强"></td>
+      <td colspan="2" ><span class="f">[2]</span>最期待夺金项目
+        <select name="select2" id="select2">
+          <option>射箭</option>
+          <option>体操</option>
+          <option>举重</option>
+          <option>篮球</option>
+          <option>游泳</option>
+      </select></td>
+    </tr>
+    
+    <tr>
+      <td colspan="2"><span class="f">[3]</span>最喜欢的体育项目<br>
+        <input type="checkbox" name="checkbox" id="checkbox">举重        &nbsp;&nbsp;
+        <input type="checkbox" name="checkbox" id="checkbox">        羽毛球&nbsp;&nbsp;
+        <input type="checkbox" name="checkbox" id="checkbox">
+        乒乓球&nbsp;
+<input type="checkbox" name="checkbox" id="checkbox">
+        射击&nbsp;&nbsp;
+        <input type="checkbox" name="checkbox" id="checkbox">
+        跳水&nbsp;&nbsp; <input type="checkbox" name="checkbox" id="checkbox">
+      游泳</td>
+      <td width="185" rowspan="3"><span class="f">[6]</span>最喜欢的选手<br />
+      <select name="select" size="7" multiple="multiple" id="select">
+        <option>孙杨</option>
+        <option>叶诗文</option>
+        <option>刘翔</option>
+        <option>吴敏霞</option>
+        <option>易建联</option>
+        <option>易思玲</option>
+      </select></td>
+    </tr>
+    <tr>
+      <td colspan="2"><span class="f">[4]</span>金牌最多的国家预测<br>
+        <input type="radio" name="radio" id="radio" value="radio">        中国&nbsp;&nbsp;
+        <input type="radio" name="radio" id="radio" value="radio">
+        美国&nbsp;&nbsp;
+<input type="radio" name="radio" id="radio" value="radio">
+        俄罗斯 &nbsp;&nbsp;
+        <input type="radio" name="radio" id="radio" value="radio">
+        英国</td>
+    </tr>
+    <tr>
+      <td colspan="2"><span class="f">[5]</span>我与奥运的故事:<br>
+        <textarea name="textarea" cols="50" rows="4" id="textarea">    </textarea></td>
+    </tr>
+    
+    <tr>
+      <td colspan="2"><span class="f">[7]</span>上传精彩图片
+        <input type="file" name="textfield3" id="textfield3" /></td>
+      <td valign="top">&nbsp;</td>
+    </tr>
+    <tr>
+      <td colspan="3"><span class="f">[8]</span>参与密码
+        <input name="textfield2" type="password" id="textfield2" value="123456" size="10" /></td>
+    </tr><tr>
+      <td colspan="2"><span class="f"> [9]</span>
+        <input type="submit" name="button" id="button" value="提交" />
+        <span class="f">[10]</span>
+        <input type="reset" name="button2" id="button2" value="重置" />
+        <span class="f">[11]</span>
+<input type="button" name="button3" id="button3" value="普通" /></td>
+      <td valign="top">&nbsp;</td>
+      </tr>
+  </table>
+  <br>
+  <br>
+  <table width="600" border="0" align="center">
+    <tr>
+      <th width="120" >表单元素名称</th>
+      <td width="111">[1] Text</td>
+      <td width="99">[2] Select(menu)</td>
+      <td width="89">[3] Checkbox</td>
+      <td width="81">[4] Radio</td>
+      <td width="74">[5] TextArea</td>
+    </tr>
+    <tr>
+      <td>[6] Select(list)</td>
+      <td>[7] FileUpload</td>
+      <td>[8]Password </td>
+      <td>[9] Submit</td>
+      <td>[10] Reset</td>
+      <td>[11] Button</td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

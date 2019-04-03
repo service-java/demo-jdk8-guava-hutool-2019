@@ -4,6 +4,7 @@ import cn.hutool.core.lang.Console;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
@@ -16,12 +17,7 @@ public class ArrayListDemo {
 
     static ArrayList list = new ArrayList<String>();
 
-    // 遍历输出
-    public static void displayArrayList(ArrayList<?> aList) {
-        for (int i = 0; i < aList.size(); i++) {
-            Console.log(aList.get(i));
-        }
-    }
+
 
     {
         list.add("Yao Zhengwei");
@@ -65,7 +61,7 @@ public class ArrayListDemo {
 
         // 替换
         list.set(0, "Liang Xikun");
-        displayArrayList(list);
+        Console.log(list);
     }
 
 
@@ -74,7 +70,21 @@ public class ArrayListDemo {
 
         // 移除
         list.remove(2);
-        displayArrayList(list);
+        Console.log(list);
+    }
+
+    @Test
+    public void transform() {
+        List arrayList = new ArrayList<String>();
+        arrayList.add("1");
+        arrayList.add("2");
+
+        Object[] objects = arrayList.toArray();
+        Console.log(objects);
+        // 存在问题
+//        Console.log("arrayList转数组 -> {}", objects);
+        Console.log("数组转list -> {}", Arrays.asList(objects));
+
     }
 
 }

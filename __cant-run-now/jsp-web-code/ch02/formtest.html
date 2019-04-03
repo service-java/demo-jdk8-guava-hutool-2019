@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JavaScript验证表单字段</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<form action="#" onSubmit="return check(this);">
+<table border="1">
+	<tr>
+    	<td colspan="2">请填入个人信息：</td>
+    </tr>
+    <tr>
+    	<td>员工号：</td>
+       	<td>
+          	<input type="text"  name="id" validChar="\d{4}"  isRequired="true" />
+          	<span class="feedbackHide" id="idMsg">（员工号必须输入四位数字）</span>
+          	<br /><i>必填，四位数字</i></td>
+	</tr>
+    <tr>
+    	<td>姓名：</td>
+        <td><input type="text" name="name"  validChar="[\u4E00-\u9FA5]{2,4}" isRequired="true" /> 
+            <span class="feedbackHide" id="nameMsg">（姓名必须输入二到四位汉字）</span>
+            <br /><i>必填，二到四位汉字</i></td>
+    </tr>
+    <tr>
+     	<td>邮件：</td>
+        <td><input type="text" name="mail" validChar="\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" isRequired="true" />
+            <span class="feedbackHide" id="mailMsg">（请输入正确格式的邮件）</span>
+            <br /><i>必填</i>
+        </td>
+  	</tr>
+ 	<tr>
+     	<td>费用：</td>
+        <td><input type="text" name="expense" validChar="\d+(\.\d{0,2})*" isRequired="false" /> 
+            <span class="feedbackHide" id="expenseMsg">（请输入合法的费用格式，如1.23）</span></td>           
+ 	</tr>
+    <tr>
+    	<td>&nbsp;</td>
+        <td><input type="submit" value="提交" /></td>
+    </tr>
+  </table>
+</form>           
+</body>
+</html>
+
+<script LANGUAGE="JavaScript">
+<!--
+//提交前检查
+function check(vform){
+    // 遍历表单中每个表单域
+    for(var i=0;i<vform.elements.length;i++){        
+        // 如果表单域是文本框的话,进行定义好的验证
+		if(vform.elements[i].type=="text"){
+            // 取得验证结果
+            var checkResult=checkTextBox(vform.elements[i]);
+            // 取得文本框名,getAttribute获取指定标签属性的值
+            var name=vform.elements[i].getAttribute("name");            
+            // 验证通过
+            if(checkResult){
+				//getElementById通过通过控件ID取得元素的值
+                document.getElementById(name+"Msg").className="feedbackHide";
+            }
+            else{        
+                // 验证不通过，显示提示文字并置焦点    
+                document.getElementById(name+"Msg").className="feedbackShow";
+                vform.elements[i].focus();
+                return false;
+            }                
+        }
+    }
+    return true;
+}
+
+/**
+* 检查文本框
+*/
+function checkTextBox(vTextBox){
+    // 取得文本框中允许输入的合法文字正则表达式
+    var validChar=vTextBox.getAttribute("validChar");    
+    // 取得文本框中是否必须检查的标志
+    var isRequired=vTextBox.getAttribute("isRequired");
+    // 取得文本框的输入
+    var inputValue=vTextBox.value;
+     // 如果是非必填字段且没有输入则返回真
+    if(isRequired!="true" && inputValue.length<1){
+        return true;
+    }
+    // 否则进行正则表达式验证
+	else{
+        var regexStr="^"+validChar+"$";
+        var regex=new RegExp(regexStr);
+        return regex.test(inputValue);
+    }
+}
+//-->
+</script>

@@ -1,0 +1,235 @@
+html, body, div, ul, img {
+	margin:0;
+	padding:0;
+}
+img {
+	border:0;
+}
+body {
+	background-color:#6F605A;
+	font-family:"宋体", Arial;
+	font-size:12px;
+}
+.clear:after {
+	content:".";
+	clear:both;
+	display: block;
+	height:0;
+	visibility:hidden;
+}
+#container {
+	width:900px;
+	margin:auto;
+	background-color:#FFFFFF;
+}
+/* 顶部样式 */
+#header {
+	background-image:url(../imgs/header.jpg);
+	height:181px;
+}
+#banner {
+	height:152px;
+}
+#banner .logo {
+	color:#604329;
+	height:82px;
+	display:block;
+	padding:55px 0 0 95px;
+	margin:0;
+	font-size:30px;
+	font-weight:800;
+	font-family:"黑体", "Arial Black";
+}
+#menubar {
+	height:24px;
+	padding:5px 0 0;
+}
+#menubar ul {
+	margin:0 0 0 30px;
+}
+#menubar li {
+	display:inline;
+	padding:0 10px;
+}
+#menubar li a {
+	font-size:14px;
+	text-decoration:none;
+	color:#fff;
+}
+.active_menu a {
+	color:#DDA83A !important;
+}
+/* 内容样式 */
+#body {
+	background-image:url(../imgs/center_bg.gif);
+}
+#body_left {
+	padding:20px;
+	width:471px;
+	float:left;
+}
+#body_right {
+	padding:20px;
+	width:349px;
+	float:right;
+}
+
+h2 {
+	color:#734633;
+	font-family:"黑体", "Arial Black";
+	font-size:21px;
+	font-weight:700;
+	margin:15px 0;
+}
+h2 img {
+	margin-right:5px;
+}
+/* 好书推荐 */
+.prod {
+	padding:10px;
+	margin-bottom:15px;
+	border-bottom:dashed 1px #bbb;
+}
+.prod .pic {
+	float:left;
+	width:98px;
+	height:150px;
+}
+.prod .explain_box {
+	width:295px;
+	float:right;
+	margin-right:25px;
+}
+.prod .explain_box .top {
+	height:9px;
+	background-image:url(../imgs/box_top.gif);
+}
+.prod .explain_box .content {
+	height:100px;
+	padding:10px;
+	background-image:url(../imgs/box_center.gif);
+}
+.prod .explain_box .bottom {
+	height:9px;
+	background-image:url(../imgs/box_bottom.gif);
+}
+.prod .explain_box .content a {
+	color:#F9981D;
+	text-decoration:none;
+}
+.prod .explain_box .content .title {
+	font-size:15px;
+	height:20px;
+}
+.prod .explain_box .content .details {
+	height:65px;
+	line-height:18px;
+}
+.prod .explain_box .content .more {
+	text-align:right;
+	height:15px;
+}
+/* 新书上架 */
+.show_prod {
+	text-align:center;
+	width:132px;
+	margin:10px;
+	float:left;
+}
+.show_prod a {
+	color:#aaa;
+	font-size:13px;
+	text-decoration:none;
+	line-height:21px;
+}
+.show_prod .pic {
+	background-image:url(../imgs/new_prod_box.gif);
+	height:119px;
+	position:relative;
+}
+.show_prod .pic .icon {
+	position:absolute;
+	top:0;
+	right:0;
+}
+.show_prod .pic .prod_pic {
+	margin:15px;
+	width:60px;
+	height:90px;
+}
+/* 购物车 */
+#cart h2 {
+	float:left;
+}
+#cart .info {
+	float:left;
+	margin:20px 0 0 20px;
+}
+#cart .info span {
+	color:#900;
+}
+#cart .info a {
+	color:#900;
+	margin-left:10px;
+}
+
+/* 关于书店 */
+#about_our .details {
+	font-size:13px;
+	line-height:18px;
+	color:#333;
+}
+#about_our .details img {
+	width:116px;
+	height:80px;
+	float:right;
+	margin:10px;
+}
+/* 优惠图书 */
+#promotions {
+	width:152px;
+	float:left;
+}
+/*  */
+.right_box {
+	width:177px;
+	float:right;
+}
+ul.list {
+	padding:10px 0 0 50px;
+}
+ul.list li {
+	list-style:url(../imgs/left_menu_bullet.gif);
+	padding:3px 0;
+}
+ul.list li a {
+	text-decoration:none;
+	color:#000000;
+}
+ul.list li a:hover {
+	text-decoration:underline;
+}
+/* 页面脚注 */
+#footer {
+	height:101px;
+	border-top:dashed 1px #bbb;
+}
+#footer .logo {
+	height:70px;
+	width:100px;
+	padding:10px;
+	float:left;
+}
+#footer .nav {
+	float:right;
+	padding:10px;
+}
+#footer .nav li {
+	display:inline;
+	margin-right:10px;
+}
+#footer .nav li a {
+	color:#aaa;
+	font-size:13px;
+	text-decoration:none;
+}

@@ -1,0 +1,51 @@
+
+.focusDiv {
+	BACKGROUND: #000; 
+	POSITION: relative; 
+	HEIGHT: 173px;
+	width:743px;
+	margin-top:0px;
+}
+.focusDiv #newf {
+	MARGIN-BOTTOM: 0px; OVERFLOW: hidden; POSITION: relative; HEIGHT: 173px;
+}
+.focusDiv #newf images {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px;
+}
+.focusDiv #iTabs {
+	Z-INDEX: 100; RIGHT: 10px; MARGIN: 0px; OVERFLOW: hidden; BOTTOM: 9px; LIST-STYLE-TYPE: none; POSITION: absolute;
+}
+.iTabCon img{border:0px;width:743px;height:173px;}
+.focusDiv #iTabs LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND: url(../images/focusnormal.png); FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 15px; CURSOR: pointer; COLOR: #fff; LINE-HEIGHT: 15px; MARGIN-RIGHT: 5px; PADDING-TOP: 0px; HEIGHT: 15px; TEXT-ALIGN: center; -moz-user-select: none; -background: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="images/focusnormal.png")
+}
+.focusDiv #iTabs LI.on {
+	BACKGROUND: url(../images/focuson.png); -background: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="images/focuson.png")
+}
+.focusDiv #iTabs LI.hoverState {
+	BACKGROUND: url(../images/focushover.png); -background: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="images/focushover.png")
+}
+.bl {
+	Z-INDEX: 99; OVERFLOW: hidden; WIDTH: 5px; POSITION: absolute; HEIGHT: 5px
+}
+.br {
+	Z-INDEX: 99; OVERFLOW: hidden; WIDTH: 5px; POSITION: absolute; HEIGHT: 5px
+}
+.tl {
+	Z-INDEX: 99; OVERFLOW: hidden; WIDTH: 5px; POSITION: absolute; HEIGHT: 5px
+}
+.tr {
+	Z-INDEX: 99; OVERFLOW: hidden; WIDTH: 5px; POSITION: absolute; HEIGHT: 5px
+}
+.tl {
+	BACKGROUND: url(../images/corner-tl.png) 0px 0px; LEFT: 0px; TOP: 0px; -background: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="images/corner-tl.png")
+}
+.tr {
+	RIGHT: 0px; BACKGROUND: url(../images/corner-tr.png) 5px 0px; TOP: 0px; -background: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="images/corner-tr.png")
+}
+.bl {
+	BACKGROUND: url(../images/corner-bl.png) 0px -5px; LEFT: 0px; BOTTOM: 0px; -background: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="images/corner-bl.png"); -bottom: -1px
+}
+.br {
+	RIGHT: 0px; BACKGROUND: url(../images/corner-br.png) 5px -5px; BOTTOM: 0px; -background: none; -filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true,src="images/corner-br.png"); -bottom: -1px
+}

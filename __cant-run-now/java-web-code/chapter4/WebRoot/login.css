@@ -1,0 +1,245 @@
+﻿BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #000; PADDING-TOP: 0px
+}
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.clear {
+	CLEAR: both
+}
+#header {
+	MARGIN: 0px auto; WIDTH: 790px
+}
+.h_lt {
+	FLOAT: left; WIDTH: 360px; HEIGHT: 80px
+}
+.h_lt IMG {
+	FLOAT: left;BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none;BORDER-BOTTOM-STYLE: none
+}
+.h_rt {
+	FLOAT: left; WIDTH: 400px; PADDING-TOP: 10px;color:#434343;
+}
+.h_rt a:link{
+color:#434343;
+text-decoration:none;
+font-size:12px;
+}
+.h_rt a:visited{
+color:#434343;
+text-decoration:none;
+font-size:12px;
+}
+.h_rt a:active{
+color:#434343;
+text-decoration:none;
+font-size:12px;
+}
+.h_rt a:hover{
+color:#0066FF;
+text-decoration:none;
+font-size:12px;
+}
+.h_rt IMG {
+	FLOAT: left; MARGIN-LEFT: 10px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.h_rt .userbar {
+	FLOAT: left; MARGIN-LEFT: 5px; LINE-HEIGHT: 25px; TEXT-ALIGN: center
+}
+.h_rt .userbar A {
+	COLOR: #000
+}
+#center {
+	MARGIN: 0px auto; WIDTH: 760px; PADDING-TOP: 20px
+}
+.c_lt {
+	FLOAT: left; WIDTH: 533px
+}
+.c_lt .tt {
+	BACKGROUND: url(images/login_tt.gif) no-repeat; WIDTH: 533px; TEXT-INDENT: 175px; PADDING-TOP: 25px; HEIGHT: 34px
+}
+.c_lt .content {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; BACKGROUND: url(images/login_c.gif) repeat-y; PADDING-BOTTOM: 10px; WIDTH: 493px; PADDING-TOP: 20px
+}
+.c_lt .content P {
+	MARGIN: 15px; LINE-HEIGHT: 30px
+}
+.c_lt .content P LABEL {
+	FLOAT: left; MARGIN-LEFT: -130px; WIDTH: 180px; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+.c_lt .content P INPUT {
+	BORDER-RIGHT: #aadafe 1px solid; BORDER-TOP: #aadafe 1px solid; BACKGROUND: #ebf8ff; BORDER-LEFT: #aadafe 1px solid; WIDTH: 180px; PADDING-TOP: 8px; BORDER-BOTTOM: #aadafe 1px solid; HEIGHT: 22px
+}
+.c_lt .content P INPUT.tk {
+	MARGIN-TOP: 10px; BACKGROUND: none transparent scroll repeat 0% 0%; WIDTH: 13px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 13px; BORDER-BOTTOM-STYLE: none
+}
+.c_lt .content P INPUT.tj {
+	BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-LEFT: 130px; WIDTH: 81px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 35px; BORDER-BOTTOM-STYLE: none
+}
+.c_lt .content P SPAN {
+	MARGIN-LEFT: 20px
+}
+.c_lt .content P A {
+	COLOR: #2965a4; TEXT-DECORATION: underline
+}
+.ob_pws {
+	DISPLAY: inline; FONT-SIZE: 9pt; FLOAT: left; MARGIN-LEFT: 68px; WIDTH: 183px; HEIGHT: 25px; BACKGROUND-COLOR: #f1f1f1; TEXT-ALIGN: center
+}
+.ob_pws0 {
+	DISPLAY: inline; FLOAT: left; WIDTH: 60px; LINE-HEIGHT: 25px; HEIGHT: 20px
+}
+.ob_pws1 {
+	DISPLAY: inline; FLOAT: left; WIDTH: 60px; LINE-HEIGHT: 25px; HEIGHT: 20px; BACKGROUND-COLOR: #ff3300
+}
+.ob_pws2 {
+	DISPLAY: inline; FLOAT: left; WIDTH: 60px; LINE-HEIGHT: 25px; HEIGHT: 20px; BACKGROUND-COLOR: #ffff99
+}
+.ob_pws3 {
+	DISPLAY: inline; FLOAT: left; WIDTH: 60px; LINE-HEIGHT: 25px; HEIGHT: 20px; BACKGROUND-COLOR: #00cc66
+}
+.c_lt .ft {
+	BACKGROUND: url(images/login_bt.gif) no-repeat; WIDTH: 533px; HEIGHT: 24px
+}
+.c_rt {
+	PADDING-LEFT: 10px; FLOAT: left; WIDTH: 217px
+}
+.c_rt UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.c_rt UL LI {
+	MARGIN-TOP: 5px; PADDING-LEFT: 55px; FONT-SIZE: 14px; BACKGROUND: url(images/login_rt.gif) no-repeat; WIDTH: 157px; COLOR: #666; PADDING-TOP: 5px; HEIGHT: 65px
+}
+.c_rt UL LI.zq {
+	BACKGROUND: url(images/login_ft.gif) no-repeat
+}
+.c_rt UL LI.sj {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; WIDTH: 217px; COLOR: #2866a3; PADDING-TOP: 0px
+}
+.c_rt UL LI P {
+	MARGIN-TOP: 5px; FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+.c_lt .ft .c_rtb {
+	PADDING-LEFT: 10px; WIDTH: 217px
+}
+#foot {
+	MARGIN: 0px auto; WIDTH: 790px
+}
+.bh {
+	WIDTH: 760px; HEIGHT: 33px; BACKGROUND-COLOR: #f6fbff
+}
+.bh .lt {
+	DISPLAY: block; FONT-WEIGHT: bold; BACKGROUND: url(images/login_foot.gif) no-repeat; FLOAT: left; WIDTH: 90px; COLOR: #2964a0; PADDING-TOP: 10px; HEIGHT: 23px; TEXT-ALIGN: center
+}
+.bh UL {
+	LINE-HEIGHT: 33px;margin:0px;
+}
+.bh UL LI {
+	FLOAT: left; MARGIN-LEFT: 10px; LIST-STYLE-TYPE: none;width:210px;text-align:left;
+}
+.bh UL LI A {
+	COLOR: #2964a0; TEXT-DECORATION: underline
+}
+.cop {
+	MARGIN-TOP: 10px; COLOR: #666; LINE-HEIGHT: 25px; TEXT-ALIGN: center
+}
+.cop A {
+	COLOR: #666
+}
+#lad_center {
+	MARGIN: 0px auto; WIDTH: 790px
+}
+#lad_center .lad_lt {
+	MARGIN-TOP: 20px; FLOAT: left; WIDTH: 420px
+}
+.lad_lt .tt {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #2965a3; HEIGHT: 25px
+}
+.lad_lt .tt IMG {
+	PADDING-TOP: 3px
+}
+.lad_lt .cont {
+	MARGIN-TOP: 11px; BACKGROUND: url(images/dl_bg.jpg) no-repeat; OVERFLOW: hidden; WIDTH: 420px; HEIGHT: 202px
+}
+.lad_lt .cont .pep {
+	FLOAT: left; WIDTH: 120px; HEIGHT: 202px
+}
+.lad_lt .cont .ms {
+	PADDING-LEFT: 20px; FLOAT: left; WIDTH: 280px; PADDING-TOP: 50px; HEIGHT: 152px
+}
+.lad_lt .cont .ms P {
+	MARGIN: 5px 0px 0px; LINE-HEIGHT: 15px
+}
+.lad_lt .fb {
+	PADDING-RIGHT: 10px; MARGIN-TOP: 15px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; WIDTH: 400px; PADDING-TOP: 10px; HEIGHT: 80px
+}
+.lad_lt .fb UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 20px; PADDING-TOP: 0px
+}
+.lad_lt .fb UL LI.xs {
+	DISPLAY: block; PADDING-LEFT: 60px; FONT-SIZE: 14px; BACKGROUND: url(images/login_rt.gif) no-repeat; FLOAT: left; WIDTH: 140px; COLOR: #666; PADDING-TOP: 5px; LIST-STYLE-TYPE: none; HEIGHT: 75px
+}
+.lad_lt .fb UL LI.zq {
+	DISPLAY: block; PADDING-LEFT: 60px; FONT-SIZE: 14px; BACKGROUND: url(images/login_ft.gif) no-repeat; FLOAT: left; WIDTH: 140px; COLOR: #666; PADDING-TOP: 5px; LIST-STYLE-TYPE: none; HEIGHT: 75px
+}
+.lad_lt .fb UL LI P.zb {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 0px
+}
+.lad_lt .fb UL LI P.xz {
+	MARGIN-TOP: 3px; FONT-WEIGHT: normal; FONT-SIZE: 12px
+}
+.lad_lt .fb UL LI P A {
+	COLOR: #666
+}
+#lad_center .lad_rt {
+	MARGIN-TOP: 20px; DISPLAY: block; BACKGROUND: url(images/la_bg.gif) no-repeat left -14px; FLOAT: left; WIDTH: 370px; POSITION: relative; HEIGHT: 360px
+}
+.lad_rt .top {
+	BACKGROUND: url(images/dl_tbg.gif) no-repeat; LEFT: 250px; WIDTH: 61px; POSITION: absolute; TOP: -24px; HEIGHT: 61px
+}
+.lad_rt .top2 {
+	BACKGROUND: url(images/dl_tbg.gif) no-repeat; LEFT: 180px; WIDTH: 61px; POSITION: absolute; TOP: -24px; HEIGHT: 61px
+}
+.lad_rt .top2 IMG {
+	MARGIN: 5px; WIDTH: 50px; HEIGHT: 50px
+}
+.lad_rt .top IMG {
+	MARGIN: 5px; WIDTH: 50px; HEIGHT: 50px
+}
+.lad_rt FORM {
+	PADDING-RIGHT: 50px; PADDING-LEFT: 50px; PADDING-BOTTOM: 0px; PADDING-TOP: 40px
+}
+.lad_rt FORM P {
+	MARGIN: 10px 0px 0px
+}
+.lad_rt P INPUT.sr {
+	BORDER-RIGHT: #abdafe 1px solid; BORDER-TOP: #abdafe 1px solid; BACKGROUND: #ebf8ff; MARGIN-LEFT: 5px; BORDER-LEFT: #abdafe 1px solid; WIDTH: 140px; MARGIN-RIGHT: 3px; BORDER-BOTTOM: #abdafe 1px solid; HEIGHT: 23px
+}
+.lad_rt UL {
+	MARGIN: 80px 40px
+}
+.lad_rt UL LI {
+	MARGIN-TOP: 15px; LIST-STYLE-TYPE: none
+}
+.lad_rt UL LI LABEL {
+	FLOAT: left; MARGIN-LEFT: -130px; WIDTH: 180px; PADDING-TOP: 5px; TEXT-ALIGN: right
+}
+.lad_rt UL LI INPUT.sr {
+	BORDER-RIGHT: #abdafe 1px solid; BORDER-TOP: #abdafe 1px solid; BACKGROUND: #ebf8ff; MARGIN-LEFT: 5px; BORDER-LEFT: #abdafe 1px solid; WIDTH: 140px; MARGIN-RIGHT: 5px; BORDER-BOTTOM: #abdafe 1px solid; HEIGHT: 23px
+}
+.lad_rt .bottom {
+	BORDER-TOP: #c0e4fe 1px solid; MARGIN-LEFT: 20px; WIDTH: 330px; LINE-HEIGHT: 20px; PADDING-TOP: 10px
+}
+.lad_rt .bottom P {
+	COLOR: #2965a4
+}
+.lad_rt .bottom P B {
+	MARGIN-BOTTOM: 5px; HEIGHT: 15px
+}
+.Login1 {
+	DISPLAY: block; BACKGROUND: url(images/dl.gif) no-repeat; FLOAT: left; MARGIN-LEFT: 20px; WIDTH: 85px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 40px; BORDER-BOTTOM-STYLE: none
+}
+.Login2 {
+	DISPLAY: block; BACKGROUND: url(images/login_tj.gif) no-repeat; FLOAT: left; MARGIN-LEFT: 5px; WIDTH: 85px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 40px; BORDER-BOTTOM-STYLE: none
+}

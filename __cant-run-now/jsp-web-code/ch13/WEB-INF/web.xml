@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>
+	ch13new</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<filter>
+        <filter-name>SimpleFilter</filter-name>
+        <filter-class>com.TestFilter</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>SimpleFilter</filter-name>
+        <url-pattern>/test.jsp</url-pattern>
+    </filter-mapping>
+    
+     <!-- EncodingFilter definition -->
+  <filter>
+    <filter-name>EncodingFilter</filter-name>
+    <filter-class>com.EncodingFilter</filter-class>
+	<init-param>
+      <param-name>Encoding</param-name>
+      <param-value>GB2312</param-value>
+    </init-param>
+  </filter>
+
+  <!-- EncodingFilter mapping -->
+  <filter-mapping>
+    <filter-name>EncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- CheckFormFilter definition -->
+  <filter>
+    <filter-name>CheckFormFilter</filter-name>
+    <filter-class>com.CheckFormFilter</filter-class>
+  </filter>
+
+  <!-- CheckFormFilter mapping -->
+  <filter-mapping>
+    <filter-name>CheckFormFilter</filter-name>
+    <url-pattern>/CheckFormSuccess.jsp</url-pattern>
+  </filter-mapping>
+  
+  <!-- CompressionFilter definition -->
+  <filter>
+        <filter-name>CompressionFilter</filter-name>
+        <filter-class>com.CompressionFilter</filter-class>
+    </filter>
+    
+    <!--CompressionFilter mapping -->
+    <filter-mapping>
+        <filter-name>CompressionFilter</filter-name>
+        <!--url-pattern>*.jsp</url-pattern-->
+        <url-pattern>*.html</url-pattern>
+    </filter-mapping>
+    
+    <listener>
+        <listener-class>com.RequestListener</listener-class>
+    </listener>
+    
+    <listener>
+        <listener-class>com.ContextListener</listener-class>
+    </listener>
+    
+     <listener>
+        <listener-class>com.SessionAttributeListener</listener-class>
+    </listener>
+    
+     <listener>
+        <listener-class>com.User</listener-class>
+    </listener>
+    
+    <servlet>
+		<display-name>LogoutServlet</display-name>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>OnlineUserServlet</servlet-name>
+		<servlet-class>com.OnlineUserServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>OnlineUserServlet</servlet-name>
+		<url-pattern>/success</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>logout</servlet-name>
+		<servlet-class>com.LogoutServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>logout</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	
+</web-app>

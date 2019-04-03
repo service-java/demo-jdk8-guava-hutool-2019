@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="admin" extends="struts-default" namespace="">
+		<action name="adminValidate" class="com.itzcn.action.AdminLoginAction" method="adminLogin">
+			<result name="success">/admin/index.jsp</result>
+			<result name="input">/login.jsp</result>
+		</action>
+	</package>
+	<include file="post_struts.xml"></include>
+	<include file="user_struts.xml"></include>
+
+
+</struts>    

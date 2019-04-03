@@ -1,0 +1,115 @@
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee web-jsptaglibrary_2_1.xsd" version="2.1">
+	<tlib-version>1.0</tlib-version>
+	<short-name>my</short-name>
+	<display-name>My Tag</display-name>
+	<description>Custom Tag library</description>
+	<uri>/mytag</uri>
+	
+	<tag>
+		<name>hello</name>
+		<tag-class>com.HelloTag</tag-class>
+		<body-content>empty</body-content>
+	</tag>
+	
+	<tag>
+		<name>myfont</name>
+		<tag-class>com.AttributeTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>bgColor</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>color</name>
+			<required>true</required>
+		</attribute>
+		<attribute>
+			<name>bordercolor</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>fontSize</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>align</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>border</name>
+			<required>false</required>
+		</attribute>
+		<attribute>
+			<name>width</name>
+			<required>false</required>
+		</attribute>
+	</tag>	
+	
+	<tag>
+		<name>welcome</name>
+		<tag-class>com.HelloSimpleTag</tag-class>
+		<body-content>tagdependent</body-content>
+		<attribute>
+			<name>name</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+	 <tag>
+        <name>hello</name>
+        <tag-class>com.HelloTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    
+    <tag>	
+        <name>loop</name>
+		<tag-class>com.BodyTag</tag-class>
+		<body-content>jsp</body-content>
+        <attribute>
+  			<name>counts</name>
+  			<required>true</required>
+  			<rtexprvalue>true</rtexprvalue>
+  		</attribute>
+    </tag> 
+    
+    <tag>
+         <name>switch</name>
+         <tag-class>com.SwitchTag</tag-class>
+         <body-content>JSP</body-content>
+    </tag>
+    
+    <tag>
+         <name>case</name>
+         <tag-class>com.CaseTag</tag-class>
+         <body-content>JSP</body-content>
+         <attribute>
+             <name>cond</name>
+             <required>true</required>
+             <rtexprvalue>true</rtexprvalue>
+         </attribute>
+     </tag>
+    
+     <tag>
+        <name>default</name>
+        <tag-class>com.DefaultTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+    
+    <tag>
+		<name>iterate</name>
+		<tag-class>com.IterateTag</tag-class>
+		<body-content>JSP</body-content>
+		<attribute>
+			<name>map</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<name>element</name>
+			<required>true</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+	
+</taglib>

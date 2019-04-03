@@ -1,0 +1,267 @@
+﻿* {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+BODY {
+	BACKGROUND: #fff; FONT: 11px/180% Verdana,Tahoma,"宋体"; COLOR: #434343
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+TEXTAREA {
+	FONT-SIZE: 12px
+}
+search {
+	FONT-SIZE: 12px
+}
+A {
+	COLOR: #143c80; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+EM {
+	FONT: 11px normal Verdana,Tahoma; LETTER-SPACING: 1px
+}
+H2 {
+	FONT-SIZE: 12px
+}
+#wrapper {
+	MARGIN: 0px auto; WIDTH: 762px
+}
+#header {width:762px;height:78px;position:relative;}
+.logo {position:absolute;width:158px;height:58px;background:url(../images/logo.gif) no-repeat;left:3px;bottom:2px;}
+.logo span {display:none}
+.login {position:absolute;right:3px;top:10px;}
+
+.login a:link{
+color:#434343;
+text-decoration:none;
+font-size:12px;
+}
+.login a:visited{
+color:#434343;
+text-decoration:none;
+font-size:12px;
+}
+.login a:active{
+color:#434343;
+text-decoration:none;
+font-size:12px;
+}
+.login a:hover{
+color:#0066FF;
+text-decoration:none;
+font-size:12px;
+}
+/*nav*/	
+#nav_index {
+	BACKGROUND: url(../images/navbg.gif) repeat-x 0px -76px; MARGIN: 5px 0px; WIDTH:762px; POSITION: relative; HEIGHT: 265px
+}
+#nav_index UL {
+	BACKGROUND: url(../images/navbg.gif) no-repeat left top; FLOAT: left
+}
+#nav_index LI SPAN {
+	RIGHT: 0px; BACKGROUND: url(../images/navbg.gif) no-repeat 0px -38px; WIDTH: 6px; POSITION: absolute; TOP: 0px; HEIGHT: 38px
+}
+#nav_index LI {
+	FLOAT: left
+}
+#nav_index LI A {
+	PADDING-RIGHT: 20px; DISPLAY: block; PADDING-LEFT: 20px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(../images/spacer.gif) no-repeat right 50%; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #fff; LINE-HEIGHT: 38px; PADDING-TOP: 0px; HEIGHT: 38px; TEXT-ALIGN: center
+}
+#nav_index LI A:hover {
+	COLOR: #c5e6f5; TEXT-DECORATION: none
+}
+#nav {
+	BACKGROUND: url(../images/navbg.gif) repeat-x 0px -80px; MARGIN: 5px 0px; WIDTH: 762px; POSITION: relative; HEIGHT: 52px
+}
+#nav UL {
+	BACKGROUND: url(../images/navbg.gif) no-repeat left top; FLOAT: left
+}
+#nav LI SPAN {
+	RIGHT: 0px; BACKGROUND: url(../images/navbg.gif) no-repeat 0px -40px; WIDTH: 6px; POSITION: absolute; TOP: 0px; HEIGHT: 40px
+}
+#nav LI {
+	FLOAT: left
+}
+#nav LI A {
+	PADDING-RIGHT: 20px; DISPLAY: block; PADDING-LEFT: 20px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(../images/spacer.gif) no-repeat right 50%; FLOAT: left; PADDING-BOTTOM: 0px; COLOR: #fff; LINE-HEIGHT: 40px; PADDING-TOP: 0px; HEIGHT: 40px; TEXT-ALIGN: center
+}
+#nav LI A:hover {
+	COLOR: #c5e6f5; TEXT-DECORATION: none
+}
+.banner {
+	CLEAR: both; BACKGROUND: url(../images/banner.jpg); MARGIN:5px 0px; WIDTH: 762px; HEIGHT: 209px
+}
+.banner IMG {
+	DISPLAY: block; MARGIN: 0px
+}
+#main_log {
+	Z-INDEX: 3; RIGHT: 11px; BACKGROUND: url(../images/main_log.gif) no-repeat; MARGIN: 0px; WIDTH: 224px; POSITION: absolute; TOP: 9px; HEIGHT: 255px
+}
+#main_log_c {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; PADDING-BOTTOM: 10px; LINE-HEIGHT: 30px; PADDING-TOP: 10px
+}
+#main_log_c A {
+	TEXT-DECORATION: underline
+}
+#main_log_c P {
+	PADDING-TOP: 3px
+}
+#main_log_c STRONG {
+	PADDING-RIGHT: 30px; PADDING-LEFT: 30px; FONT-SIZE: 14px; PADDING-BOTTOM: 10px; COLOR: #315a9f; PADDING-TOP: 10px
+}
+#main_log_c INPUT {
+	BORDER-RIGHT: #c2d0e3 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #c2d0e3 1px solid; PADDING-LEFT: 6px; PADDING-BOTTOM: 0px; BORDER-LEFT: #c2d0e3 1px solid; LINE-HEIGHT: 22px; PADDING-TOP: 0px; BORDER-BOTTOM: #c2d0e3 1px solid; HEIGHT: 22px
+}
+#main_log_c .check {
+	WIDTH: 56px; HEIGHT: 22px
+}
+#main_log_c SPAN {
+	FLOAT: right; BACKGROUND-IMAGE: none
+}
+#content {
+	WIDTH: 762px
+}
+#main {
+	FLOAT: left; WIDTH: 522px;overflow:hidden;
+}
+
+.tag {
+	BORDER-RIGHT: #b9c3d0 1px solid; FLOAT: left; WIDTH: 110px
+}
+.tag UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 40px; PADDING-TOP: 39px
+}
+.tag LI A {
+	PADDING-RIGHT: 0px; MARGIN-TOP: -1px; DISPLAY: block; PADDING-LEFT: 20px; FONT-WEIGHT: bold; BACKGROUND: url(../images/ul_bg.gif) no-repeat 50% bottom; PADDING-BOTTOM: 0px; COLOR: #143c80; LINE-HEIGHT: 34px; PADDING-TOP: 0px; HEIGHT: 34px
+}
+.tag LI A:hover {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: url(../images/ul_bg.gif) no-repeat 50% top; PADDING-BOTTOM: 0px; COLOR: #315a9f; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+.about {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 18px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 374px; MARGIN-RIGHT: 18px; PADDING-TOP: 30px; POSITION: relative; HEIGHT: 150px
+}
+.about H1 {
+	FONT-SIZE: 14px; COLOR: #ff6600
+}
+.about .about_img {
+	RIGHT: 0px; BOTTOM: -10px; POSITION: absolute;z-index:-9999;
+}
+.link {
+	PADDING-RIGHT: 18px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}
+.link H4 {
+	FONT-SIZE: 14px; MARGIN: 3px 0px
+}
+.link IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 3px 4px 1px 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#sider {
+	FLOAT: right; WIDTH: 240px
+}
+#sider H2 {
+	BACKGROUND: url(../images/sider_t.gif) no-repeat left 50%; FLOAT: left; WIDTH: 240px; LINE-HEIGHT: 30px; HEIGHT: 30px
+}
+#sider H2 A {
+	PADDING-LEFT: 12px; BACKGROUND: url(../images/h2_arrow.gif) no-repeat left 50%; MARGIN-LEFT: 9px; COLOR: #315a9f
+}
+#sider H2 SPAN A {
+	PADDING-RIGHT: 9px; FONT-WEIGHT: normal; FLOAT: right; BACKGROUND-IMAGE: none; COLOR: #516176
+}
+#sider UL {
+	BORDER-RIGHT: #b9c3d0 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #b9c3d0 0px solid; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 12px; BORDER-LEFT: #b9c3d0 1px solid; WIDTH: 238px; PADDING-TOP: 12px; BORDER-BOTTOM: #b9c3d0 0px solid
+}
+#sider LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 12px; FLOAT: left; PADDING-BOTTOM: 1px; OVERFLOW: hidden; WIDTH: 212px; PADDING-TOP: 1px; WHITE-SPACE: nowrap;BACKGROUND: url(../images/li_arrow.gif) no-repeat left 50%;margin-left:3px;
+}
+#sider LI A {
+	 COLOR: #434343
+}
+#sider LI EM {
+	FONT-SIZE: 11px; FONT-STYLE: normal
+}
+#sider .sider_b {
+	BACKGROUND: url(../images/sider_b.gif) no-repeat; FLOAT: left; WIDTH: 240px; HEIGHT: 15px
+}
+#foot {
+	CLEAR: both; BACKGROUND: url(../images/foot_bg.gif) repeat-x left top; FLOAT: left; WIDTH: 762px; COLOR: #143c80
+}
+.foot {
+	COLOR: #143c80; TEXT-ALIGN: center
+}
+#foot P {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; TEXT-ALIGN: center
+}
+#foot IMG {
+	BORDER-TOP-WIDTH: 0px; MARGIN-TOP: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.payWay {
+	BORDER-RIGHT: #d8ebff 1px solid; BORDER-TOP: #d8ebff 1px solid; FLOAT: left; MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 30px; BORDER-LEFT: #d8ebff 1px solid; WIDTH: 760px; BORDER-BOTTOM: #d8ebff 1px solid
+}
+.payWay H3 {
+	PADDING-RIGHT: 10px; BORDER-TOP: #d8ebff 2px solid; PADDING-LEFT: 10px; FONT-SIZE: 14px; BACKGROUND: #eff6fe; MARGIN-BOTTOM: 5px; PADDING-BOTTOM: 5px; COLOR: #37679c; PADDING-TOP: 5px; BORDER-BOTTOM: #d8ebff 1px solid
+}
+.payWay .pay3W {
+	WIDTH: 760px
+}
+.payWay .pay3W LI {
+	FONT-WEIGHT: bold; BACKGROUND: url(http://www.itzcn.com/img/index/pay_yee.png) no-repeat center top; FLOAT: left; WIDTH: 252px; COLOR: #37679c; TEXT-ALIGN: center
+}
+.payWay .pay3W .p02 {
+	BACKGROUND-IMAGE: url(http://www.itzcn.com/img/index/pay_zfb.png)
+}
+.payWay .pay3W .p03 {
+	BACKGROUND-IMAGE: url(http://www.itzcn.com/img/index/pay_bank.png)
+}
+.payWay .pay3W LI SPAN {
+	DISPLAY: block; WIDTH: 252px; CURSOR: pointer; PADDING-TOP: 130px; TEXT-ALIGN: center
+}
+.payWayC {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; FLOAT: left; PADDING-BOTTOM: 20px; PADDING-TOP: 20px
+}
+.payWay H4 {
+	PADDING-LEFT: 12px; FONT-SIZE: 14px; BACKGROUND: url(http://www.itzcn.com/img/index/tab_home.png) no-repeat left -692px; MARGIN: 0px 0px 8px
+}
+.payWayC UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 30px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.payWayC LI {
+	FLOAT: left; WIDTH: 170px; HEIGHT: 32px
+}
+.payWayC INPUT {
+	POSITION: relative; TOP: -4px
+}
+.payWayC Q {
+	BORDER-RIGHT: #fff4c9 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #fff4c9 1px solid; DISPLAY: block; PADDING-LEFT: 5px; BACKGROUND: #fffdf5; PADDING-BOTTOM: 5px; BORDER-LEFT: #fff4c9 1px solid; COLOR: #575757; PADDING-TOP: 5px; BORDER-BOTTOM: #fff4c9 1px solid
+}
+.payWayC P.buttonPay {
+	CLEAR: left; TEXT-ALIGN: center
+}
+.payWay INPUT.buttonPay {
+	BORDER-TOP-WIDTH: 0px; MARGIN-TOP: 5px; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 14px; BACKGROUND: url(http://www.itzcn.com/img/index/tab_home.png) no-repeat left -1518px; BORDER-BOTTOM-WIDTH: 0px; WIDTH: 102px; CURSOR: pointer; COLOR: #fff; HEIGHT: 34px; TEXT-ALIGN: center; BORDER-RIGHT-WIDTH: 0px
+}
+.payWayC .t1 {
+	BORDER-RIGHT: #d8ebff 1px solid; BORDER-TOP: #d8ebff 1px solid; MARGIN-TOP: 20px; BORDER-LEFT: #d8ebff 1px solid; WIDTH: 720px; BORDER-BOTTOM: #d8ebff 1px solid; BORDER-COLLAPSE: collapse
+}
+.payWayC .t1 TH {
+	FONT-SIZE: 14px; BACKGROUND: #eff6fe; COLOR: #37679c; TEXT-ALIGN: left
+}
+.payWayC .t1 TH {
+	BORDER-RIGHT: #d8ebff 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #d8ebff 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #d8ebff 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #d8ebff 1px solid
+}
+.payWayC .t1 TD {
+	BORDER-RIGHT: #d8ebff 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #d8ebff 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #d8ebff 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #d8ebff 1px solid
+}
+.payWayC .t1 .tN {
+	FONT-WEIGHT: bold; COLOR: #37679c; TEXT-ALIGN: center
+}
+.payWayC .t2 TABLE TD {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.payWayC .t2 TABLE TD STRONG {
+	DISPLAY: inline-block; WIDTH: 56px; TEXT-ALIGN: right
+}
+.payWayIns {
+	CLEAR: left; PADDING-RIGHT: 50px; PADDING-LEFT: 50px; MARGIN-BOTTOM: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 0px
+}

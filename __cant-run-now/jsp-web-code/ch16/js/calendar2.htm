@@ -1,0 +1,318 @@
+<html>
+
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Calendar</title>
+<style>
+<!--
+.DayN { font-family: Arial; font-size: 11px; background-color: #E3E3E3; color: rgb(0,0,0); font-weight: bold; text-align: center; vertical-align: middle; border: 2px solid #E3E3E3 }
+.DayU { font-family: Arial; font-size: 11px; background-color: 9B9A9A; color: rgb(255,255,255); font-weight: bold; text-align: center; vertical-align: middle; border: 2px outset rgb(255,255,255) }
+.DayD{ font-family: Arial; font-size: 11px; background-color: rgb(255,255,255); color: rgb(0,0,0); font-weight: bold; text-align: center; vertical-align: middle; border: 2px inset rgb(255,255,255) }
+.WeekDay{ font-family: Arial; font-size: 11px; background-color: #0101AE; color: rgb(255,255,255); font-weight: bold; text-align: center; vertical-align: middle; border-left: 1px solid rgb(255,255,255); border-right: 1px solid rgb(255,255,255); border-top: 1px solid rgb(255,255,255) }
+.WeekEnd{ font-family: Arial; font-size: 11px; background-color: rgb(255,0,0); color: rgb(255,255,255); font-weight: bold; text-align: center; vertical-align: middle; border-left: 1px solid rgb(255,255,255); border-right: 1px solid rgb(255,255,255); border-top: 1px solid rgb(255,255,255) }
+.ArrowN{ font-family: Arial; font-size: 13px; background-color: #BABABA; color: rgb(255,255,255); font-weight: bold; text-align: center; vertical-align: middle; border: 2px solid #BABABA}
+.ArrowU{ font-family: Arial; font-size: 13px; background-color: #BABABA; color: rgb(255,255,255); font-weight: bold; text-align: center; vertical-align: middle; border: 2px outset rgb(255,255,255) }
+.ArrowD{ font-family: Arial; font-size: 13px; background-color: #E3E3E3; color: rgb(255,255,255); font-weight: bold; text-align: center; vertical-align: middle; border: 2px inset rgb(255,255,255) }
+.DateSelect1{ font-family: Arial; font-size: 11px; background-color: #E3E3E3; font-weight: bold; text-align: right }
+.DateSelect{ height:200px;font-family: Arial; font-size: 13px; background-color: #E3E3E3; font-weight: bold; text-align: right }
+.unnamed1 {  height: 100px}
+-->
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" topmargin="0" leftmargin="0">
+
+<table border="0" cellpadding="0" cellspacing="0"
+style="font-size: 11px; cursor: hand; background-color: #E3E3E3; border: 1px solid #000000"
+id="tblCal" width="100%" height="100%" OnSelectStart="return false;">
+  <tr>
+    <td align="center" bgcolor="#808080" id="celBack" class="ArrowN">&lt;</td>
+    <td align="center" style="vertical-align: bottom" id="celMonth" colspan="5"><table
+    border="0" cellpadding="0" cellspacing="0" align="center">
+      <tr>
+      <td width="40" align=left><div style="clip:rect(2,36,20,2); position:absolute; top:1px"><p><select
+        name="selYear" size="1" class="DateSelect" style="text-align: right"
+        ONCHANGE="selMonthYear();">
+        </select></p>
+        </div></td>
+        <td width="40" align=left><div style="clip:rect(2,46,16,2); position:absolute; top:3px"><p><select
+        name="selMonth" size="1" class="DateSelect" style="text-align: right;"
+        ONCHANGE="selMonthYear();" >
+          <option value="January">一月</option>
+          <option value="February">二月</option>
+          <option value="March">三月</option>
+          <option value="April">四月</option>
+          <option value="May">五月</option>
+          <option value="June">六月</option>
+          <option value="July">七月</option>
+          <option value="August">八月</option>
+          <option value="September">九月</option>
+          <option value="October">十月</option>
+          <option value="November">十一月</option>
+          <option value="December">十二月</option>
+        </select></p>
+        </div></td>
+       
+      </tr>
+    </table>
+    </td>
+    <td align="center" bgcolor="#808080" id="celNext" class="ArrowN">&gt;</td>
+  </tr>
+  <tr>
+    <td align="center"
+    style="vertical-align: middle; background-color: rgb(255,0,0); color: rgb(255,255,255)"
+    width="14%" class="WeekEnd">日</td>
+    <td align="center" style="vertical-align: middle" width="14%" class="WeekDay">一</td>
+    <td align="center" style="vertical-align: middle" width="14%" class="WeekDay">二</td>
+    <td align="center" style="vertical-align: middle" width="14%" class="WeekDay">三</td>
+    <td align="center" style="vertical-align: middle" width="14%" class="WeekDay">四</td>
+    <td align="center" style="vertical-align: middle" width="14%" class="WeekDay">五</td>
+    <td align="center" style="vertical-align: middle; background-color: #ff0000; color: #ffffff" width="14%"
+    class="WeekEnd">六</td>
+  </tr>
+  <tr>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d1"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d2"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d3"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d4"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d5"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d6"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d7"></td>
+  </tr>
+  <tr>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d8"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d9"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d10"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d11"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d12"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d13"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d14"></td>
+  </tr>
+  <tr>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d15"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d16"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d17"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d18"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d19"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d20"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d21"></td>
+  </tr>
+  <tr>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d22"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d23"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d24"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d25"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d26"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d27"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d28"></td>
+  </tr>
+  <tr>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d29"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d30"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d31"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d32"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d33"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d34"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d35"></td>
+  </tr>
+  <tr>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d36"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d37"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d38"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d39"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d40"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d41"></td>
+    <td align="center" style="vertical-align: middle" class="DayN" width="14%" id="d42"></td>
+  </tr>
+</table>
+
+<p><script language="JavaScript"><!--
+var dCurDate = "";
+var objTemp;
+
+window.onload = initWindow;
+window.onerror = doError;
+document.onmouseover = raiseCel;
+document.onmouseout = sinkCel;
+document.onmousedown = mdCel;
+document.onmouseup = muCel;
+
+function doError() {
+	alert(arguments[0]);
+}
+
+
+function initWindow() {
+	var dNow = new Date();
+	setDateSelect();
+	updateCal(dNow);
+	displayMonthYear(dNow);
+}
+
+
+function public_setDate(sDate) {
+	dCurDate = "";
+	objTemp = "";
+	var dNow = new Date(sDate);
+	dCurDate = dNow;
+	if (dNow == "NaN") {dNow = new Date(); dCurDate = "";}
+	
+	displayMonthYear(dNow);
+	updateCal(dNow);
+}
+
+function setDay(sDay) {
+	sMonth = selMonth.options[selMonth.selectedIndex].value;
+	sYear = selYear.value
+	window.external.raiseEvent("ondatechange",sMonth + " " + sDay + ", " + sYear);
+}
+
+function displayMonthYear(dDate) {
+	iYear = dDate.getFullYear();
+	selYear.value = iYear;
+	if (selYear.value == "")
+	{
+		objNewOpt = document.createElement("OPTION");
+		objNewOpt.text = iYear;
+		objNewOpt.value = iYear;
+		if (iYear > parseInt(selYear.options[0].value)) iPos = 0;
+			else iPos = selYear.options.length + 1;
+		selYear.options.add(objNewOpt,iPos);
+		selYear.value = iYear;
+	}
+	selMonth.selectedIndex = dDate.getMonth();
+}
+
+function selMonthYear() {
+	dDate = new Date(selYear.value, selMonth.selectedIndex, 1);
+	updateCal(dDate);
+}
+
+function setDateSelect() {
+	dNow = new Date();
+	iScrap = dNow.getFullYear();
+	for (i=-3; i<5; i++)
+	{
+		objNewOpt = document.createElement("OPTION");
+		objNewOpt.text = (iScrap - i);
+		objNewOpt.value = (iScrap - i);
+		selYear.options.add(objNewOpt);
+	}
+}
+
+function raiseCel() {
+	objItem = window.event.srcElement;
+	if (objItem.className == "DayN")
+		if (objItem.innerText != "") objItem.className = "DayU";
+	if (objItem.className == "ArrowN") objItem.className = "ArrowU";
+}
+
+function sinkCel() {
+	objItem = window.event.srcElement;
+	if (objItem.className == "DayU") objItem.className = "DayN";
+	if (objItem.className == "ArrowU") objItem.className = "ArrowN";
+}
+
+function mdCel() {
+	objTemp = "";
+	sCel = window.event.srcElement;
+	if (sCel.className == "DayU") {sCel.className = "DayD"; objTemp = sCel;}
+	if (sCel.className == "ArrowU") sCel.className = "ArrowD";
+}
+
+function muCel() {
+	sCel = window.event.srcElement;
+	if (sCel.className == "ArrowD")
+	{
+		sCel.className = "ArrowU";
+		if (sCel.id == "celBack")
+		{
+			dDate = dateAdd("m", -1, new Date(selYear.value, selMonth.selectedIndex, 1));
+			displayMonthYear(dDate);
+			updateCal(dDate);
+		}
+		if (sCel.id == "celNext")
+		{
+			dDate = dateAdd("m", 1, new Date(selYear.value, selMonth.selectedIndex, 1));
+			displayMonthYear(dDate);
+			updateCal(dDate);
+		}
+	}
+	if (sCel.className == "DayD") setDay(sCel.innerText);
+	if (objTemp != "") objTemp.className = "DayN";
+}
+
+function updateCal(dDate) {
+	iMonth = dDate.getMonth();
+	iYear = dDate.getFullYear();
+	iDay = dDate.getDate();
+
+	dStart = new Date(iYear, iMonth, 1);
+	dEnd = dateAdd("m", 1, dStart);
+
+	iDays = dateDiff("d", dStart, dEnd);
+	iStartDay = (dStart.getDay() + 1);
+	
+	for (i = 1;  i < 43; i++) {
+		sScrap = "d" + i
+		objItem = document.all[sScrap];
+		if (objItem.className == "DayD") objItem.className = "DayN";
+
+		if ((i < iStartDay) || ((i - iStartDay + 1) > iDays)) objItem.innerText = "";
+				else objItem.innerText = (i - iStartDay + 1);
+   }
+
+	if (dCurDate != "")
+		if ((dCurDate.getMonth() == dDate.getMonth()) && (dCurDate.getFullYear() == dDate.getFullYear()))
+			document.all("d" + (iStartDay - 1 + dCurDate.getDate())).className = "DayD";
+}
+
+function dateAdd(sInterval, iNumber, dDate) {
+	dTemp = new Date(dDate);
+	if (dTemp == "NaN") dTemp = new Date();
+	switch (sInterval) {
+		case "s" :
+			return new Date(Date.parse(dTemp) + (1000 * iNumber));
+		case "n" :
+			return new Date(Date.parse(dTemp) + (60000 * iNumber));
+		case "h" :
+			return new Date(Date.parse(dTemp) + (3600000 * iNumber));
+		case "d" :
+			return new Date(Date.parse(dTemp) + (86400000 * iNumber));
+		case "w" :
+			return new Date(Date.parse(dTemp) + ((86400000 * 7) * iNumber));
+		case "m" :
+			return new Date(dTemp.getFullYear(), (dTemp.getMonth()) + iNumber, dTemp.getDate());
+		case "y" :
+			return new Date((dTemp.getFullYear() + iNumber), dTemp.getMonth(), dTemp.getDate());
+	}
+}
+
+function dateDiff(sInterval, dStart, dEnd) {
+	dStart = new Date(dStart);
+		if (dStart == "NaN") dStart = new Date();
+	dEnd = new Date(dEnd);
+		if (dEnd == "NaN") dEnd = new Date();
+	switch (sInterval) {
+		case "s" :
+			return parseInt((Date.parse(dEnd) - Date.parse(dStart)) / 1000);
+		case "n" :
+			return parseInt((Date.parse(dEnd) - Date.parse(dStart)) / 60000);
+		case "h" :
+			return parseInt((Date.parse(dEnd) - Date.parse(dStart)) / 3600000);
+		case "d" :
+			iScrap = (Date.parse(dEnd) - Date.parse(dStart)) / 86400000
+			iScrap = iScrap + .1
+			return parseInt(iScrap);
+		case "w" :
+			return parseInt((Date.parse(dEnd) - Date.parse(dStart)) / (86400000 * 7));
+		case "m" :
+			return (dEnd.getMonth() - dStart.getMonth());
+		case "y" :
+			return (dEnd.getFullYear() - dStart.getFullYear());
+	}
+}
+
+// --></script></p>
+</body>
+</html>

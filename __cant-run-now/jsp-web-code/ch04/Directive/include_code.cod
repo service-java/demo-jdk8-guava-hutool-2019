@@ -1,0 +1,4 @@
+<%@ page contentType="text/html; charset=gb2312" %>
+<% String s="这是插入执行代码的内容";
+   out.print(s);
+%>

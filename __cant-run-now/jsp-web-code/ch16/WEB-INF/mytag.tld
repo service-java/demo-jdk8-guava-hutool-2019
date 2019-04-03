@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!DOCTYPE taglib
+        PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.1//EN"
+	"http://java.sun.com/j2ee/dtds/web-jsptaglibrary_1_1.dtd">
+
+<taglib>
+    <tlibversion>1.0</tlibversion>
+    <jspversion>1.1</jspversion>
+    <shortname>control</shortname>
+
+<tag>
+		<name>poptag</name>
+    	<tagclass>taglib.PopTag</tagclass>
+    	<bodycontent>empty</bodycontent>
+    	<attribute>
+    		<name>method</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>
+</tag>
+
+
+<tag>
+		<name>newstag</name>
+    	<tagclass>taglib.NewsTag</tagclass>
+    	<bodycontent>empty</bodycontent>
+    	<attribute>
+    		<name>method</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>
+</tag>
+
+<tag>
+		<name>news</name>
+    	<tagclass>taglib.NewsTag4guest</tagclass>
+    	<bodycontent>empty</bodycontent>
+    	<attribute>
+    		<name>method</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>
+</tag>
+
+<tag>
+		<name>news4news</name>
+    	<tagclass>taglib.News4news</tagclass>
+    	<bodycontent>empty</bodycontent>
+    	<attribute>
+    		<name>method</name>
+    		<required>false</required>
+        	<rtexprvalue>false</rtexprvalue>
+        </attribute>
+</tag>
+
+
+
+
+</taglib>

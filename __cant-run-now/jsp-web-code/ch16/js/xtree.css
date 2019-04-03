@@ -1,0 +1,20 @@
+.webfx-tree-container     { margin: 0px;
+                            padding: 0px;
+                            /*font: normal 12px menu;*/
+                            font: icon; }
+.webfx-tree-item          { padding: 0px;
+                            margin: 0px;
+                            /*font: normal 12px menu;*/
+                            font: icon; }
+.webfx-tree-item a        { color: #000000;
+							text-decoration: none;
+                            margin-left: 5px; }
+.webfx-tree-item a:hover  { color: blue;
+                            text-decoration: none;
+                            margin-left: 5px; }
+.webfx-tree-item a:active { background: highlight;
+                            color: white;
+                            text-decoration: none;
+                            margin-left: 5px; }
+.webfx-tree-item img      { vertical-align: bottom; }
+td,p,body,div {  font-size: 9pt; text-decoration: none}

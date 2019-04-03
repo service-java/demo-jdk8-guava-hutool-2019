@@ -1,5 +1,6 @@
 package _collections;
 
+import cn.hutool.core.lang.Console;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -17,27 +18,25 @@ public class ArrayDemo {
     public static void displayArray(int[] arr) {
         // 遍历输出数组
         for (int i : arr) {
-            System.out.print(i + " ");
+            Console.log(i);
         }
-        System.out.println();
     }
 
     /**
      * 遍历输出
      */
-    public static void displayArray2D(int[][] arr) { // 注意二维数组
+    public static void displayArray2D(int[][] arr) {
+        // 注意二维数组
         for (int i = 0, iLen = arr.length; i < iLen; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                System.out.print(arr[i][j] + " ");
+                Console.log(arr[i][j] + " ");
             }
-            System.out.println();
         }
     }
 
 
     @Test
     public void main() {
-        // 数组声名
         final int ARRAY_SIZE = 5;
         int[] array = new int[ARRAY_SIZE];
         array[2] = 1;
@@ -45,12 +44,8 @@ public class ArrayDemo {
 
         // 数组引用复制
         int[] array2 = array;
-        if (array == array2) {
-            System.out.println("They are same.");
-        } // 地址相同
-        else {
-            System.out.println("They are not same.");
-        }
+        Console.log(array == array2);
+
 
         // 修改看看
         array[0] = 200;
@@ -60,12 +55,7 @@ public class ArrayDemo {
 
         // 数组复制
         array2 = Arrays.copyOf(array, array.length);
-        if (array == array2) {
-            System.out.println("They are same.");
-        } else {
-            // 地址相同
-            System.out.println("They are not same.");
-        }
+        Console.log(array == array2);
 
         array[0] = 203;
         array2[4] = 104;
@@ -102,7 +92,6 @@ public class ArrayDemo {
         array2D[1] = new int[4];
         array2D[2] = new int[3];
         displayArray2D(array2D);
-
     }
 
     @Test
@@ -110,8 +99,26 @@ public class ArrayDemo {
 
     }
 
+    @Test
+    public void transposition() {
+        int[][] array = new int[3][2];
+        int[][] arrayT = new int[2][3];
 
+        // 生成数组
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                array[i][j] = i + j;
+            }
+        }
+        Console.log(array);
 
-
+        // 翻转
+        for (int i = 0; i < arrayT.length; i++) {
+            for (int j = 0; j < arrayT[i].length; j++) {
+                arrayT[i][j] = array[j][i];
+            }
+        }
+        Console.log(arrayT);
+    }
 
 }

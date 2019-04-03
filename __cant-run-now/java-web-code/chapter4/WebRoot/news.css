@@ -1,0 +1,265 @@
+* {
+	margin: 0 auto;
+	padding: 0;
+	LIST-STYLE-TYPE: none;
+	text-align:center;
+}
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0;
+	padding:0;
+	font-size:14px
+}
+INPUT {
+	FONT-SIZE: 12px
+}
+TEXTAREA {
+	FONT-SIZE: 12px
+}
+search {
+	FONT-SIZE: 12px
+}
+EM {
+	FONT: 11px normal Verdana, Tahoma;
+	LETTER-SPACING: 1px;
+}
+a {
+	text-decoration:none;
+	color:#666
+}
+a:hover {
+	text-decoration: underline;
+	color:#000000;
+}
+H2 {
+	FONT-SIZE: 12px
+}
+#wrapper {
+	MARGIN: 0px auto;
+	WIDTH: 762px
+}
+#header {
+	width:762px;
+	height:78px;
+	position:relative;
+	clear:both
+}
+.logo {
+	position:absolute;
+	width:158px;
+	height:58px;
+	background:url(images/logo.gif) no-repeat;
+	left:3px;
+	bottom:2px;
+}
+.logo span {
+	display:none
+}
+.login {
+	position:absolute;
+	right:3px;
+	top:10px;
+}
+.login a:link {
+	color:#434343;
+	text-decoration:none;
+	font-size:12px;
+}
+.login a:visited {
+	color:#434343;
+	text-decoration:none;
+	font-size:12px;
+}
+.login a:active {
+	color:#434343;
+	text-decoration:none;
+	font-size:12px;
+}
+.login a:hover {
+	color:#0066FF;
+	text-decoration:none;
+	font-size:12px;
+}
+/*nav*/	
+/**/
+#nav_index {
+	MARGIN:5px 0px;
+	WIDTH:762px;
+	POSITION:relative;
+	background-image: url(images/navbg.gif);
+	background-repeat: repeat;
+	background-position: 0px -76px;
+	clear:both;
+}
+#nav_index ul {
+/*	*/BACKGROUND: url(images/navbg.gif) no-repeat left top;
+	FLOAT: left;
+	width: 550px;
+	clear:both;
+	
+}
+#nav_index LI SPAN {
+	RIGHT: 0px;
+	BACKGROUND: url(images/navbg.gif) no-repeat 0px -38px;
+	WIDTH: 6px;
+	POSITION: absolute;
+	TOP: 0px;
+	HEIGHT: 38px;
+}
+#nav_index LI {
+	FLOAT: left;
+	width: 100px;
+}
+#nav_index LI A {
+	PADDING-RIGHT: 20px;
+	display: block;
+	PADDING-LEFT: 20px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14px;
+	BACKGROUND: url(images/spacer.gif) no-repeat right 50%;
+	FLOAT: left;
+	PADDING-BOTTOM: 0px;
+	COLOR: #fff;
+	LINE-HEIGHT: 38px;
+	PADDING-TOP: 0px;
+	HEIGHT: 38px;
+	TEXT-ALIGN: center;
+}
+#nav_index LI A:hover {
+	COLOR: #c5e6f5;
+	TEXT-DECORATION: none
+}
+#nav {
+	BACKGROUND: url(images/navbg.gif) repeat-x 0px -80px;
+	MARGIN: 5px 0px;
+	WIDTH: 762px;
+	POSITION: relative;
+	HEIGHT: 52px
+}
+#nav UL {
+	BACKGROUND: url(images/navbg.gif) no-repeat left top;
+	FLOAT: left
+}
+#nav LI SPAN {
+	RIGHT: 0px;
+	BACKGROUND: url(images/navbg.gif) no-repeat 0px -40px;
+	WIDTH: 6px;
+	POSITION: absolute;
+	TOP: 0px;
+	HEIGHT: 40px
+}
+#nav LI {
+	FLOAT: left
+}
+#nav LI A {
+	PADDING-RIGHT: 20px;
+	DISPLAY: block;
+	PADDING-LEFT: 20px;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 14px;
+	BACKGROUND: url(images/spacer.gif) no-repeat right 50%;
+	FLOAT: left;
+	PADDING-BOTTOM: 0px;
+	COLOR: #fff;
+	LINE-HEIGHT: 40px;
+	PADDING-TOP: 0px;
+	HEIGHT: 40px;
+	TEXT-ALIGN: center
+}
+#nav LI A:hover {
+	COLOR: #c5e6f5;
+	TEXT-DECORATION: none
+}
+#foot {
+	BACKGROUND: url(images/foot_bg.gif) repeat-x left top;
+	WIDTH: 762px;
+	COLOR: #143c80;
+	TEXT-ALIGN: center;
+	CLEAR: both;
+	MARGIN: 0px auto;
+}
+.foot {
+	COLOR: #143c80;	TEXT-ALIGN: center;
+	CLEAR: both;
+	MARGIN: 0px auto;
+
+}
+#foot P {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-BOTTOM: 10px;
+	PADDING-TOP: 10px;
+}
+#foot IMG {
+	BORDER-TOP-WIDTH: 0px;
+	MARGIN-TOP: 0px;
+	BORDER-LEFT-WIDTH: 0px;
+	BORDER-BOTTOM-WIDTH: 0px;
+	BORDER-RIGHT-WIDTH: 0px
+}
+.content {
+	margin-left:10px;
+	line-height:24px;
+	text-align: left;
+}
+h1 {
+	color:#006;
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+	margin-bottom:0px;
+}
+ h2 {
+	font-size:12px;
+	text-align:center;
+	font-weight:normal;
+	border-top:#ccc 1px dashed;
+	color:#666;
+	height:24px;
+	margin:3px 5px 8px 0;
+	background:#f5f5f5;
+}
+p{
+	text-indent: 20px;
+	text-align: left;
+	}
+#sHeader {
+	height:52px;
+	background:url(images/titbg2.gif) no-repeat;
+	color:#333;
+	padding-left:110px;
+	padding-top:2px;
+	margin-left: 10px;
+	text-align: left;
+}
+#wrap {
+	margin: 20px auto 10px auto;
+	width: 730px;
+	background: #fff;
+	padding: 10px;
+	border: 5px solid #E6F4FE;
+	clear:both;
+}
+#demo {
+	height: 150px;
+	width: 510px;
+	overflow: hidden;
+	border: 1px solid #FFC937;
+}
+#mydemo {
+	height: 110px;
+	width: 510px;
+	overflow: hidden;
+	background-color:#EBF8FF;
+	border: 1px solid #ACDAFF;
+}
+#nav_index {
+	MARGIN:5px 0px;
+	WIDTH:762px;
+	height:38px;
+	POSITION:relative;
+	background-image: url(images/navbg.gif);
+	background-repeat: repeat;
+	background-position: 0px -76px;
+	clear:both;
+}

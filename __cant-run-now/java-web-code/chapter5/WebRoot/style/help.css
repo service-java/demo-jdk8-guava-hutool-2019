@@ -1,0 +1,71 @@
+﻿
+/* Layout style */
+.modulebg { margin-bottom:8px; border:1px solid #A3D1E0; background:url(../images/module_bg.gif) repeat-x; }
+.module { overflow:hidden; margin-bottom:8px; border:1px solid #A3D1E0; }
+	.module_title { height:32px; border-bottom:1px dashed #A5A5A5; overflow:hidden; color:#0287CA; }
+		.module_title h2 { float:left; font-size:14px; line-height:32px; text-indent:15px; font-family:simsun;}
+		.module_title h2 span { font-weight:normal; }
+		.module_title h2 cite { color:#C90066; }
+		.module_title em {float:right; width:450px; height:15px; overflow:hidden; margin:10px 5px 0 0; font-family: simsun; }
+			.module_title ul { float:right; }
+		.module_title .more { float:right; padding:7px 5px 0 0; font-family: simsun; }
+		.close a { display:inline; float:right; width:17px; height:17px; margin:7px 5px 0 0; overflow:hidden; background:url(../images/icon_close.gif) no-repeat; text-indent:-9999px; }
+		.module_title em li { float:left; padding:0 8px;  *padding:2px 4px 0 10px; background:url(../images/icon_li_3.gif) no-repeat 0 2px; }
+
+.f_yellow{ color:#FE7009; font-weight:bold !important; font-size:14px;}
+	
+
+/* stying for help Page */
+.help_search {}
+	.help_search h3 { padding:12px 0 0 7px; font-weight:normal; }
+	.help_search fieldset { padding:13px 0 15px 6px;}
+.help_list { padding:0 0 12px 0; }
+	.help_list dl {width:92%; margin:0 auto; padding:10px 0 4px 0; border-bottom:1px solid #DDE5E6; }
+.help_text { padding:0px 5px 0px 5px; }
+.help_text h3{padding-top:10px;}
+.help_text a:link{
+text-decoration:none;
+color:#3689D3;
+}
+.help_text a:active{
+text-decoration:none;
+color:#3689D3;
+}
+.help_text a:visited{
+text-decoration:none;
+color:#3689D3;
+}
+.help_text a:hover{
+text-decoration:none;
+color:#CE823C;
+}
+.helplist dt{
+font-size:16px;font-weight:bold;height:30px;line-height:30px;
+background:url(../images/ht_menufolderopen.gif) no-repeat; padding-left:30px;margin-left:5px;
+}
+.helplist dd a{
+background:url(../images/page.gif) no-repeat;height:25px;line-height:25px;padding-left:15px;margin-left:25px;
+}
+.helplist a:link{
+text-decoration:none;
+color:#3689D3;
+}
+.helplist a:active{
+text-decoration:none;
+color:#3689D3;
+}
+.helplist a:visited{
+text-decoration:none;
+color:#3689D3;
+}
+.helplist a:hover{
+text-decoration:none;
+color:#CE823C;
+}
+.col1 h1 { height:33px; background:url(../images/h1_bg.gif) no-repeat; font-size:14px; line-height:33px; text-indent:15px; color:#FFF; }
+
+/* 区块控制 */
+.area { width:980px; margin:0 auto; overflow:hidden; clear:both; margin-top:8px;}
+
+.col9 { float:left; width:260px; }
+.col10 { float:left; width:700px; }

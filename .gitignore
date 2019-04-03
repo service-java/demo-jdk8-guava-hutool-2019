@@ -122,3 +122,4 @@ __tmp
 upload
 uploads
 outjava-tools.iml
+!/__resource/*

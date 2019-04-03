@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.itzcn.entity.Post" table="post" catalog="ch15">
+        <id name="postId" type="java.lang.Integer">
+            <column name="postId" />
+            <generator class="native" />
+        </id>
+        <property name="postName" type="java.lang.String">
+            <column name="postName" length="50" not-null="true" unique="true">
+                <comment>部门名称</comment>
+            </column>
+        </property>
+        <property name="postNum" type="java.lang.Integer">
+            <column name="postNum" not-null="true">
+                <comment>部门人数</comment>
+            </column>
+        </property>
+        <property name="postRemark" type="java.lang.String">
+            <column name="postRemark" length="200" not-null="true">
+                <comment>部门简介</comment>
+            </column>
+        </property>
+        <set name="users" inverse="true" lazy="false">
+            <key>
+                <column name="postId" not-null="true">
+                    <comment>部门编号</comment>
+                </column>
+            </key>
+            <one-to-many class="com.itzcn.entity.User"/>
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document */
+.sort_xinshu {
+	WIDTH: 230px; DISPLAY: inline; BACKGROUND: url(index/bg2.gif) no-repeat 50% bottom; FLOAT: left; HEIGHT: 175px; MARGIN-RIGHT: 10px
+}
+.sort_cont {
+	BORDER-BOTTOM: #9a9a9a 1px; BORDER-LEFT: #9a9a9a 1px solid; BACKGROUND-COLOR: #ffffff; WIDTH: 228px; HEIGHT: 160px; BORDER-TOP: #9a9a9a 1px solid; BORDER-RIGHT: #9a9a9a 1px solid; border-bottom:#9a9a9a 1px solid;
+}
+.sort_title {
+	BORDER-BOTTOM: #eaeaea 1px solid; MARGIN: auto; PADDING-LEFT: 20px; WIDTH: 208px; BACKGROUND: url(../images/bg3.gif) no-repeat; HEIGHT: 20px; COLOR: #000000; FONT-SIZE: 12px; FONT-WEIGHT: bold; PADDING-TOP: 6px
+}
+.sort_title A {
+	COLOR: #000
+}
+.sort_titl {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 10px; FLOAT: right; COLOR: #878787; FONT-SIZE: 12px; FONT-WEIGHT: normal; PADDING-TOP: 2px
+}
+.sort_titl A {
+	COLOR: #878787
+}
+.cont_detail {
+	MARGIN: 7px 0px 0px 8px; WIDTH: 220px; HEIGHT: 128px
+}
+.img_frame {
+	WIDTH: 93px; FLOAT: left; MARGIN-RIGHT: 0px
+}
+.img_frame IMG {
+	WIDTH: 85px
+}
+.detail_look {
+	WIDTH: 123px; BACKGROUND: url(index/line_dotted.gif) repeat-x left 24px; FLOAT: left; HEIGHT: 128px
+}
+.detail_look A {
+	COLOR: #004d00
+}
+.detail_look H3 {
+	PADDING-LEFT: 12px; BACKGROUND: url(index/icon_g3.gif) no-repeat left 5px; FONT-SIZE: 14px; FONT-WEIGHT: normal; PADDING-TOP: 3px
+}
+.bar_detail {
+	LINE-HEIGHT: 23px; PADDING-TOP: 8px
+}
+.bar_detail A {
+	COLOR: #666
+}
+.bar_detail UL {
+	LIST-STYLE-TYPE: none;
+	WIDTH: 246px;
+	DISPLAY: block;
+	font-size: 12px;
+}
+.bar_detail UL LI {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 7px; PADDING-RIGHT: 8px; DISPLAY: block; WHITE-SPACE: nowrap; FLOAT: left; WORD-BREAK: break-all; PADDING-TOP: 0px
+}
+
+
+
+.div_dh {
+	TEXT-ALIGN:left; PADDING-BOTTOM: 5px; MARGIN: auto; WIDTH: 980px; CLEAR: both; OVERFLOW: hidden
+}
+.twobt {
+	BACKGROUND-IMAGE: url(../images/bg4.gif); BORDER-LEFT: #dddddd 1px solid; MARGIN-TOP: 0px; HEIGHT: 30px; BORDER-RIGHT: #dddddd 1px solid
+}
+.twobt2 {
+	TEXT-ALIGN: right; MARGIN-TOP: 10px; FLOAT: right; HEIGHT: 15px; MARGIN-RIGHT: 20px
+}
+.twobt1 {
+	BACKGROUND-IMAGE: url(../images/14.gif); WIDTH: 93px; FLOAT: left; HEIGHT: 30px; CURSOR: pointer
+}
+.hezuo {
+	BORDER-BOTTOM: #cccccc 1px solid; BORDER-LEFT: #cccccc 1px solid; PADDING-BOTTOM: 15px; LINE-HEIGHT: 18px; MARGIN: auto; WIDTH: 976px; COLOR: #000000; BORDER-RIGHT: #cccccc 1px solid; PADDING-TOP: 5px
+}

@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+#picBox{
+	width:410px;
+	height:200px;
+	float:left;
+	margin:0px;
+	border:1px solid #DEDEDE;
+	overflow:hidden;
+	position:relative;
+	}
+#picBox ul#show_pic{ margin:0; padding:0; list-style:none; height:205px; width:3050px; position:absolute;}
+#picBox ul#show_pic li{ float:left; margin:0; padding:0; height:205px;}
+#picBox ul#show_pic li img{ display:block;}
+#icon_num{ position:absolute; bottom:0px; right:10px;}
+#icon_num li{ float:left; background:url(../images/flashbutton.gif) no-repeat -15px 0;width:15px; height:15px; list-style:none; color:#39F; text-align:center;  cursor:pointer; padding:0; margin:0;margin-right:5px;}
+#icon_num li:hover,#icon_num li.active{ background:url(../images/flashbutton.gif) no-repeat 0 0; color:#fff;}
+#picBox_top{width:610px; height:205px; margin:50px auto; position:relative; overflow:hidden;}
+#picBox_top ul#show_pic_top{ margin:0; padding:0; list-style:none; height:205px; width:610px; position:absolute;}
+#picBox_top ul#show_pic_top li{ float:left; margin:0; padding:0; height:205px;}
+#picBox_top ul#show_pic_top li img{ display:block;}
+#icon_num_top{ position:absolute; bottom:0px; right:10px;}
+#icon_num_top li{ float:left; background:url(../images/flashbutton.gif) no-repeat -15px 0;width:15px; height:15px; list-style:none; color:#39F; text-align:center;  cursor:pointer; padding:0; margin:0;margin-right:5px;}
+#icon_num_top li:hover,#icon_num_top li.active{ background:url(../images/flashbutton.gif) no-repeat 0 0; color:#fff;}

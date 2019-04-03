@@ -1,0 +1,162 @@
+HTML {
+	HEIGHT: 100%
+}
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+TABLE {
+	FONT-SIZE: 12px
+}
+INPUT {
+	FONT-SIZE: 12px; VERTICAL-ALIGN: middle; FONT-FAMILY: tahoma,Arial,Helvetica,sans-serif
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+H6 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+h7 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: 400; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+P {
+	MARGIN: 0px
+}
+BODY {
+	FONT-SIZE: 12px; BACKGROUND: #fff; MARGIN: 0px; COLOR: #222; WORD-BREAK: break-all; LINE-HEIGHT: 150%; FONT-FAMILY: tahoma,Arial,Century Gothic,verdana,Helvetica,sans-serif; HEIGHT: 100%; TEXT-ALIGN: center
+}
+A:link {
+	COLOR: #277dbb; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #277dbb; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #469ad9; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #277dbb; TEXT-DECORATION: none
+}
+.left {
+	FLOAT: left
+}
+.right {
+	FLOAT: right
+}
+.clear {
+	CLEAR: both
+}
+.none {
+	DISPLAY: none
+}
+.input_onFocus {
+	BACKGROUND: #ffc
+}
+.input_onBlur {
+	BACKGROUND: #fff
+}
+#Header {
+	CLEAR: both; MARGIN: 20px auto 0px; WIDTH: 760px
+}
+#Header #logo {
+	BACKGROUND: url(images/logo.jpg) no-repeat left top; FLOAT: left; WIDTH: 150px; TEXT-INDENT: -9999px; HEIGHT: 30px
+}
+#Header #menu {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; COLOR: #277dbb; PADDING-TOP: 10px
+}
+#Container {
+	CLEAR: both; BACKGROUND: url(images/ContainerBg.jpg) no-repeat left 20px; MARGIN: auto; WIDTH: 760px
+}
+#Container .Sidebar {
+	RIGHT: 20px; BACKGROUND: #fff; FLOAT: right; WIDTH: 250px; POSITION: relative; TOP: 0px; TEXT-ALIGN: left
+}
+#Container .Sidebar FORM {
+	BORDER-RIGHT: #adadad 1px solid; PADDING-RIGHT: 20px; BORDER-TOP: #adadad 1px solid; PADDING-LEFT: 20px; BACKGROUND: url(images/UserLogin.jpg) no-repeat 15px 15px; PADDING-BOTTOM: 0px; BORDER-LEFT: #adadad 1px solid; PADDING-TOP: 50px; BORDER-BOTTOM: #adadad 1px solid
+}
+#Container .Sidebar FORM UL {
+	
+}
+#Container .Sidebar FORM UL LI {
+	MARGIN: 0px 0px 10px; COLOR: #999
+}
+#Container .Sidebar FORM UL LI.CookieDate {
+	MARGIN: 0px 0px 10px 44px
+}
+#Container .Sidebar FORM UL LI.hr {
+	BORDER-BOTTOM: #adadad 1px solid
+}
+#Container .Sidebar FORM UL LI.regbt {
+	TEXT-ALIGN: center
+}
+#Container .Sidebar FORM UL LI.regbt A {
+	MARGIN: 0px
+}
+#Container .Sidebar FORM UL LI #UserName {
+	BORDER-RIGHT: #aeaeae 1px solid; BORDER-TOP: #aeaeae 1px solid; BACKGROUND: #f4f4f4; BORDER-LEFT: #aeaeae 1px solid; BORDER-BOTTOM: #aeaeae 1px solid
+}
+#Container .Sidebar FORM UL LI #Password {
+	BORDER-RIGHT: #aeaeae 1px solid; BORDER-TOP: #aeaeae 1px solid; BACKGROUND: #f4f4f4; BORDER-LEFT: #aeaeae 1px solid; BORDER-BOTTOM: #aeaeae 1px solid
+}
+#Container .Sidebar FORM UL LI #codestr {
+	BORDER-RIGHT: #aeaeae 1px solid; BORDER-TOP: #aeaeae 1px solid; BACKGROUND: #f4f4f4; BORDER-LEFT: #aeaeae 1px solid; BORDER-BOTTOM: #aeaeae 1px solid
+}
+#Container .Sidebar FORM UL LI #codestr {
+	FONT-WEIGHT: 600; FONT-SIZE: 14px; MARGIN: -1px 0px 0px; WIDTH: 52px; FONT-FAMILY: Century Gothic,verdana,tahoma,Arial,Helvetica,sans-serif; HEIGHT: 18px
+}
+#Container .Sidebar FORM UL LI INPUT#Submit {
+	MARGIN: 0px 0px 0px 46px; HEIGHT: 25px
+}
+#Container .Sidebar FORM UL LI A {
+	MARGIN: 0px 0px 0px 14px; COLOR: #f00
+}
+#Container .Sidebar UL.help {
+	BORDER-RIGHT: #adadad 1px solid; PADDING-RIGHT: 20px; BORDER-TOP: #adadad 1px solid; PADDING-LEFT: 20px; PADDING-BOTTOM: 20px; MARGIN: 20px 0px 0px; BORDER-LEFT: #adadad 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #adadad 1px solid
+}
+#Container .Sidebar UL.help LI {
+	LIST-STYLE: disc none inside
+}
+#Container .MainBody {
+	FLOAT: left; MARGIN: 170px 0px 0px; WIDTH: 470px; TEXT-ALIGN: left
+}
+#Container .MainBody .ad {
+	MARGIN: 4px 0px 0px 6px; COLOR: #fff
+}
+#Container .MainBody DL {
+	MARGIN: 20px 0px 0px 30px
+}
+#Container .MainBody DL DT {
+	FONT-WEIGHT: 600; FONT-SIZE: 14px; COLOR: #333
+}
+#Container .MainBody DL DD {
+	MARGIN: 5px 0px 20px 30px; COLOR: #999
+}
+#Footer {
+	CLEAR: both; PADDING-RIGHT: 0px; BORDER-TOP: #adadad 1px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 20px auto auto; WIDTH: 700px; PADDING-TOP: 15px; HEIGHT: 20px
+}

@@ -1,0 +1,37 @@
+drop database ch10;
+create database ch10;
+use ch10;
+CREATE TABLE student (
+    stu_id int not null auto_increment,
+    name CHAR(30) NOT NULL, 
+    address VARCHAR(200),
+    birthday date,
+    CONSTRAINT PRIMARY KEY (stu_id) 
+);
+INSERT INTO student VALUES(11,'小张', '上海', '1982-06-17');
+INSERT INTO student VALUES(12,'小李', '杭州', '1981-11-18');
+INSERT INTO student(name,address,birthday)VALUES('小王', '北京', '1980-05-10');
+
+
+create table words(
+WordsID int not null auto_increment,
+WordsTitle varchar(100) default NULL,
+WordsContent text,
+WordsTime datetime default '0000-00-00 00:00:00',
+UserID int not null default '0',
+primary key(WordsID)
+);
+insert into words(WordsTitle,WordsContent,WordsTime) values("明天晚上十点开会","明天晚上十点开会","2010-11-23");
+insert into words(WordsTitle,WordsContent,WordsTime) values("后天放假","后台开始放假三天","2010-11-25");
+insert into words(WordsTitle,WordsContent,WordsTime) values("请将表格提交","请将表格提交到公共邮箱中",
+"2010-12-2");
+insert into words(WordsTitle,WordsContent,WordsTime) values("准备考试","准备考试","2010-12-4");
+
+drop database bin_db;
+create database bin_db;
+use bin_db;
+create table bindata(
+filename char(255) not null,
+binfile longblob,
+primary key (filename)
+);

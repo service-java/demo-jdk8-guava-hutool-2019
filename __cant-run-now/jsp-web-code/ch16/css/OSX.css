@@ -1,0 +1,175 @@
+.BodyHeader_Left {
+	font-family: "ËÎÌå";
+	font-size: 10pt;
+	text-decoration: none;
+	background-image: url(TopLeft.gif);
+	font-weight: bold;
+	vertical-align: middle;
+	height: 22px;
+	width: 81px;
+}
+.BodyHeader_Middle {
+	font-family: "ËÎÌå";
+	font-size: 10pt;
+	text-decoration: none;
+	background-image: url(TopMiddle.gif);
+	font-weight: bold;
+	vertical-align: middle;
+	height: 22px;
+	width: auto;
+}
+.BodyHeader_Right {
+	font-family: "ËÎÌå";
+	font-size: 10pt;
+	text-decoration: none;
+	font-weight: bold;
+	background-image: url(TopRight.gif);
+	vertical-align: middle;
+	height: 22px;
+	width: 47px;
+}
+.Body {
+	font-family: "ËÎÌå";
+	font-size: 9pt;
+	text-decoration: none;
+	width: auto;
+	background-color: #EEEEEE;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #0099FF;
+	border-right-color: #0099FF;
+	border-bottom-color: #0099FF;
+	border-left-color: #0099FF;
+	vertical-align: middle;
+}
+.BodyFooter_Left {
+	font-family: "ËÎÌå";
+	font-size: 7pt;
+	text-decoration: none;
+	background-image: url(BottomLeft.gif);
+	vertical-align: middle;
+	height: 14px;
+	width: 12px;
+}
+.BodyFooter_Middle {
+	font-family: "ËÎÌå";
+	font-size: 7pt;
+	text-decoration: none;
+	background-image: url(BottomMiddle.gif);
+	vertical-align: middle;
+	height: 14px;
+	width: auto;
+}
+.BodyFooter_Right {
+	font-family: "ËÎÌå";
+	font-size: 7pt;
+	text-decoration: none;
+	background-image: url(BottomRight.gif);
+	vertical-align: middle;
+	height: 14px;
+	width: 65px;
+}
+.Succ {
+	font-family: "Ó×Ô²";
+	font-size: 36pt;
+	font-style: italic;
+	text-decoration: none;
+	font-weight: bolder;
+	color: #0066FF;
+}
+
+
+.normalText {
+	font-family: "ËÎÌå";
+	font-size: 9pt;
+	text-decoration: none;
+}
+.titleText {
+	font-family: "ËÎÌå";
+	font-size: 9pt;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+.whitenormal {
+	font-family: "ËÎÌå";
+	font-size: 9pt;
+	color:#FFFFFF;
+	text-decoration: none;
+}
+.singlePXTable_Unit {
+	border-top: 1px solid #000000;
+	border-right: 1px none #000000;
+	border-bottom: 1px none #000000;
+	border-left: 1px solid #000000;
+}
+.singlePXTable_Table {
+	border-top: 1px none #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+	border-left: 1px none #000000;
+}
+.TD {
+	FONT-SIZE: 12px;
+	color:#3366FF;
+	}
+
+.tableBorder{
+border:1px #0099cc solid; 
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+}
+
+.tablexu{
+border:1px #666666 dotted; 
+border-top-width: 1px;
+border-right-width: 1px;
+border-bottom-width: 1px;
+border-left-width: 1px;
+}
+
+.textBox{
+	font-family: "ËÎÌå";
+	font-size: 9pt;
+	text-decoration: none;
+	border: 1px dashed #999999;
+	height: 20px;
+	width: 150px;
+}
+
+.Gtext{
+font-family: "ËÎÌå";
+font-size: 9pt;
+text-decoration: none;
+color:#666666;
+}
+
+
+a:link {
+font-family: "ËÎÌå";
+font-size: 9pt;
+color:#000000; 
+text-decoration: none;
+}
+
+a:hover {
+	font-family: "ËÎÌå";
+	font-size: 9pt;
+	color: #3399CC;
+	
+}
+
+a:visited {
+	font-family: "ËÎÌå";
+	font-size: 9pt;
+	color: #3399CC;
+	text-decoration: none;
+}

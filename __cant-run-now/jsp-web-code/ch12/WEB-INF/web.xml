@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4"
+	xmlns="http://java.sun.com/xml/ns/j2ee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>ch12</display-name>
+
+	<!-- TestServlet definition -->
+	<servlet>
+		<description></description>
+		<display-name>Test</display-name>
+		<servlet-name>Test</servlet-name>
+		<servlet-class>com.TestServlet</servlet-class>
+	</servlet>
+	<!-- TestServlet mapping -->
+	<servlet-mapping>
+		<servlet-name>Test</servlet-name>
+		<url-pattern>/Test</url-pattern>
+	</servlet-mapping>
+
+	<!-- GetServerInfo definition -->
+	<servlet>
+		<display-name>ServletInfo</display-name>
+		<servlet-name>ServletInfo</servlet-name>
+		<servlet-class>com.ServletInfo</servlet-class>
+		<init-param>
+			<param-name>Purpose</param-name>
+			<param-value>getServletInfo</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Date</param-name>
+			<param-value>2010-11-20</param-value>
+		</init-param>
+		<init-param>
+			<param-name>Developping tool</param-name>
+			<param-value>Eclipse</param-value>
+		</init-param>
+	</servlet>
+	<!-- GetServerInfo mapping -->
+	<servlet-mapping>
+		<servlet-name>ServletInfo</servlet-name>
+		<url-pattern>/showServletInfo</url-pattern>
+	</servlet-mapping>
+
+	<!--Hello definition  -->
+	<servlet>
+		<description></description>
+		<display-name>Hello</display-name>
+		<servlet-name>Hello</servlet-name>
+		<servlet-class>com.HelloServlet</servlet-class>
+	</servlet>
+
+	<!-- Hello mapping -->
+	<servlet-mapping>
+		<servlet-name>Hello</servlet-name>
+		<url-pattern>/Hello</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- WelcomeServlet definition -->
+	<servlet>
+		<description></description>
+		<display-name>Welcome</display-name>
+		<servlet-name>Welcome</servlet-name>
+		<servlet-class>com.WelcomeServlet</servlet-class>
+	</servlet>
+	<!-- WelcomeServlet mapping -->
+	<servlet-mapping>
+		<servlet-name>Welcome</servlet-name>
+		<url-pattern>/Welcome</url-pattern>
+	</servlet-mapping>
+
+
+	<!-- HttpReqResServlet definition -->
+	<servlet>
+		<description></description>
+		<display-name>ReqRes</display-name>
+		<servlet-name>RequestResponse</servlet-name>
+		<servlet-class>com.HttpReqResServlet</servlet-class>
+	</servlet>
+
+	<!-- HttpReqResServlet mapping -->
+	<servlet-mapping>
+		<servlet-name>RequestResponse</servlet-name>
+		<url-pattern>/RequestResponse</url-pattern>
+	</servlet-mapping>
+
+	<!-- ServerInfoServlet definition -->
+	<servlet>
+		<description></description>
+		<display-name>ServerInfoServlet</display-name>
+		<servlet-name>ServerInfo</servlet-name>
+		<servlet-class>com.ServerInfoServlet</servlet-class>
+	</servlet>
+	<!--SessionServlet mapping  -->
+	<servlet-mapping>
+		<servlet-name>ServerInfo</servlet-name>
+		<url-pattern>/ServerInfo</url-pattern>
+	</servlet-mapping>
+	<!-- ServerInfoServlet definition -->
+	<servlet>
+		<description></description>
+		<display-name>getSession</display-name>
+		<servlet-name>getSession</servlet-name>
+		<servlet-class>com.SessionServlet</servlet-class>
+	</servlet>
+	<!-- SessionServlet definition -->
+	<servlet-mapping>
+		<servlet-name>getSession</servlet-name>
+		<url-pattern>/getSession</url-pattern>
+	</servlet-mapping>
+
+	<!-- ServletContextServlet definition -->
+	<servlet>
+		<description></description>
+		<display-name>ServletContextServlet</display-name>
+		<servlet-name>ServletContext</servlet-name>
+		<servlet-class>com.ServletContextServlet</servlet-class>
+	</servlet>
+
+	<!-- ServletContextServlet mapping -->
+	<servlet-mapping>
+		<servlet-name>ServletContext</servlet-name>
+		<url-pattern>/counter</url-pattern>
+	</servlet-mapping>
+
+	<!-- ForwardServlet definition-->
+	<servlet>
+		<description></description>
+		<display-name>ForwardServlet</display-name>
+		<servlet-name>Forward</servlet-name>
+		<servlet-class>com.ForwardServlet</servlet-class>
+	</servlet>
+	<!-- ForwardServlet mapping-->
+	<servlet-mapping>
+		<servlet-name>Forward</servlet-name>
+		<url-pattern>/forward</url-pattern>
+	</servlet-mapping>
+
+	<!-- IncludeServlet definition-->
+	<servlet>
+		<description></description>
+		<display-name>IncludeServlet</display-name>
+		<servlet-name>Include</servlet-name>
+		<servlet-class>com.IncludeServlet</servlet-class>
+	</servlet>
+	<!-- IncludeServlet mapping-->
+	<servlet-mapping>
+		<servlet-name>Include</servlet-name>
+		<url-pattern>/include</url-pattern>
+	</servlet-mapping>
+
+	<!-- HttpErrHandlerServlet definition-->
+	<servlet>
+		<servlet-name>HttpErrHandler</servlet-name>
+		<servlet-class>com.HttpErrHandlerServlet</servlet-class>
+	</servlet>
+	<!-- HttpErrHandlerServlet mapping-->
+	<servlet-mapping>
+		<servlet-name>HttpErrHandler</servlet-name>
+		<url-pattern>/HttpErrHandler</url-pattern>
+	</servlet-mapping>
+
+	<!-- ExceptionHandler definition-->
+	<servlet>
+		<servlet-name>ExceptionHandler</servlet-name>
+		<servlet-class>com.ExceptHandleServlet</servlet-class>
+	</servlet>
+	<!-- ExceptionHandler mapping-->
+	<servlet-mapping>
+		<servlet-name>ExceptionHandler</servlet-name>
+		<url-pattern>/ExceptionHandler</url-pattern>
+	</servlet-mapping>
+
+	<!-- ExceptionServlet definition-->
+	<servlet>
+		<servlet-name>ExceptionServlet</servlet-name>
+		<servlet-class>com.ExceptionServlet</servlet-class>
+	</servlet>
+	<!-- ExceptionServlet mapping-->
+	<servlet-mapping>
+		<servlet-name>ExceptionServlet</servlet-name>
+		<url-pattern>/excep</url-pattern>
+	</servlet-mapping>
+
+	<error-page>
+		<error-code>401</error-code>
+		<location>/HttpErrHandler</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/HttpErrHandler</location>
+	</error-page>
+	<!-- message definition-->
+	<servlet>
+		<description></description>
+		<display-name>AddMessageServlet</display-name>
+		<servlet-name>AddMessageServlet</servlet-name>
+		<servlet-class>message.AddMessageServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<description></description>
+		<display-name>ViewMessageServlet</display-name>
+		<servlet-name>ViewMessageServlet</servlet-name>
+		<servlet-class>message.ViewMessageServlet</servlet-class>
+	</servlet>
+	<!-- message mapping-->
+	<servlet-mapping>
+		<servlet-name>AddMessageServlet</servlet-name>
+		<url-pattern>/AddMessageServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ViewMessageServlet</servlet-name>
+		<url-pattern>/ViewMessageServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

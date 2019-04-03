@@ -1,0 +1,173 @@
+
+A {
+	COLOR: #4a4a4a; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+
+#container {
+	MARGIN: 0px auto; WIDTH: 980px; PADDING-TOP: 8px
+}
+#article {
+	DISPLAY: inline; FLOAT: right; WIDTH: 780px; 
+}
+#aside {
+	DISPLAY: inline; FLOAT: left; MARGIN-right: 20px; WIDTH: 180px
+}
+
+
+.title {
+	BACKGROUND: #eef7fe; FLOAT: left; MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 25px; WIDTH: 780px
+}
+.title DT {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: #fff; MARGIN-BOTTOM: 15px;padding-left:10px; LINE-HEIGHT: 34px; BORDER-BOTTOM: #c1e3ff 1px solid; HEIGHT: 34px
+}
+.title DD {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 325px; LINE-HEIGHT: 24px; PADDING-TOP: 0px
+}
+.title DD.about {
+	WIDTH: 690px
+}
+.title DD.about P.vi {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 14px; TEXT-ALIGN: center
+}
+.title DD.about P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; TEXT-INDENT: 2em; PADDING-TOP: 5px
+}
+.title DD.about P.vi {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; TEXT-INDENT: 0px; PADDING-TOP: 5px
+}
+.title DD.about DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 10px 0px; PADDING-TOP: 0px
+}
+.title DD.about DT {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.title DD.about DD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; WIDTH: 690px; PADDING-TOP: 0px
+}
+.title DD.detail {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 30px; WIDTH: 100%; PADDING-TOP: 0px; POSITION: relative; TOP: -15px
+}
+.title DD.detail H2 {
+	FONT-SIZE: 12px; MARGIN: 14px 0px 5px
+}
+.title DD.sitemap {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 20px; PADDING-BOTTOM: 30px; WIDTH: 690px; PADDING-TOP: 0px
+}
+.title DD.detail TABLE.diy {
+	MARGIN: 30px 0px 0px 90px
+}
+.title DD.detail TABLE TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.title DD.detail TABLE.diy SPAN {
+	COLOR: red
+}
+.title DD.detail TABLE.diy EM {
+	FONT-WEIGHT: normal; COLOR: #064878
+}
+.title DD.detail TABLE.diy INPUT {
+	BORDER-RIGHT: #c1e3ff 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #c1e3ff 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; BORDER-LEFT: #c1e3ff 1px solid; WIDTH: 180px; PADDING-TOP: 4px; BORDER-BOTTOM: #c1e3ff 1px solid
+}
+.title DD.detail TABLE.diy TEXTAREA {
+	BORDER-RIGHT: #c1e3ff 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #c1e3ff 1px solid; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; OVERFLOW: auto; BORDER-LEFT: #c1e3ff 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #c1e3ff 1px solid
+}
+.title DD.detail TABLE .button01 {
+	BACKGROUND: url(images/about/help_submit.png) no-repeat; MARGIN: 0px 10px 0px 80px; WIDTH: 72px; CURSOR: pointer; BORDER-TOP-STYLE: none; LINE-HEIGHT: 29px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 29px; BORDER-BOTTOM-STYLE: none
+}
+.title DD.detail TABLE .button02 {
+	BACKGROUND: url(images/about/help_reset.png) no-repeat; MARGIN: 0px 10px; WIDTH: 72px; CURSOR: pointer; BORDER-TOP-STYLE: none; LINE-HEIGHT: 29px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 29px; BORDER-BOTTOM-STYLE: none
+}
+.about DD {
+	WIDTH: 690px
+}
+.product DD {
+	PADDING-LEFT: 60px; WIDTH: 600px
+}
+.product DD H1 {
+	CLEAR: left; FONT-SIZE: 16px; MARGIN-BOTTOM: 12px; LINE-HEIGHT: 36px; BORDER-BOTTOM: #c6e6ff 1px dashed; HEIGHT: 36px
+}
+.product DD P {
+	TEXT-INDENT: 2em
+}
+.product DD P IMG {
+	FLOAT: left; MARGIN: 0px 10px 30px 0px
+}
+.q {
+	BACKGROUND: #fff; FLOAT: left; MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 25px; WIDTH: 730px
+}
+.pages {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 15px 0px; PADDING-TOP: 0px
+}
+.pages A {
+	BORDER-RIGHT: #fff 0px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #fff 0px solid; DISPLAY: block; PADDING-LEFT: 0.5em; BACKGROUND: #fff; FLOAT: left; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #fff 0px solid; COLOR: #37679c; LINE-HEIGHT: 16px; MARGIN-RIGHT: 0.1em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #fff 0px solid; HEIGHT: 16px
+}
+.pages SPAN {
+	BORDER-RIGHT: #fff 0px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #fff 0px solid; DISPLAY: block; PADDING-LEFT: 0.5em; BACKGROUND: #fff; FLOAT: left; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #fff 0px solid; COLOR: #37679c; LINE-HEIGHT: 16px; MARGIN-RIGHT: 0.1em; PADDING-TOP: 0.2em; BORDER-BOTTOM: #fff 0px solid; HEIGHT: 16px
+}
+.pages SPAN.current {
+	BORDER-RIGHT: #dbecff 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #dbecff 1px solid; PADDING-LEFT: 0.5em; FONT-WEIGHT: bold; BACKGROUND: #37679c; FLOAT: left; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #dbecff 1px solid; COLOR: #fff; LINE-HEIGHT: 16px; PADDING-TOP: 0.2em; BORDER-BOTTOM: #dbecff 1px solid; HEIGHT: 16px
+}
+.pages A {
+	BORDER-RIGHT: #dbecff 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #dbecff 1px solid; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #dbecff 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #dbecff 1px solid; TEXT-DECORATION: none
+}
+.pages A:hover {
+	BORDER-LEFT-COLOR: #37679c; BORDER-BOTTOM-COLOR: #37679c; COLOR: #37679c; BORDER-TOP-COLOR: #37679c; BORDER-RIGHT-COLOR: #37679c
+}
+.pages A.nextprev {
+	FONT-WEIGHT: bold
+}
+.pages SPAN.nextprev {
+	COLOR: #666
+}
+.pages SPAN.nextprev {
+	BORDER-RIGHT: #ddd 1px solid; BORDER-TOP: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; COLOR: #999; BORDER-BOTTOM: #ddd 1px solid
+}
+.pages INPUT {
+	BORDER-RIGHT: #ffffff 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ffffff 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 10px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: #ffffff 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ffffff 1px solid
+}
+.pages INPUT.butt {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 20px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.sideNav {
+	BACKGROUND: url(help_cell.gif) #eef7fe no-repeat right bottom
+}
+.sideNav DT {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(help_cell.gif) no-repeat left top; COLOR: #fff; LINE-HEIGHT: 30px; HEIGHT: 30px; TEXT-ALIGN: center
+}
+.sideNav DD {
+	BORDER-TOP: #fff 1px solid; FONT-SIZE: 14px; MARGIN: 0px 5px 0px 12px; LINE-HEIGHT: 40px; BORDER-BOTTOM: #c6e6ff 1px solid; HEIGHT: 40px
+}
+.sideNav DD A {
+	DISPLAY: block; PADDING-LEFT: 32px; LINE-HEIGHT: 40px; HEIGHT: 40px
+}
+.sideNav DD A:hover {
+	FONT-WEIGHT: bold; BACKGROUND: url(help_cell.gif) no-repeat 0px -40px; MARGIN-RIGHT: -5px; POSITION: relative; TEXT-DECORATION: none
+}
+.sideNav DD.current A {
+	FONT-WEIGHT: bold; BACKGROUND: url(help_cell.gif) no-repeat 0px -40px; MARGIN-RIGHT: -5px; POSITION: relative
+}
+.sideNav DD.last {
+	BORDER-BOTTOM-WIDTH: 0px
+}
+.contact {
+	
+}
+.contact DT {
+	MARGIN-TOP: 10px; PADDING-LEFT: 15px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(images/about/help_contact_bg.png) no-repeat left top; COLOR: #064878; LINE-HEIGHT: 36px; HEIGHT: 36px
+}
+.contact DT.ask {
+	MARGIN-TOP: 15px; BACKGROUND: url(images/about/help_contact_bg.png) no-repeat right top; TEXT-INDENT: -9999px; HEIGHT: 53px
+}
+.contact DT.ask A {
+	DISPLAY: block; HEIGHT: 53px
+}
+.contact DD {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BACKGROUND: url(images/about/help_contact_bg.png) no-repeat left bottom; PADDING-BOTTOM: 15px; PADDING-TOP: 0px
+}
+.contact DD P.next {
+	TEXT-INDENT: 36px
+}
+
