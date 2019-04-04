@@ -30,7 +30,7 @@ public class CalculateUtils {
             throw new CalculateException("MVEL formula can't be null! formula : " + formula); // 公式不能为空
         }
         if (variables == null || variables.size() == 0) {
-            throw new CalculateException("MVEL variables can't be null! variables : " + String.valueOf(variables)); // 参数不能为空
+            throw new CalculateException("MVEL variables can't be null! variables : " + variables); // 参数不能为空
         }
 
         try {
@@ -40,9 +40,9 @@ public class CalculateUtils {
 
         } catch (NumberFormatException e) {
             throw new CalculateException(
-                    "MVEL can't convert to BigDecimal, please check the variables : " + String.valueOf(variables) + "!",
-                    e);
+                    "MVEL can't convert to BigDecimal, please check the variables : " + variables + "!", e);
         } catch (Exception e) {
+            e.printStackTrace();
             throw e;
         }
         BigDecimal result = null;
@@ -50,7 +50,7 @@ public class CalculateUtils {
             result = (BigDecimal) MVEL.eval(formula, variables);
         } catch (PropertyAccessException pae) {
             throw new CalculateException(
-                    "MVEL please check the formula :" + formula + " & variables : " + String.valueOf(variables) + "!",
+                    "MVEL please check the formula :" + formula + " & variables : " + variables + "!",
                     pae);
         } catch (CompileException ce) {
             throw new CalculateException("MVEL calculate error! ", ce);

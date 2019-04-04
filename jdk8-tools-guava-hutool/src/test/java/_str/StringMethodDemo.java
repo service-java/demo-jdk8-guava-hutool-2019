@@ -7,82 +7,126 @@ package _str;
  */
 
 
+import cn.hutool.core.lang.Console;
+import org.junit.Test;
+
 public class StringMethodDemo {
+    String s1 = "Welcome";
+    String s2 = "welcome";
 
-    public static void main(String[] args) {
+    @Test
+    public void main() {
         // equals和equalsIgnoreCase方法
-        String s1 = "Welcome";
-        String s2 = "welcome";
-        Boolean isEqual = s1.equals(s2);
-        System.out.println("s1 equals s2: " + isEqual);
-
-        isEqual = s1.equalsIgnoreCase(s2);
-        System.out.println("s1 equalsIgnoreCase s2: " + isEqual);
+        Console.log(s1.equals(s2));
+        Console.log(s1.equalsIgnoreCase(s2));
 
         // compareTo和compareToIgnoreCase方法
-        int x = s1.compareTo(s2);
-        System.out.println("s1 compareTo s2: " + x);
+        Console.log(s1.compareTo(s2));
+        Console.log(s1.compareToIgnoreCase(s2));
 
-        x = s1.compareToIgnoreCase(s2);
-        System.out.println("s1 compareToIgnoreCase s2: " + x);
 
+        // indexOf和lastIndexOf方法
+        System.out.println("'e'首次出现在s1中的下标： " + s1.indexOf('e'));
+        System.out.println("\"abc\"最后一次出现在s1中的下标： " + s1.indexOf("abc"));
+    }
+
+
+    @Test
+    public void hello () {
         // startsWith和endsWith方法
-        Boolean b = s1.startsWith("AAA");
-        System.out.println("s1 startsWith 'AAA': " + b);
-        b = s1.endsWith("AAA");
-        System.out.println("s1 endsWith 'AAA': " + b);
-
-        // length()方法
-        x = s1.length();
-        System.out.println("s1的长度： " + x);
-
-        // charAt()方法
-        char ch = 'a';
-        ch = s1.charAt(0);
-        System.out.println("s1的第一个字符： " + ch);
+        Console.log(s1.startsWith("AAA"));
+        Console.log(s1.endsWith("AAA"));
 
         // concat方法
         String s3 = s1.concat(s2);
-        System.out.println("s1 concat s2： " + s3);
+        Console.log(s3);
 
-        // substring方法
-        String s1_child1 = s1.substring(1);
-        String s1_child2 = s1.substring(1, 5); // 下标1到4，包括4
-        System.out.println("s1子串1： " + s1_child1);
-        System.out.println("s1子串2： " + s1_child2);
 
         // 大小写转化方法
-        s3 = s1.toLowerCase();
-        System.out.println("s1转小写： " + s3);
-        s3 = s1.toUpperCase();
-        System.out.println("s1转大写： " + s3);
+        Console.log(s1.toLowerCase());
+        Console.log(s1.toUpperCase());
+
 
         // trim()方法
         s1 = " Welcome ";
         s3 = s1;
-        System.out.println("去除首尾空格之前： " + s3);
-        s3 = s3.trim();
-        System.out.println("去除首尾空格之后： " + s3);
+        Console.log("去除首尾空格之前： \n{} \n去除首尾空格之后： \n{} ", s3, s3.trim());
+    }
 
+    @Test
+    public void basic() {
+        // length()方法
+        Console.log(s1.length());
+
+        // charAt()方法
+        char ch = s1.charAt(0);
+        System.out.println("s1的第一个字符： " + ch);
+
+        // substring方法
+        String s1_child1 = s1.substring(1);
+        Console.log("s1子串1： " + s1_child1);
+        // 下标1到4，包括4
+        String s1_child2 = s1.substring(1, 5);
+        Console.log("s1子串2： " + s1_child2);
+    }
+
+    @Test
+    public void replace() {
         // replace()方法
-        s1 = "Welcome";
-        s3 = s1.replace('e', 'E');
-        System.out.println("E 替换 e 的s1： " + s3);
+        System.out.println("E 替换 e 的s1： " + s1.replace('e', 'E'));
 
         // split方法
         String str = "welcome to java and html";
         String[] tokens = str.split(" ");
-        System.out.println("用split把句子拆成单词： ");
         for (String val : tokens) {
             System.out.println(val);
         }
+    }
 
-        // indexOf和lastIndexOf方法
-        x = s1.indexOf('e');
-        System.out.println("'e'首次出现在s1中的下标： " + x);
-        x = s1.indexOf("abc");
-        System.out.println("\"abc\"最后一次出现在s1中的下标： " + x);
 
+    @Test
+    public void split() {
+        // 定义字符串
+        String str = "joe@gaddisBooks.com";
+        // 字符串拆成数组
+        String[] tokens = str.split("[@.]");
+        for (String val : tokens) {
+            System.out.println(val);
+        }
+    }
+
+
+    @Test
+    public void equalDemo() {
+        String message =  " So say we all! ";
+        String message1 = " So say we all! ";
+        String message2 = new String(" So say we all! ");
+
+        // 类似缓存机制演示
+        Console.log("{} {} {}",
+                message == message1,
+                message == message2,
+                message.compareTo(message1));
+
+        //        message2.latern();
+    }
+
+    @Test
+    public  void demo() {
+        // 声名数组
+        String fullName = "Cynthia Susan Smith";
+        char[] nameArray = new char[5];
+        // 字符串提取方法
+        fullName.getChars(8, 13, nameArray, 0);
+        //字符串转化成数组
+        nameArray = fullName.substring(8, 13).toCharArray();
+
+        // 输出字符串和数组
+        System.out.println("The string is: " + fullName);
+        System.out.println("The values in the nameArray are: ");
+        for (char val : nameArray) {
+            System.out.print(val + " ");
+        }
     }
 
 }
