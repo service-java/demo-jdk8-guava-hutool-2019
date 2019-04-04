@@ -1,6 +1,7 @@
 package _java8;
 
 import cn.hutool.core.lang.Console;
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
@@ -9,6 +10,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamDemo {
 
@@ -34,6 +36,22 @@ public class StreamDemo {
                 .collect(Collectors.toList());
         Console.log("{} 个数: {}", filtered, filtered.size());
 
+    }
+
+    @Test
+    public void distinct() {
+        ArrayList<Object> list = new ArrayList<>();
+        list.add(11);
+        list.add(12);
+        list.add(13);
+        list.add(12);
+
+        Set<Object> collect = list.stream().collect(Collectors.toSet());
+        Console.log(collect);
+
+//        List<Object> distinct = list.stream().distinct().collect();
+//        Console.log(list);
+//        Console.log(distinct);
     }
 
 }
