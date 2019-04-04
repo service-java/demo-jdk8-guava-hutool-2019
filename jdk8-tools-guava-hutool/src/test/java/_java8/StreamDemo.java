@@ -1,6 +1,8 @@
 package _java8;
 
 import cn.hutool.core.lang.Console;
+import org.apache.commons.lang.StringUtils;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,8 +11,9 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 public class StreamDemo {
-    public static void main(String[] args) {
 
+    @Test
+    public void setStreamTest() {
         List<Integer> idsList = new ArrayList();
         idsList.add(10);
         idsList.add(11);
@@ -19,13 +22,18 @@ public class StreamDemo {
 
         Set<Integer> ids = idsList.stream().collect(Collectors.toSet());
         Console.log(ids);
+    }
 
-        Console.log("------------");
+    @Test
+    public void hello() {
+
         List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
         List<String> filtered = strings.stream()
-                .filter(string -> !string.isEmpty())
+                .filter(string -> StringUtils.isNotEmpty(string))
+//                .filter(string -> !string.isEmpty())
                 .collect(Collectors.toList());
-        Console.log("{} \n{}", filtered, filtered.size());
+        Console.log("{} 个数: {}", filtered, filtered.size());
 
     }
+
 }
