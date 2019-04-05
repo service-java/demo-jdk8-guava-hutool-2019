@@ -107,8 +107,7 @@ public class StringMethodDemo {
                 message == message1,
                 message == message2,
                 message.compareTo(message1));
-
-        //        message2.latern();
+//                message2.latern();
     }
 
     @Test

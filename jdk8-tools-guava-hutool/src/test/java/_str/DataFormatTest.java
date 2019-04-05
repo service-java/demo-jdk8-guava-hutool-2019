@@ -5,10 +5,11 @@ import org.junit.Test;
 
 import java.text.DecimalFormat;
 
-public class DataFormatTest {
+public class
+DataFormatTest {
 
     @Test
-    public static void main(String[] args) {
+    public void main() {
 
 //        Console.log(System.nanoTime());
 
@@ -16,6 +17,17 @@ public class DataFormatTest {
 
         DecimalFormat df = new DecimalFormat(".##");
         Console.log(df.format(12121212.54555d));
+    }
+
+
+    @Test
+    public void main2() {
+
+        // @TODO
+        // 00开头 -> 16进制
+        Console.log(String.format("%09d", 001002007));
+        Console.log(String.format("%09d", Integer.parseInt("001002007")));
+        Console.log("001002003" + 1);
     }
 
 

@@ -92,12 +92,13 @@ public class FastjsonTest  {
     @Test
     public void parseComplexJSON() {
         JSONObject jsonObject = JSON.parseObject(COMPLEX_JSON_STR);
-        String teacherName = jsonObject.getString("teacherName");
-        Integer teacherAge = jsonObject.getInteger("teacherAge");
-        JSONObject course = jsonObject.getJSONObject("course");
+//        String teacherName = jsonObject.getString("teacherName");
+//        Integer teacherAge = jsonObject.getInteger("teacherAge");
+//        JSONObject course = jsonObject.getJSONObject("course");
         JSONArray students = jsonObject.getJSONArray("students");
 
         Console.log(students);
+
 //        for (Object student : students) {
 //
 //        }
