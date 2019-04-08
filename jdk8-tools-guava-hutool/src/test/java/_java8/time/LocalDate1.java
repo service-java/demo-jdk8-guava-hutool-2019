@@ -1,5 +1,7 @@
 package _java8.time;
 
+import org.junit.Test;
+
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
@@ -21,6 +23,11 @@ public class LocalDate1 {
         System.out.println(today);
         System.out.println(tomorrow);
         System.out.println(yesterday);
+    }
+
+
+    @Test
+    public void hello () {
 
         LocalDate independenceDay = LocalDate.of(2014, Month.JULY, 4);
         DayOfWeek dayOfWeek = independenceDay.getDayOfWeek();
@@ -33,7 +40,6 @@ public class LocalDate1 {
 
         LocalDate xmas = LocalDate.parse("24.12.2014", germanFormatter);
         System.out.println(xmas);   // 2014-12-24
-
 
     }
 
