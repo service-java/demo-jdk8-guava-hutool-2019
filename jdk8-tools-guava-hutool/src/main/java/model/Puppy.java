@@ -1,4 +1,4 @@
-package _file;
+package model;
 
 
 public class Puppy {

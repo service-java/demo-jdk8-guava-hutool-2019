@@ -18,9 +18,6 @@ public class FileUtilsDemo {
         String type = FileTypeUtil.getType(file);
         //输出 jpg则说明确实为jpg文件
         Console.log("文件类型 {} ", type);
-
-
-
     }
 
     @Test

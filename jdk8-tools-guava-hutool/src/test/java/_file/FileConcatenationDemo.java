@@ -1,5 +1,7 @@
 package _file;
 
+import org.junit.Test;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileFilter;
@@ -8,14 +10,18 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class TextFileConcatenation {
+public class FileConcatenationDemo {
 
-    public static void main(String[] args) {
-        File root = new File("E:\\java测试文件");// 获得保存文本文件的文件夹
+    @Test
+    public void main() {
+        // 获得保存文本文件的文件夹
+        File root = new File("E:\\java测试文件");
 
-        File[] txtFiles = root.listFiles(new FileFilter() {// 使用匿名内部类进行文件过滤
+        // 使用匿名内部类进行文件过滤
+        File[] txtFiles = root.listFiles(new FileFilter() {
             @Override
-            public boolean accept(File pathname) {// 获得当前文件夹中全部文本文件
+            // 获得当前文件夹中全部文本文件
+            public boolean accept(File pathname) {
                 if (pathname.getName().endsWith(".txt")) {
                     return true;
                 }
@@ -28,11 +34,14 @@ public class TextFileConcatenation {
         try {
             fw = new FileWriter("E://java-test.txt");
             for (File txtFile : txtFiles) {
-                fr = new FileReader(txtFile);// 创建FileInputStream对象
-                br = new BufferedReader(fr);// 创建缓冲输入流
+                // 创建FileInputStream对象
+                fr = new FileReader(txtFile);
+                // 创建缓冲输入流
+                br = new BufferedReader(fr);
                 String line;
                 while ((line = br.readLine()) != null) {
-                    fw.write(line);// 将读入的数据写入到文件中
+                    // 将读入的数据写入到文件中
+                    fw.write(line);
                 }
             }
         } catch (FileNotFoundException e) {
@@ -42,21 +51,21 @@ public class TextFileConcatenation {
         } finally {
             if (fw != null) {
                 try {
-                    fw.close();//释放资源
+                    fw.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (br != null) {
                 try {
-                    br.close();//释放资源
+                    br.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
             }
             if (fr != null) {
                 try {
-                    fr.close();//释放资源
+                    fr.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

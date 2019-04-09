@@ -1,23 +1,24 @@
 package _file;
+
+import org.junit.Test;
+
+import java.io.*;
+
 /**
- * 骆金参
- * lab8-2 复制文件内容到另一个文件
+ * Description: 模块功能
+ * User: luo0412
+ * Date: 2019-04-09
+ * Time: 12:28
  */
+public class FileCopyDemo {
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-
-public class TxtLab1 {
-
-    public static void main(String[] args) {
+    @Test
+    public void demo() {
         String filePath = "d:/tmp";
 
         String fileName1 = "test.txt";
         String fileName2 = "test2.txt";
-        String txtContent = "HibernateValidateTest Java World";
+        String txtContent = "Hello Java";
         FileInputStream in = null;
         FileOutputStream out = null;
 
@@ -33,6 +34,7 @@ public class TxtLab1 {
             // 输出异常信息
             e.printStackTrace();
         }
+
 
         try {
             // 创建FileOutputStream对象

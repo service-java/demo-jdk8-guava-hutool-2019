@@ -1,4 +1,4 @@
-package _file;
+package _basic;
 
 public class VarargsDemo {
 
@@ -17,8 +17,9 @@ public class VarargsDemo {
         double result = numbers[0];
 
         for (int i = 1; i < numbers.length; i++)
-            if (numbers[i] > result)
+            if (numbers[i] > result) {
                 result = numbers[i];
+            }
         System.out.println("The max value is " + result);
     }
 }
