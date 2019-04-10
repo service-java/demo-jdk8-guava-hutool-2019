@@ -12,6 +12,9 @@ import java.io.*;
  */
 public class FileCopyDemo {
 
+    // java复制文件夹中的所有文件和文件夹到另一个文件夹中
+    // https://www.cnblogs.com/lishuo/p/5786842.html
+
     @Test
     public void demo() {
         String filePath = "d:/tmp";

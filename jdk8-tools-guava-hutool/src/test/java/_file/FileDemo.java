@@ -155,7 +155,10 @@ public class FileDemo {
         String filePath = "d:/tmp";
 
         String fileName = "test.txt";
-        String txtContent = "helo";
+        String txtContent = "[info]\n" +
+                "date=16:51 2019/03/27\n" +
+                "ForeGroundUrl = http://pmpub.pinming.cn/app_background/ss5/index.zip";
+
         FileInputStream in = null;
         FileOutputStream out = null;
 
