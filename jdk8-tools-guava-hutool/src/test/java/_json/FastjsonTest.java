@@ -1,4 +1,4 @@
-package _fastjson;
+package _json;
 
 import cn.hutool.core.lang.Console;
 import com.alibaba.fastjson.JSON;
