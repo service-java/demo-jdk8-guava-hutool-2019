@@ -1,5 +1,7 @@
 package _java8.time;
 
+import org.junit.Test;
+
 import java.time.Clock;
 import java.time.Instant;
 import java.time.LocalTime;
@@ -13,9 +15,10 @@ import java.util.Locale;
 /**
  * @author Benjamin Winterberg
  */
-public class LocalTime1 {
+public class LocalTimeDemo {
 
-    public static void main(String[] args) {
+    @Test
+    public void main() {
 
         // get the current time
         Clock clock = Clock.systemDefaultZone();
@@ -24,7 +27,6 @@ public class LocalTime1 {
 
         Instant instant = clock.instant();
         Date legacyDate = Date.from(instant);
-
 
         ZoneId zone1 = ZoneId.of("Europe/Berlin");
         ZoneId zone2 = ZoneId.of("Brazil/East");

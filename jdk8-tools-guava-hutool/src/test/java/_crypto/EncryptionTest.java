@@ -1,4 +1,4 @@
-package _crypt;
+package _crypto;
 
 import org.junit.Test;
 

@@ -102,12 +102,19 @@ public class StringMethodDemo {
         String message1 = " So say we all! ";
         String message2 = new String(" So say we all! ");
 
+
         // 类似缓存机制演示
+        // true false 0
         Console.log("{} {} {}",
                 message == message1,
                 message == message2,
                 message.compareTo(message1));
-//                message2.latern();
+
+        // true true??
+        message2 = message.intern();
+        Console.log("{} {}",
+                message1 == message2,
+                message1.equals(message2));
     }
 
     @Test

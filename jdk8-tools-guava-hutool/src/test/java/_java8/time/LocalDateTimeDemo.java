@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * @author Benjamin Winterberg
  */
-public class LocalDateTime1 {
+public class LocalDateTimeDemo {
 
     public static void main(String[] args) {
 

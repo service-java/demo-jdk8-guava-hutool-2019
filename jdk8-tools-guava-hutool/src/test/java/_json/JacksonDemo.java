@@ -1,14 +1,18 @@
 package _json;
 
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Console;
 import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationConfig;
 import model.Student;
 import org.junit.Test;
 
 import java.io.IOException;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 
 /**
@@ -19,6 +23,7 @@ import java.io.IOException;
  */
 public class JacksonDemo {
     final String jsonString = "{\"name\":\"Mahesh\", \"age\":21}";
+
 
     @Test
     public void main() {
@@ -43,5 +48,20 @@ public class JacksonDemo {
     }
 
 
+    @Test
+    public void map2Str() {
+        Map<String, String> map = new HashMap<>();
+        ObjectMapper objectMapper = new ObjectMapper();
+        map.put("date", DateUtil.format(new Date(), "HH:mm yyyy/MMdd"));
+        map.put("time", DateUtil.format(new Date(), "yyyy-MM-dd HH:mm:ss"));
+//        System.out.println("print map: " + map);
+        String jsonStr = null;
+        try {
+            jsonStr = objectMapper.writeValueAsString(map);
+            Console.log(jsonStr);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+    }
 
 }

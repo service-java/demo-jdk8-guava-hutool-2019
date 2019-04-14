@@ -17,7 +17,7 @@ public class AESDemo {
     final String iv = "1234567890123456";
 
     @Test
-    public void main() {
+    public void aes() {
 
         // 随机生成密钥
 //      byte[]  key = SecureUtil.generateKey(SymmetricAlgorithm.AES.getValue()).getEncoded();

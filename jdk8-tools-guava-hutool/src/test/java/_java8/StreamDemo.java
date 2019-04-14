@@ -5,10 +5,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -46,12 +43,15 @@ public class StreamDemo {
         list.add(13);
         list.add(12);
 
-        Set<Object> collect = list.stream().collect(Collectors.toSet());
+        List<Object> collect = list.stream().distinct().collect(Collectors.toList());
         Console.log(collect);
 
-//        List<Object> distinct = list.stream().distinct().collect();
-//        Console.log(list);
-//        Console.log(distinct);
+    }
+
+    @Test
+    public void distinctHashMapByKey () {
+//        HashMap<Integer, String> map = new HashMap<>();
+
     }
 
 }

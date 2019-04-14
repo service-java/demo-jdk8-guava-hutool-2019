@@ -13,7 +13,7 @@ import java.util.Locale;
 /**
  * @author Benjamin Winterberg
  */
-public class LocalDate1 {
+public class LocalDateDemo {
 
     public static void main(String[] args) {
         LocalDate today = LocalDate.now();

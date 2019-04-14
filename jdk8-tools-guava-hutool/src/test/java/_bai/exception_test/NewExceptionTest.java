@@ -1,21 +1,29 @@
 package _bai.exception_test;
 
+import cn.hutool.core.lang.Console;
 import exception.NewException;
+import org.junit.Test;
 
 public class NewExceptionTest {
-    public static void showArea(double r) throws NewException { // 创建求圆面积的方?
+    // 求圆面积
+    public static void showBigArea(double r) throws NewException {
         if (r <= 20) {
-            throw new NewException(r); // 抛出异常
+            throw new NewException(r);
         }
-        double area = 3.14 * r * r; // 计算圆的面积
-        System.out.println("圆的面积是：" + area); // 输出圆的面积
+        // 计算圆的面积
+        double area = 3.14 * r * r;
+        System.out.println("圆的面积是：" + area);
     }
 
-    public static void main(String[] args) {
+    @Test
+    public void showBigDemo() {
         try {
-            showArea(10); // 调用showArea()方法，传递半?10
+            // 调用showArea()方法
+            showBigArea(10);
         } catch (NewException ex) {
-            System.out.println(ex); // 输出异常信息
+            System.out.println(ex);
         }
+
+        Console.log("理理我吧!!!");
     }
 }

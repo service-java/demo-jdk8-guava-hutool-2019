@@ -1,5 +1,7 @@
 package _java8.stream;
 
+import org.junit.Test;
+
 import java.util.Optional;
 
 /**
@@ -7,14 +9,15 @@ import java.util.Optional;
  */
 public class Optional1 {
 
-    public static void main(String[] args) {
+    @Test
+    public void demo1() {
         Optional<String> optional = Optional.of("bam");
 
         optional.isPresent();           // true
         optional.get();                 // "bam"
         optional.orElse("fallback");    // "bam"
 
-        optional.ifPresent((s) -> System.out.println(s.charAt(0)));     // "b"
+        optional.ifPresent((s) -> System.out.println(s.charAt(0)));  // "b"
     }
 
 }
