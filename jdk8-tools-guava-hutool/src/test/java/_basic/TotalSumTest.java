@@ -49,7 +49,8 @@ public class TotalSumTest {
             x = scan.nextInt();
             sum += x;
         }
-        scan.close(); // 及时关闭
+        // 及时关闭
+        scan.close();
         return sum;
     }
 
@@ -58,10 +59,12 @@ public class TotalSumTest {
      *
      * @param varargs
      */
-    private static void print(String... varargs) { // 创建参数可变的方法
+    private static void print(String... varargs) {
+        // 创建参数可变的方法
         for (int i = 0; i < varargs.length; i++) {
-            System.out.print(varargs[i] + " "); // 输出参数的内容
+            System.out.print(varargs[i] + " ");
         }
-        System.out.println(); // 换行
+        // 换行
+        System.out.println();
     }
 }

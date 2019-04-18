@@ -16,7 +16,7 @@ public class JsonUtilDemo {
     }
 
     @Test
-    public void hello () {
+    public void hello() {
         String jsonStr = "{\"b\":\"value2\",\"c\":\"value3\",\"a\":\"value1\"}";
         JSONObject jsonObject = JSONUtil.parseObj(jsonStr);
         Console.log(jsonObject);
@@ -29,7 +29,7 @@ public class JsonUtilDemo {
 
 
     @Test
-    public void hello2 () {
+    public void hello2() {
 
     }
 

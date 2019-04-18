@@ -13,7 +13,7 @@ import lombok.ToString;
 @Getter
 @ToString
 public class Teacher {
-//    @NotBlank(message = "不能为空")
+    //    @NotBlank(message = "不能为空")
     private String name;
     private String job;
     private String career;

@@ -15,7 +15,7 @@ public class BitSetDemo {
             if ((i % 2) == 0) bits1.set(i);
             if ((i % 5) != 0) bits2.set(i);
         }
-        Console.log("bits1 -> {} \nbits2 -> {}" , bits1, bits2);
+        Console.log("bits1 -> {} \nbits2 -> {}", bits1, bits2);
 
         // AND bits
         bits2.and(bits1);

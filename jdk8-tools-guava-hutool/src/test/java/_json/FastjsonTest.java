@@ -17,14 +17,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class FastjsonTest  {
+public class FastjsonTest {
 
     //json字符串-简单对象型
-    private static final String  JSON_OBJ_STR = "{\"studentName\":\"lily\",\"studentAge\":12}";
+    private static final String JSON_OBJ_STR = "{\"studentName\":\"lily\",\"studentAge\":12}";
     //json字符串-数组类型
-    private static final String  JSON_ARRAY_STR = "[{\"studentName\":\"lily\",\"studentAge\":12},{\"studentName\":\"lucy\",\"studentAge\":15}]";
+    private static final String JSON_ARRAY_STR = "[{\"studentName\":\"lily\",\"studentAge\":12},{\"studentName\":\"lucy\",\"studentAge\":15}]";
     //复杂格式json字符串
-    private static final String  COMPLEX_JSON_STR = "{\"teacherName\":\"crystall\",\"teacherAge\":27,\"course\":{\"courseName\":\"english\",\"code\":1270},\"students\":[{\"studentName\":\"lily\",\"studentAge\":12},{\"studentName\":\"lucy\",\"studentAge\":15}]}";
+    private static final String COMPLEX_JSON_STR = "{\"teacherName\":\"crystall\",\"teacherAge\":27,\"course\":{\"courseName\":\"english\",\"code\":1270},\"students\":[{\"studentName\":\"lily\",\"studentAge\":12},{\"studentName\":\"lucy\",\"studentAge\":15}]}";
 
     private List<Person> listOfPersons = new ArrayList<Person>();
 
@@ -38,7 +38,7 @@ public class FastjsonTest  {
     public void whenJavaList_thanConvertToJsonCorrect() {
         Console.log(new Person(15, "John Doe", new Date()));
 
-        String jsonOutput= JSON.toJSONString(listOfPersons);
+        String jsonOutput = JSON.toJSONString(listOfPersons);
         Console.log(jsonOutput);
     }
 
@@ -60,11 +60,11 @@ public class FastjsonTest  {
         List listOfPersons = new ArrayList<Person>();
         listOfPersons.add(new Person(15, "John Doe", new Date()));
         listOfPersons.add(new Person(20, "Janette Doe", new Date()));
-        String jsonOutput= JSON.toJSONString(listOfPersons);
+        String jsonOutput = JSON.toJSONString(listOfPersons);
 //        Console.log(JSON.toJSON(new Person(15, "John Doe", new Date())));
         Console.log(jsonOutput);
 
-        jsonOutput= JSON.toJSONString(listOfPersons.toString());
+        jsonOutput = JSON.toJSONString(listOfPersons.toString());
         Console.log(jsonOutput);
 //        Object parse = JSONArray.parse(jsonOutput);
 //        Console.log(parse);

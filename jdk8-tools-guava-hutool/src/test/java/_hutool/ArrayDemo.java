@@ -12,7 +12,7 @@ public class ArrayDemo {
 
 
         // 判空
-        int[] a = { 1, 2 };
+        int[] a = {1, 2};
         int[] b = null;
         Console.log(
                 "{} {} {} {} {} {}",

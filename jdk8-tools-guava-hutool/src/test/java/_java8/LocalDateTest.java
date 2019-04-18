@@ -32,7 +32,7 @@ public class LocalDateTest {
     }
 
     @Test
-    public void monthFirstAndLastDay () {
+    public void monthFirstAndLastDay() {
         // 本月的第一天
         LocalDate today = LocalDate.now();
         LocalDate firstday = LocalDate.of(today.getYear(), today.getMonth(), 1);

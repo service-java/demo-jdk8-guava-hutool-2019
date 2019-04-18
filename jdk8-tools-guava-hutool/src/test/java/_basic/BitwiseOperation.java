@@ -26,6 +26,7 @@ public class BitwiseOperation {
         System.out.println("a ^ b = " + c); // 49
         c = ~a;
         System.out.println("~a = " + c);    // -61
+
         // 正整数的按位取反是其本身+1的负数
         // 负整数的按位取反是其本身+1的绝对值
         c = a << 2;

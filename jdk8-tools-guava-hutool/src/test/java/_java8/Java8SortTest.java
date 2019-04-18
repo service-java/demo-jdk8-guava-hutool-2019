@@ -31,7 +31,7 @@ public class Java8SortTest {
 
 
     @Test
-    public void sort () {
+    public void sort() {
         Java8SortTest tester = new Java8SortTest();
         // 排序改变本身???
         tester.sortUsingJava8(names1);

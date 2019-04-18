@@ -26,7 +26,7 @@ public class StreamDemo {
     @Test
     public void hello() {
 
-        List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd","", "jkl");
+        List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd", "", "jkl");
         List<String> filtered = strings.stream()
                 .filter(string -> StringUtils.isNotEmpty(string))
 //                .filter(string -> !string.isEmpty())
@@ -49,7 +49,7 @@ public class StreamDemo {
     }
 
     @Test
-    public void distinctHashMapByKey () {
+    public void distinctHashMapByKey() {
 //        HashMap<Integer, String> map = new HashMap<>();
 
     }

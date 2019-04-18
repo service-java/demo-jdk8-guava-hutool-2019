@@ -22,7 +22,7 @@ public class Person implements Serializable {
     public Person(int age, String fullName, Date dateOfBirth) {
         super();
         this.age = age;
-        this.fullName= fullName;
+        this.fullName = fullName;
         this.dateOfBirth = dateOfBirth;
     }
 

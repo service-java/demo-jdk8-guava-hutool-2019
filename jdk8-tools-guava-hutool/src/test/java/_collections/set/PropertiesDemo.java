@@ -8,7 +8,7 @@ import java.util.*;
 public class PropertiesDemo {
 
     @Test
-    public void hello () {
+    public void hello() {
         Properties capitals = new Properties();
         capitals.put("Illinois", "Springfield");
         capitals.put("Missouri", "Jefferson City");

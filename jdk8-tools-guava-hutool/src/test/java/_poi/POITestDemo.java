@@ -71,7 +71,7 @@ public class POITestDemo {
         HSSFCellStyle cellStyle4 = workbook.createCellStyle();
         HSSFFont font = workbook.createFont();
         font.setFontName("华文行楷");
-        font.setFontHeightInPoints((short)15);
+        font.setFontHeightInPoints((short) 15);
         font.setColor(HSSFColor.RED.index);
         cellStyle4.setFont(font);
 
@@ -111,11 +111,13 @@ public class POITestDemo {
 
         // 3. 读数据
         int lastRowIndex = sheet.getLastRowNum();
-        Console.log("共{}行\n", lastRowIndex+1);
+        Console.log("共{}行\n", lastRowIndex + 1);
         for (int i = 0; i <= lastRowIndex; i++) {
             HSSFRow row = sheet.getRow(i);
-            if (row == null) { break; }
-            
+            if (row == null) {
+                break;
+            }
+
             short lastCellNum = row.getLastCellNum();
             for (int j = 0; j < lastCellNum; j++) {
                 HSSFCell cell = row.getCell(j);
@@ -133,7 +135,6 @@ public class POITestDemo {
         // 4. 关闭流
         bufferedInputStream.close();
     }
-
 
 
 }

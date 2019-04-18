@@ -4,7 +4,7 @@ function Product(name) {
 
 Product.prototype.stock = 0;
 Product.prototype.price = 0;
-Product.prototype.getValueOfGoods = function() {
+Product.prototype.getValueOfGoods = function () {
     return this.stock * this.price;
 };
 
@@ -15,7 +15,7 @@ product.stock = 78;
 print('Value of Goods: ' + product.getValueOfGoods());
 
 
-var getValueOfGoods = function(javaProduct) {
+var getValueOfGoods = function (javaProduct) {
     var jsProduct = new Product();
     Object.bindProperties(jsProduct, javaProduct);
     return jsProduct.getValueOfGoods();

@@ -35,7 +35,7 @@ public class Java8InterfaceTest {
     }
 
     @Test
-    public void test () {
+    public void test() {
         GreetingService greetService1 = message ->
                 System.out.println("HibernateValidateTest " + message);
         GreetingService greetService2 = (message) ->

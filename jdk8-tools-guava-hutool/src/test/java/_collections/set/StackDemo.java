@@ -8,7 +8,7 @@ import java.util.*;
 public class StackDemo {
 
     @Test
-    public void hello () {
+    public void hello() {
         Stack<Integer> st = new Stack<>();
         Console.log(st);
 

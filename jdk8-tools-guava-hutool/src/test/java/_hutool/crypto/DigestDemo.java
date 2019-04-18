@@ -19,10 +19,10 @@ public class DigestDemo {
         // 验证签名
         boolean verify = sign.verify(data, signed);
         Console.log(
-            "{}\n{}\n{}\n",
-            data,
-            signed,
-            verify);
+                "{}\n{}\n{}\n",
+                data,
+                signed,
+                verify);
     }
 
 }

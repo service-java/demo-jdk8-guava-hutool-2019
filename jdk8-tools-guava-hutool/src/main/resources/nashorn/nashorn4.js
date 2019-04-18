@@ -14,7 +14,7 @@ for each (var num in array) print(num);
 // object literals in constructors
 
 var runnable = new java.lang.Runnable() {
-    run: function() {
+    run: function () {
         print('on the run');
     }
 };
@@ -25,7 +25,7 @@ runnable.run();
 // bind properties
 
 var o1 = {};
-var o2 = { foo: 'bar'};
+var o2 = {foo: 'bar'};
 
 Object.bindProperties(o1, o2);
 
@@ -78,13 +78,12 @@ var SuperRunner = Java.type('com.winterbe.java8.samples.nashorn.SuperRunner');
 var Runner = Java.extend(SuperRunner);
 
 var runner = new Runner() {
-    run: function() {
+    run: function () {
         Java.super(runner).run();
         print('on my run');
     }
 }
 runner.run();
-
 
 
 // load

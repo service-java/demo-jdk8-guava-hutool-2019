@@ -25,7 +25,7 @@ print('passing custom person object:');
 function Person(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
-    this.getFullName = function() {
+    this.getFullName = function () {
         return this.firstName + " " + this.lastName;
     }
 }

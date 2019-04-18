@@ -27,7 +27,7 @@ public class ConvertDemo {
     }
 
     @Test
-    public void hello2 () {
+    public void hello2() {
         String a1 = "123456789";
 
         //结果为："１２３４５６７８９"
@@ -63,7 +63,6 @@ public class ConvertDemo {
         Console.log(list);
 
     }
-
 
 
 }

@@ -21,7 +21,7 @@ public class StrUtilDemo {
 
 
     @Test
-    public  void h() {
+    public void h() {
         Console.log(HashUtil.jsHash("<script>"));
         Console.log(StrUtil.hasBlank("h _ 9"));
 

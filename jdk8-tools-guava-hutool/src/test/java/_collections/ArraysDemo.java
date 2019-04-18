@@ -12,12 +12,12 @@ import java.util.Arrays;
  * Time: 12:09
  */
 public class ArraysDemo {
-    int a[] = { 1, 3, 2, 7, 6, 5, 4, 9 };
-    int b[] = { 1, 3, 2, 7, 6, 5, 4, 9 };
-    int c[] = { 1, 3, 2, 7, 6, 5, 4, 9 };
-    char d[] = { 'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B' };
-    char[] e = { 'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B' };
-    char[] f = { 'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B' };
+    int a[] = {1, 3, 2, 7, 6, 5, 4, 9};
+    int b[] = {1, 3, 2, 7, 6, 5, 4, 9};
+    int c[] = {1, 3, 2, 7, 6, 5, 4, 9};
+    char d[] = {'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B'};
+    char[] e = {'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B'};
+    char[] f = {'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B'};
 
     @Test
     public void sort() {

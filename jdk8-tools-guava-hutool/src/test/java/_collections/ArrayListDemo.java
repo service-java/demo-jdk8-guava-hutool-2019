@@ -18,7 +18,6 @@ public class ArrayListDemo {
     static ArrayList list = new ArrayList<String>();
 
 
-
     {
         list.add("Yao Zhengwei");
         list.add("Hu Bin");
@@ -57,7 +56,7 @@ public class ArrayListDemo {
 
 
     @Test
-    public void replace () {
+    public void replace() {
 
         // 替换
         list.set(0, "Liang Xikun");
@@ -66,7 +65,7 @@ public class ArrayListDemo {
 
 
     @Test
-    public void remove () {
+    public void remove() {
 
         // 移除
         list.remove(2);

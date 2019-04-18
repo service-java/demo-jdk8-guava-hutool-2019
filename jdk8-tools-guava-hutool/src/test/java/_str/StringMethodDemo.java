@@ -32,7 +32,7 @@ public class StringMethodDemo {
 
 
     @Test
-    public void hello () {
+    public void hello() {
         // startsWith和endsWith方法
         Console.log(s1.startsWith("AAA"));
         Console.log(s1.endsWith("AAA"));
@@ -98,7 +98,7 @@ public class StringMethodDemo {
 
     @Test
     public void equalDemo() {
-        String message =  " So say we all! ";
+        String message = " So say we all! ";
         String message1 = " So say we all! ";
         String message2 = new String(" So say we all! ");
 
@@ -118,7 +118,7 @@ public class StringMethodDemo {
     }
 
     @Test
-    public  void demo() {
+    public void demo() {
         // 声名数组
         String fullName = "Cynthia Susan Smith";
         char[] nameArray = new char[5];

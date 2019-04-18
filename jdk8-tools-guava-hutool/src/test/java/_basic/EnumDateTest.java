@@ -13,7 +13,7 @@ import org.junit.Test;
 public class EnumDateTest {
 
     @Test
-    public void hello () {
+    public void hello() {
         String code = EnumDate.YYYY_MM_DD.getCode();
         Console.log(code);
     }

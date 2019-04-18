@@ -1,8 +1,11 @@
 package _basic;
 
+import org.junit.Test;
+
 public class VarargsDemo {
 
-    public static void main(String args[]) {
+    @Test
+    public void main() {
         // 调用可变参数的方法
         printMax(34, 3, 3, 2, 56.5);
         printMax(new double[]{1, 2, 3});
@@ -16,10 +19,11 @@ public class VarargsDemo {
 
         double result = numbers[0];
 
-        for (int i = 1; i < numbers.length; i++)
+        for (int i = 1; i < numbers.length; i++) {
             if (numbers[i] > result) {
                 result = numbers[i];
             }
+        }
         System.out.println("The max value is " + result);
     }
 }

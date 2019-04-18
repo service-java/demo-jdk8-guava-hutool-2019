@@ -35,7 +35,7 @@ public class DateUtilDemo {
     }
 
     @Test
-    public void hello () {
+    public void hello() {
         String format1 = DateUtil.format(new Date(), "hh:mm yyyy/MM/dd");
 //        String format = DateUtil.format(new Date(), "hh:ss yyyy/MM/dd");
         Console.log(format1);

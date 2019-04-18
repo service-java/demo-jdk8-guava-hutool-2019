@@ -15,7 +15,7 @@ public class User {
     Integer age;
     String password;
 
-    private void testMethod () {
+    private void testMethod() {
         Console.log("test----");
     }
 }

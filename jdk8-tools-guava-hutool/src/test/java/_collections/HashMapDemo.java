@@ -26,7 +26,7 @@ public class HashMapDemo {
 
 
     @Test
-    public void eachKV () {
+    public void eachKV() {
         // 遍历key key->values
         for (String key : map.keySet()) {
             Console.log("{} {}", key, map.get(key));
@@ -34,9 +34,8 @@ public class HashMapDemo {
     }
 
 
-
     @Test
-    public void eachIterator () {
+    public void eachIterator() {
         // 迭代器
         // hasNext -> next
         Iterator<Map.Entry<String, String>> ite = map.entrySet().iterator();
@@ -49,7 +48,7 @@ public class HashMapDemo {
 
 
     @Test
-    public void eachEntry () {
+    public void eachEntry() {
         // 数据量大的时候
         for (Map.Entry<String, String> entry : map.entrySet()) {
             Console.log("{} {}", entry.getKey(), entry.getValue());
@@ -58,10 +57,9 @@ public class HashMapDemo {
     }
 
 
-
     @Test
     @Deprecated
-    public void eachValueSimple () {
+    public void eachValueSimple() {
         // 遍历值
         for (String v : map.values()) {
             // 不能遍历key

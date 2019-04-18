@@ -9,7 +9,7 @@ public class ObjectUtilDemo {
 
         String a = "ef";
         Integer i = 1_000_000;
-        int [] arr = {1 , 2};
+        int[] arr = {1, 2};
         Console.log("{} {} {}",
                 ObjectUtil.isBasicType(a),
                 ObjectUtil.isBasicType(i), // true

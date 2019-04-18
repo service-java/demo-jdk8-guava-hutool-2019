@@ -8,12 +8,12 @@ var Product = Backbone.Model.extend({
     defaults: {
         stock: 0,
         price: 0.0,
-        name:'',
+        name: '',
         valueOfGoods: 0.0
     },
 
-    initialize: function() {
-        this.on('change:stock change:price', function() {
+    initialize: function () {
+        this.on('change:stock change:price', function () {
             var stock = this.get('stock');
             var price = this.get('price');
             var valueOfGoods = this.getValueOfGoods(stock, price);
@@ -21,7 +21,7 @@ var Product = Backbone.Model.extend({
         });
     },
 
-    getValueOfGoods: function(stock, price) {
+    getValueOfGoods: function (stock, price) {
         return stock * price;
     }
 });
@@ -38,7 +38,7 @@ Nashorn6.getProduct(product.attributes);
 
 
 // bind java object to backbone model and pass result back to java
-var calculate = function(javaProduct) {
+var calculate = function (javaProduct) {
     var model = new Product();
     model.set('name', javaProduct.name);
     model.set('price', javaProduct.price);

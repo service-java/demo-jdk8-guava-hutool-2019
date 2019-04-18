@@ -1,7 +1,6 @@
 package _leetcode.easy._101;
 
 
-
 import _leetcode.structure.TreeNode;
 
 import java.util.LinkedList;

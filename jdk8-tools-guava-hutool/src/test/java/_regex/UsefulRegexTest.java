@@ -26,7 +26,7 @@ public class UsefulRegexTest {
     }
 
     @Test
-    public void phoner () {
+    public void phoner() {
         Console.log("{} {} {}",
                 ReUtil.isMatch(Regular.phone.getRegex(), "17816869505"),
                 ReUtil.isMatch(Regular.phone.getRegex(), "178168695052"),
@@ -35,7 +35,7 @@ public class UsefulRegexTest {
     }
 
     @Test
-    public void escape () {
+    public void escape() {
         Console.log("replaceAll: {}", ReUtil.escape("我有个$符号{}"));
     }
 }

@@ -18,7 +18,7 @@ public class Solution {
         for (int i = l1 - 1; i >= 0; --i) {
             int c = c1[i] - '0';
             for (int j = l2 - 1; j >= 0; --j) {
-                ans[i + j + 1] +=  c * (c2[j] - '0');
+                ans[i + j + 1] += c * (c2[j] - '0');
             }
         }
         for (int i = l - 1; i > 0; --i) {

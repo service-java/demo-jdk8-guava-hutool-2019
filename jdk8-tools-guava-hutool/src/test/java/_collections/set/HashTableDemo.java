@@ -8,7 +8,7 @@ import java.util.*;
 public class HashTableDemo {
 
     @Test
-    public  void main() {
+    public void main() {
         // Create a hash map
         Hashtable<String, Double> balances = new Hashtable<>();
         balances.put("Zara", new Double(3434.34));

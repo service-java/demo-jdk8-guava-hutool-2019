@@ -22,7 +22,7 @@ public class HibernateValidateTest {
     }
 
     @Valid
-    private void hello(@NotEmpty(message="不能为空") String hero) {
+    private void hello(@NotEmpty(message = "不能为空") String hero) {
         Console.log(hero);
     }
 }

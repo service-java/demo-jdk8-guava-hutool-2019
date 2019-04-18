@@ -1,4 +1,5 @@
 function sqrt(x)  x * x
+
 print(sqrt(3));
 
 var array = [1, 2, 3, 4];

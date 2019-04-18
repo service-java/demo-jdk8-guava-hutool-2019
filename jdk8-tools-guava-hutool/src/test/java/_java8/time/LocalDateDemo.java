@@ -27,7 +27,7 @@ public class LocalDateDemo {
 
 
     @Test
-    public void hello () {
+    public void hello() {
 
         LocalDate independenceDay = LocalDate.of(2014, Month.JULY, 4);
         DayOfWeek dayOfWeek = independenceDay.getDayOfWeek();

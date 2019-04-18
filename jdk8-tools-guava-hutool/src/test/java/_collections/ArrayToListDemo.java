@@ -33,7 +33,7 @@ public class ArrayToListDemo {
         String[] a = arrayList.toArray(new String[size]);
         Console.log(a);
 
-        List<String> list= Arrays.asList(a);
+        List<String> list = Arrays.asList(a);
         List<String> arrayList2 = new ArrayList<>();
         arrayList2.addAll(list);
         Console.log(list);

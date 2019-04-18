@@ -8,7 +8,7 @@ public class OptionalTest {
     private static Integer sum(Optional<Integer> a, Optional<Integer> b) {
         // isPresent()
         // 如果Optional包含非null的引用（引用存在），返回true
-        Console.log("参数1 -> {} 参数2 -> {}" , a.isPresent(), b.isPresent());
+        Console.log("参数1 -> {} 参数2 -> {}", a.isPresent(), b.isPresent());
 
         // 返回Optional所包含的引用,
         // 若引用缺失,返回指定的值
@@ -40,8 +40,6 @@ public class OptionalTest {
 
         System.out.println(sum(a, b));
     }
-
-
 
 
 }

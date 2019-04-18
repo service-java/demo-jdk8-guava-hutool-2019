@@ -8,7 +8,7 @@ import java.util.Map;
 public class MapDemo {
     public static void main(String[] args) {
 
-        Map<Object, Object> colorMap = MapUtil.of(new String[][] {{
+        Map<Object, Object> colorMap = MapUtil.of(new String[][]{{
 //                {"RED", "#FF0000"},
 //                {"GREEN", "#00FF00"},
 //                {"BLUE", "#0000FF"}

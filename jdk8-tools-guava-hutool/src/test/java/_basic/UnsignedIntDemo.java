@@ -1,7 +1,11 @@
 package _basic;
 
+import org.junit.Test;
+
 public class UnsignedIntDemo {
-    public static void main(String[] args) {
+
+    @Test
+    public void main() {
         System.out.println("\u0041pple");
     }
 }

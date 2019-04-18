@@ -95,7 +95,7 @@ public class ArraySimpleDemo {
     }
 
     @Test
-    public void hello () {
+    public void hello() {
 
     }
 

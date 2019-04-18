@@ -35,7 +35,7 @@ public class JacksonDemo {
             System.out.println(student);
 
             // 没有实体
-            Map<String,Object> dataMap = mapper.readValue(jsonString, Map.class);
+            Map<String, Object> dataMap = mapper.readValue(jsonString, Map.class);
             Console.log(dataMap);
             String name = dataMap.get("name").toString();
             Console.log(name);

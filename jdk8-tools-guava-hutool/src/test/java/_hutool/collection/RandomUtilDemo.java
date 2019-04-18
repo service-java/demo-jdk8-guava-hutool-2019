@@ -8,7 +8,7 @@ public class RandomUtilDemo {
 
 
         Console.log("{} {}\n ",
-            RandomUtil.randomUUID(), RandomUtil.randomNumbers(12));
+                RandomUtil.randomUUID(), RandomUtil.randomNumbers(12));
 
     }
 }

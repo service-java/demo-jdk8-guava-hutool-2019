@@ -13,8 +13,6 @@ import java.util.StringTokenizer;
 public class StringBuilderDemo {
 
 
-
-
     @Test
     public void stringTokenizerDemo() {
 
@@ -24,13 +22,13 @@ public class StringBuilderDemo {
 
         // 遍历输出
         for (int i = 0; i < number; i++) {
-            Console.log(sTokenizer.nextToken() );
+            Console.log(sTokenizer.nextToken());
         }
 
         // 另一种遍历输出方式
-		while(sTokenizer.hasMoreTokens()){
-			Console.log(sTokenizer.nextToken());
-		}
+        while (sTokenizer.hasMoreTokens()) {
+            Console.log(sTokenizer.nextToken());
+        }
 
     }
 

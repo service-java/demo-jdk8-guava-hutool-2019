@@ -45,7 +45,7 @@ public class AESDemo {
 
 
     @Test
-    public void aesCBC () {
+    public void aesCBC() {
         // 原始内容
         AES aes = new AES(Mode.CBC, Padding.PKCS5Padding, keyStr.getBytes(), iv.getBytes());
 

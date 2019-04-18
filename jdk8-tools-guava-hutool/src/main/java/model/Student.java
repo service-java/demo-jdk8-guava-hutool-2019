@@ -12,6 +12,8 @@ import org.hibernate.validator.constraints.NotBlank;
 public class Student {
     private String name;
     private String job;
+    private Integer age;
+    private Double money;
 
     @NotBlank(message = "兴趣爱好不能为空")
     private String hobby;
