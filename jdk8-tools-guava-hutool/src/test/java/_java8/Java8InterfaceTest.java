@@ -17,6 +17,16 @@ public class Java8InterfaceTest {
         void sayMessage(String message);
     }
 
+    // 定义接口Formula
+    interface Formula{
+
+        double calculate(int a);
+
+        default double sqrt(int a) {
+            return Math.sqrt(a);
+        }
+
+    }
 
     @Test
     public void mathInterfaceDemo() {
@@ -44,6 +54,20 @@ public class Java8InterfaceTest {
 
         greetService1.sayMessage("Runoob");
         greetService2.sayMessage("Google");
+    }
+
+
+    @Test
+    public void formula() {
+        Formula formula = new Formula() {
+            @Override
+            public double calculate(int a) {
+                return sqrt(a * 100) + 2;
+            }
+        };
+
+        System.out.println(formula.calculate(100));     // 102.0
+        System.out.println(formula.sqrt(16));           // 4.0
     }
 
 
