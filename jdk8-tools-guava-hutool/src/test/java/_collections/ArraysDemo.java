@@ -4,6 +4,7 @@ import cn.hutool.core.lang.Console;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.List;
 
 /**
  * Description: 模块功能
@@ -18,6 +19,8 @@ public class ArraysDemo {
     char d[] = {'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B'};
     char[] e = {'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B'};
     char[] f = {'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B'};
+    int[] g = { 1, 2, 3, 3, 3, 3, 6, 6, 6 };
+    int[] h = { 1, 2, 3, 3, 3, 3, 6, 6, 6, };
 
     @Test
     public void sort() {
@@ -57,6 +60,38 @@ public class ArraysDemo {
          */
         Console.log(Arrays.equals(e, f));
     }
+
+
+    @Test
+    public void fill() {
+        Arrays.fill(g, 3);
+        Console.log(g);
+
+        Arrays.fill(h, 0, 2, 9);
+        Console.log(h);
+    }
+
+
+    @Test
+    public void asList() {
+        List<String> stooges = Arrays.asList("Larry", "Moe", "Curly");
+        System.out.println(stooges);
+
+        char[] k = { 'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B' };
+        // [a, f, b, c, e, A, C, B]
+        System.out.println(Arrays.toString(k));
+    }
+
+    @Test
+    public void copyOf() {
+        int i[] = Arrays.copyOf(h, 6);
+        Console.log(i);
+
+        int j[] = Arrays.copyOfRange(h, 6, 11);
+        // [6, 6, 6, 0, 0]
+        Console.log(j);
+    }
+
 
 
 }

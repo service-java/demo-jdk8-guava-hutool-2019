@@ -15,6 +15,7 @@ import java.util.Comparator;
  */
 public class CollectionsDemo {
     ArrayList<Integer> arrayList = new ArrayList<>();
+    ArrayList<Integer> arrayList2 = new ArrayList<Integer>();
 
     {
         arrayList.add(-1);
@@ -25,7 +26,16 @@ public class CollectionsDemo {
         arrayList.add(4);
         arrayList.add(-9);
         arrayList.add(-7);
-        Console.log(arrayList);
+        Console.log("arrayList " + arrayList);
+
+    }
+
+    {
+
+        arrayList2.add(-3);
+        arrayList2.add(-5);
+        arrayList2.add(7);
+        Console.log("arrayList2 " + arrayList2);
     }
 
     @Test
@@ -68,6 +78,42 @@ public class CollectionsDemo {
     public void swap() {
         Collections.swap(arrayList, 2, 5);
         System.out.println(arrayList);
+    }
+
+    @Test
+    public void minAndMax() {
+        System.out.println(Collections.max(arrayList));
+        System.out.println(Collections.min(arrayList));
+    }
+
+    @Test
+    public void replaceAll() {
+        // 把所有的3替换成 -3
+        Collections.replaceAll(arrayList, 3, -3);
+        Console.log(arrayList);
+    }
+
+    @Test
+    public void frequency() {
+        System.out.println(Collections.frequency(arrayList, 3));
+    }
+
+    @Test
+    public void indexOfSubList() {
+        ArrayList<Integer> subArrayList = new ArrayList<>();
+        subArrayList.add(3);
+        subArrayList.add(-5);
+        // 2
+        System.out.println(Collections.indexOfSubList(arrayList, subArrayList));
+    }
+
+    @Test
+    public void binarySearch() {
+        // 二分查找前 List必须有序
+        Collections.sort(arrayList);
+        Console.log("arrayList 排序后: " + arrayList);
+        // 返回序号 2
+        System.out.println(Collections.binarySearch(arrayList, -5));
     }
 
 }

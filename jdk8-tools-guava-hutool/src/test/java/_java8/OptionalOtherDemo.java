@@ -1,4 +1,6 @@
-package _java8.stream;
+package _java8;
+
+import org.junit.Test;
 
 import java.util.Optional;
 import java.util.function.Supplier;
@@ -10,7 +12,7 @@ import java.util.function.Supplier;
  *
  * @author Benjamin Winterberg
  */
-public class Optional2 {
+public class OptionalOtherDemo {
 
     static class Outer {
         Nested nested = new Nested();
@@ -36,11 +38,6 @@ public class Optional2 {
         }
     }
 
-    public static void main(String[] args) {
-        test1();
-        test2();
-        test3();
-    }
 
     public static <T> Optional<T> resolve(Supplier<T> resolver) {
         try {
@@ -51,13 +48,15 @@ public class Optional2 {
         }
     }
 
-    private static void test3() {
+    @Test
+    public void test3() {
         Outer outer = new Outer();
         resolve(() -> outer.getNested().getInner().getFoo())
                 .ifPresent(System.out::println);
     }
 
-    private static void test2() {
+    @Test
+    public void test2() {
         Optional.of(new Outer())
                 .map(Outer::getNested)
                 .map(Nested::getInner)
@@ -65,7 +64,8 @@ public class Optional2 {
                 .ifPresent(System.out::println);
     }
 
-    private static void test1() {
+    @Test
+    public void test1() {
         Optional.of(new Outer())
                 .flatMap(o -> Optional.ofNullable(o.nested))
                 .flatMap(n -> Optional.ofNullable(n.inner))

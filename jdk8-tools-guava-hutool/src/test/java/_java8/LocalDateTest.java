@@ -4,14 +4,19 @@ package _java8;
 import cn.hutool.core.lang.Console;
 import org.junit.Test;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.Month;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
+import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
+import java.util.Locale;
 
 public class LocalDateTest {
     @Test
-    public void main() {
+    public void methodsDemo() {
         LocalDate now = LocalDate.now();
         Console.log("{} {} {}", now, now.getMonth(), now.getDayOfMonth());
         Console.log("是本月的第{}天", now.getDayOfMonth());
@@ -42,6 +47,36 @@ public class LocalDateTest {
         Console.log("本月有{}天", today.lengthOfMonth());
         Console.log("本月的第一天" + firstday);
         Console.log("本月的最后一天" + lastDay);
+    }
+
+
+    @Test
+    public void german() {
+        LocalDate independenceDay = LocalDate.of(2014, Month.JULY, 4);
+        DayOfWeek dayOfWeek = independenceDay.getDayOfWeek();
+        // FRIDAY
+        System.out.println(dayOfWeek);
+
+        DateTimeFormatter germanFormatter =
+                DateTimeFormatter
+                        .ofLocalizedDate(FormatStyle.MEDIUM)
+                        .withLocale(Locale.GERMAN);
+
+        LocalDate xmas = LocalDate.parse("24.12.2014", germanFormatter);
+        // 2014-12-24
+        System.out.println(xmas);
+    }
+
+
+    @Test
+    public void plusTomorrow() {
+        LocalDate today = LocalDate.now();
+        LocalDate tomorrow = today.plus(1, ChronoUnit.DAYS);
+        LocalDate yesterday = tomorrow.minusDays(2);
+
+        System.out.println(today);
+        System.out.println(tomorrow);
+        System.out.println(yesterday);
     }
 }
 
