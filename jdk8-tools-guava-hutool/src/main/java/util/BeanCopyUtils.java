@@ -1,6 +1,7 @@
 package util;
 
 import cn.hutool.core.lang.Console;
+import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
@@ -18,6 +19,7 @@ import java.util.Set;
  * 对象操作
  */
 public class BeanCopyUtils {
+
 
     public static String[] getNullPropertyNames(Object source) {
         final BeanWrapper src = new BeanWrapperImpl(source);
