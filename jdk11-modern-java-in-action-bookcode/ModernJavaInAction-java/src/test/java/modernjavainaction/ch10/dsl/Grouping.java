@@ -17,7 +17,7 @@
 package modernjavainaction.ch10.dsl;
 
 import static java.util.stream.Collectors.groupingBy;
-import static modernjavainaction.ch06.Dish.menu;
+import static modernjavainaction.ch06_collectors.Dish.menu;
 import static modernjavainaction.ch10.dsl.Grouping.GroupingBuilder.groupOn;
 
 import java.util.List;
@@ -25,7 +25,7 @@ import java.util.Map;
 import java.util.function.Function;
 import java.util.stream.Collector;
 
-import modernjavainaction.ch06.Dish;
+import modernjavainaction.ch06_collectors.Dish;
 
 public class Grouping {
 
