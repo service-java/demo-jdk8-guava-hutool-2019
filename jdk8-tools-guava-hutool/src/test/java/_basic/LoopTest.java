@@ -1,5 +1,7 @@
 package _basic;
 
+import org.junit.Test;
+
 /**
  * 循环
  *
@@ -7,12 +9,14 @@ package _basic;
  */
 public class LoopTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void main() {
         // 定义字符串数组
         String[] arr = {"hello", "hi", "world", "java"};
+        // Java5引入的增强型for循环
         for (String i : arr) {
             System.out.println(i);
-        } // Java5引入的增强型for循环。
+        }
     }
 
 }

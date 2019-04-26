@@ -11,7 +11,7 @@ public class VarargsDemo {
         printMax(new double[]{1, 2, 3});
     }
 
-    public static void printMax(double... numbers) {
+    public void printMax(double... numbers) {
         if (numbers.length == 0) {
             System.out.println("No argument passed");
             return;

@@ -1,5 +1,7 @@
 package _basic;
 
+import org.junit.Test;
+
 import java.util.Scanner;
 
 /**
@@ -7,27 +9,18 @@ import java.util.Scanner;
  */
 
 public class TotalSumTest {
-    /**
-     * 主方法
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
-        System.out.println("The sum is: " + totalSum(111, 20, 30, 40, 79));
-        System.out.println("The sum is: " + totalSum());
 
-        print("Java", "PHP");
-        print("Java", "PHP", "Java");
+    @Test
+    public void main() {
+        System.out.println("The sum is: " + totalSum(111, 20, 30, 40, 79));
+//        System.out.println("The sum is: " + totalSum());
+
+//        print("Java", "PHP");
+//        print("Java", "PHP", "Java");
     }
 
 
-    /**
-     * 参数任意个都行
-     *
-     * @param numbers
-     * @return
-     */
-    public static int totalSum(int... numbers) {
+    public int totalSum(int... numbers) {
         int total = 0;
         for (int val : numbers) {
             total += val;
@@ -35,16 +28,13 @@ public class TotalSumTest {
         return total;
     }
 
-    /**
-     * 需手动结束，推荐上面的
-     *
-     * @return
-     */
-    public static int totalSum() {
+
+    public  int totalSum() {
         System.out.println("start:");
         Scanner scan = new Scanner(System.in);
         int sum = 0;
         int x;
+        // 输入非int终止
         while (scan.hasNextInt()) {
             x = scan.nextInt();
             sum += x;
@@ -59,12 +49,12 @@ public class TotalSumTest {
      *
      * @param varargs
      */
-    private static void print(String... varargs) {
-        // 创建参数可变的方法
-        for (int i = 0; i < varargs.length; i++) {
-            System.out.print(varargs[i] + " ");
-        }
-        // 换行
-        System.out.println();
-    }
+//    private  void print(String... varargs) {
+//        // 创建参数可变的方法
+//        for (int i = 0; i < varargs.length; i++) {
+//            System.out.print(varargs[i] + " ");
+//        }
+//        // 换行
+//        System.out.println();
+//    }
 }

@@ -1,5 +1,7 @@
 package _basic;
 
+import org.junit.Test;
+
 /**
  * 类型转换
  *
@@ -11,6 +13,7 @@ public class TypeConversion {
      *
      * @param args
      */
+    @Test
     public static void main(String[] args) {
         // 浮点数加减并不准确
         System.out.println(1.0D - 0.9D);
@@ -22,9 +25,14 @@ public class TypeConversion {
         // (double) 5 / 2;
         // 5D / 2;
 
+
+    }
+
+
+    @Test
+    public void hello () {
         // 强制类型转化
         int i = 'a';
         System.out.println("a的ASCII码： " + i);
     }
-
 }
