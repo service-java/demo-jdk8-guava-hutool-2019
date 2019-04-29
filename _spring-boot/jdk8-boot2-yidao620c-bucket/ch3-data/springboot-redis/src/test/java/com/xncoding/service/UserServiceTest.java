@@ -29,6 +29,7 @@ import static org.junit.Assert.assertNull;
 public class UserServiceTest {
     @Autowired
     private UserService userService;
+
     @Test
     public void testCache() {
         int id = new Random().nextInt(1000);
