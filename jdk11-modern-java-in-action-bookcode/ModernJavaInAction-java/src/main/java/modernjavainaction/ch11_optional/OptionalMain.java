@@ -1,5 +1,7 @@
 package modernjavainaction.ch11_optional;
 
+import org.junit.Test;
+
 import static java.util.stream.Collectors.toSet;
 
 import java.util.List;
@@ -66,6 +68,11 @@ public class OptionalMain {
         .flatMap(Optional::stream)
         .collect(toSet());
   }
+
+  @Test
+//  public static void h () {
+//      getCarInsuranceNames();
+//  }
 
   public Optional<Insurance> nullSafeFindCheapestInsurance(Optional<Person> person, Optional<Car> car) {
     if (person.isPresent() && car.isPresent()) {

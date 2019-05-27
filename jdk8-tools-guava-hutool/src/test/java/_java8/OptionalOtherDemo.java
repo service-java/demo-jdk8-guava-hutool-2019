@@ -16,7 +16,6 @@ public class OptionalOtherDemo {
 
     static class Outer {
         Nested nested = new Nested();
-
         public Nested getNested() {
             return nested;
         }
@@ -24,7 +23,6 @@ public class OptionalOtherDemo {
 
     static class Nested {
         Inner inner = new Inner();
-
         public Inner getInner() {
             return inner;
         }
@@ -32,7 +30,6 @@ public class OptionalOtherDemo {
 
     static class Inner {
         String foo = "boo";
-
         public String getFoo() {
             return foo;
         }
@@ -48,10 +45,15 @@ public class OptionalOtherDemo {
         }
     }
 
+
+
+
     @Test
-    public void test3() {
-        Outer outer = new Outer();
-        resolve(() -> outer.getNested().getInner().getFoo())
+    public void test1() {
+        Optional.of(new Outer())
+                .flatMap(o -> Optional.ofNullable(o.nested))
+                .flatMap(n -> Optional.ofNullable(n.inner))
+                .flatMap(i -> Optional.ofNullable(i.foo))
                 .ifPresent(System.out::println);
     }
 
@@ -65,11 +67,10 @@ public class OptionalOtherDemo {
     }
 
     @Test
-    public void test1() {
-        Optional.of(new Outer())
-                .flatMap(o -> Optional.ofNullable(o.nested))
-                .flatMap(n -> Optional.ofNullable(n.inner))
-                .flatMap(i -> Optional.ofNullable(i.foo))
+    public void test3() {
+        Outer outer = new Outer();
+        resolve(() -> outer.getNested().getInner().getFoo())
                 .ifPresent(System.out::println);
     }
+
 }

@@ -29,8 +29,8 @@ public class DataBindController {
     ObjectMapper mapper;
 
     @RequestMapping("/update")
-    public @ResponseBody
-    String say(@RequestBody List<User> list) {
+    @ResponseBody
+    public String say(@RequestBody List<User> list) {
         StringBuilder sb = new StringBuilder();
         for (User user : list) {
             sb.append(user.getName()).append(" ");

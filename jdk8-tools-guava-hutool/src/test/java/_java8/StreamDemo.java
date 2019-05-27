@@ -1,11 +1,13 @@
 package _java8;
 
 import cn.hutool.core.lang.Console;
-import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -52,6 +54,37 @@ public class StreamDemo {
     public void distinctHashMapByKey() {
 //        HashMap<Integer, String> map = new HashMap<>();
 
+    }
+
+    @Test
+    public void h () {
+        List a = Arrays.asList("a", "b", "c");
+        Console.log(a);
+    }
+
+
+    @Test
+    public void strLength () {
+        List<String> words = Arrays.asList("Modern", "Java", "In", "Action");
+        List<Integer> wordLengths = words.stream()
+                .map(String::length)
+                .collect(Collectors.toList());
+        Console.log(wordLengths);
+    }
+
+    @Test
+    public void flattern () {
+        String[] arrayOfWords = {"Goodbye", "World"};
+        Stream<String> words = Arrays.stream(arrayOfWords);
+
+        List<String> uniqueCharacters =
+                words.map(word -> word.split(""))
+                        .flatMap(Arrays::stream)
+                        .distinct()
+                        .collect(Collectors.toList());
+
+
+        Console.log(uniqueCharacters);
     }
 
 }

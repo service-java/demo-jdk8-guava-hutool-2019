@@ -17,7 +17,6 @@ public class ArrayListDemo {
 
     static ArrayList list = new ArrayList<String>();
 
-
     {
         list.add("Yao Zhengwei");
         list.add("Hu Bin");

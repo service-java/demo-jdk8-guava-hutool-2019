@@ -90,7 +90,7 @@ http://localhost:8080/user/list?begin=0&end=4
 http://127.0.0.1:8080/swagger3/index.html
 ```
 
-# mongo
+# mongodb
 
 ```sql
 use baike
@@ -177,4 +177,21 @@ http://localhost:8080/redis/connection/set?key=hello2&value=world
 }
 
 // 访问 http://localhost:8080/restclient/book/1
+```
+
+
+# zookeeper
+
+```jsx
+http://localhost:8080/makeorder.html
+
+http://localhost:8080/create.html?path=/hello
+http://localhost:8080/setdata.html?path=/hello&data=123123
+http://localhost:8080/getdata.html?path=/hello
+
+http://localhost:8080/check.html?path=/hello
+http://localhost:8080/children.html?path=/hello
+http://localhost:8080/watch.html?path=/hello
+
+http://localhost:8080/delete.html?path=/hello
 ```

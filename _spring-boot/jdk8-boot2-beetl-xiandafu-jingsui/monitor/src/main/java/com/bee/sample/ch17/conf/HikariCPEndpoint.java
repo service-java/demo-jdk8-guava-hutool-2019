@@ -28,7 +28,6 @@ public class HikariCPEndpoint {
 
     public HikariCPEndpoint(HikariDataSource ds) {
         this.ds = ds;
-
     }
 
     @ReadOperation
