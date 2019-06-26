@@ -1,4 +1,4 @@
-package _basic;
+package _basics;
 
 /**
  * 此程序显示从操作系统C传递给它的参数

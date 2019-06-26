@@ -1,4 +1,4 @@
-package _basic;
+package _basics;
 
 
 class Vehicle {

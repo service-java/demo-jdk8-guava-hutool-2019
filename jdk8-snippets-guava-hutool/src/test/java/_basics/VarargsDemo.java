@@ -1,4 +1,4 @@
-package _basic;
+package _basics;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package _basic;
+package _basics;
 
 import cn.hutool.core.lang.Console;
 import constant.EnumDate;

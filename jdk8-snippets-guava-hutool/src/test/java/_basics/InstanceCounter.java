@@ -1,4 +1,4 @@
-package _basic;
+package _basics;
 
 public class InstanceCounter {
     private static int numInstances = 0;
