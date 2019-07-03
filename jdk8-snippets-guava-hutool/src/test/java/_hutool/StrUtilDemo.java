@@ -39,4 +39,11 @@ public class StrUtilDemo {
                 StringUtils.isEmpty(null) // true
         );
     }
+
+
+    @Test
+    public void m() {
+        String trim = StrUtil.trim(" sadsa sadasd");
+        Console.log(trim);
+    }
 }
