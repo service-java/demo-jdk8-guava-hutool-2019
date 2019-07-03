@@ -24,6 +24,7 @@ public class LogAspect {
         // 接收到请求，记录请求内容
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
+
         // 记录下请求内容
         System.out.println("URL : " + request.getRequestURL().toString());
         System.out.println("HTTP_METHOD : " + request.getMethod());

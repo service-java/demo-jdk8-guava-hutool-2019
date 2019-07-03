@@ -1,4 +1,4 @@
-package com.xncoding.aop.aspect;
+package com.xncoding.aop.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

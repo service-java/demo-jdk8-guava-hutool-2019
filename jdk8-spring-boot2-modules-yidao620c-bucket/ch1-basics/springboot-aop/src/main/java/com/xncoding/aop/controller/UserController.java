@@ -3,7 +3,7 @@ package com.xncoding.aop.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.xncoding.aop.aspect.UserAccess;
+import com.xncoding.aop.annotation.UserAccess;
 
 /**
  * Description:
@@ -15,15 +15,15 @@ public class UserController {
         return "first controller";
     }
 
-    @RequestMapping("/doError")
-    public Object error() {
-        return 1 / 0;
-    }
-
-	@RequestMapping("/second")
+    @RequestMapping("/second")
     @UserAccess(desc = "second")
     public Object second() {
         return "second controller";
+    }
+
+    @RequestMapping("/doError")
+    public Object error() {
+        return 1 / 0;
     }
 
 }

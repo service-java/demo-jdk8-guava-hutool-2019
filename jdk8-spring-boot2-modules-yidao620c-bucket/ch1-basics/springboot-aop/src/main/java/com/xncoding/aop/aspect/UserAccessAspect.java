@@ -1,5 +1,6 @@
 package com.xncoding.aop.aspect;
 
+import com.xncoding.aop.annotation.UserAccess;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -9,7 +10,7 @@ import org.springframework.stereotype.Component;
 @Aspect
 public class UserAccessAspect {
 
-    @Pointcut(value = "@annotation(com.xncoding.aop.aspect.UserAccess)")
+    @Pointcut(value = "@annotation(com.xncoding.aop.annotation.UserAccess)")
     public void access() {
 
     }
