@@ -20,7 +20,7 @@ public class PublicController {
      *
      * @return 是否入网
      */
-    @RequestMapping(value = "/join", method = RequestMethod.GET)
+    @GetMapping(value = "/join")
     @RequiresAuthentication
     public BaseResponse join(@RequestParam("imei") String imei) {
         _logger.info("入网查询接口 start... imei=" + imei);

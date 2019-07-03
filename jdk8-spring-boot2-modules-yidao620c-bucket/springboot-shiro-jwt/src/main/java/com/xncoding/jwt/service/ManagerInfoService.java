@@ -33,6 +33,7 @@ public class ManagerInfoService {
         managerInfo.setState(1);
         managerInfo.setCreatedTime(new Date());
         managerInfo.setName("系统管理员");
+
         // 随机数
         managerInfo.setSalt("ef748186673033723bbf4e056f4ec92e");
         managerInfo.setPassword("da9c3061ae5c0973a3d48e4e721cfbad");
