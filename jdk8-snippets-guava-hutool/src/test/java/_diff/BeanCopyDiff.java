@@ -2,8 +2,8 @@ package _diff;
 
 
 import cn.hutool.core.lang.Console;
-import model.Student;
-import model.Teacher;
+import entity.classic.Student;
+import entity.classic.Teacher;
 import util.BeanCopyUtils;
 import org.springframework.beans.BeanUtils;
 

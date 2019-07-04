@@ -1,6 +1,6 @@
 package _oop;
 
-import model.Book;
+import entity.school.Book;
 
 /**
  * Book类的测试

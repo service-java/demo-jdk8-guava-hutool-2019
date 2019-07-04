@@ -1,12 +1,8 @@
 package util;
 
-import cn.hutool.core.lang.Console;
-import org.junit.Test;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
-import model.Student;
-import model.Teacher;
 
 import java.beans.PropertyDescriptor;
 import java.util.HashSet;

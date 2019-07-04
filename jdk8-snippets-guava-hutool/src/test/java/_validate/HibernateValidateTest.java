@@ -4,6 +4,7 @@ import cn.hutool.core.lang.Console;
 import org.hibernate.validator.constraints.NotBlank;
 import org.hibernate.validator.constraints.NotEmpty;
 import org.junit.Test;
+import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.annotation.Validated;
 
 import javax.validation.Valid;
@@ -21,8 +22,10 @@ public class HibernateValidateTest {
         hello(null);
     }
 
+
+
     @Valid
-    private void hello(@NotEmpty(message = "不能为空") String hero) {
+    public void hello(@NotEmpty(message = "不能为空") String hero) {
         Console.log(hero);
     }
 }

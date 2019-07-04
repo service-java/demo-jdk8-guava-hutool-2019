@@ -1,6 +1,6 @@
 package _oop;
 
-import model.Circle;
+import entity.poly.Circle;
 
 public class CircleReferenceDataTypeTest {
 

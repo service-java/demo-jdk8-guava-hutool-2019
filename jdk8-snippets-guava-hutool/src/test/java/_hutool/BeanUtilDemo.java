@@ -2,7 +2,7 @@ package _hutool;
 
 import cn.hutool.core.bean.DynaBean;
 import cn.hutool.core.lang.Console;
-import model.User;
+import entity.classic.User;
 import org.junit.Test;
 
 public class BeanUtilDemo {

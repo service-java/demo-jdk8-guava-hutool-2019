@@ -2,7 +2,7 @@ package _pageHelper;
 
 import cn.hutool.core.lang.Console;
 import com.github.pagehelper.PageInfo;
-import model.school.Student;
+import entity.school.Student;
 import org.junit.Test;
 
 import java.util.ArrayList;

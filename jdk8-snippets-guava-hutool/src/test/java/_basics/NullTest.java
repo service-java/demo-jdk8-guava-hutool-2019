@@ -1,7 +1,7 @@
 package _basics;
 
 import cn.hutool.core.lang.Console;
-import model.Student;
+import entity.classic.Student;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
@@ -36,6 +36,8 @@ public class NullTest {
     @Test
     public void test() {
         Student student = new Student();
+        student.setMoney(12d).setHobby("play");
+
         if ("helllo".equals(student.getName())) {
             Console.log("asdas");
         }
@@ -44,7 +46,8 @@ public class NullTest {
             Console.log("null写在前面");
         }
 
-        // 这里报错
+        student.setMoney(null).setHobby("girlfriend");
+        // 这里报错 需要先判空
         if (student.getMoney() != 0 && student.getMoney() != null) {
             Console.log("null写在后面");
         }

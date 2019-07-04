@@ -2,7 +2,7 @@ package _guava;
 
 import cn.hutool.core.lang.Console;
 import com.google.common.base.Optional;
-import model.Student;
+import entity.classic.Student;
 
 public class OptionalNullForbidTest {
 

@@ -2,7 +2,7 @@ package _regex;
 
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.ReUtil;
-import constant.Regular;
+import constant.RegularConstant;
 import org.junit.Test;
 
 import java.util.regex.Pattern;
@@ -12,8 +12,8 @@ public class UsefulRegexTest {
     @Test
     public void main() {
         Console.log("是否邮箱 -> {} {}",
-                ReUtil.isMatch(Regular.email.getRegex(), "1095847440@qq.com"),
-                ReUtil.isMatch(Regular.email.getRegex(), "1095847440@")
+                ReUtil.isMatch(RegularConstant.email.getRegex(), "1095847440@qq.com"),
+                ReUtil.isMatch(RegularConstant.email.getRegex(), "1095847440@")
         );
     }
 
@@ -28,9 +28,9 @@ public class UsefulRegexTest {
     @Test
     public void phoner() {
         Console.log("{} {} {}",
-                ReUtil.isMatch(Regular.phone.getRegex(), "17816869505"),
-                ReUtil.isMatch(Regular.phone.getRegex(), "178168695052"),
-                ReUtil.isMatch(Regular.phone.getRegex(), "13646615640")
+                ReUtil.isMatch(RegularConstant.phone.getRegex(), "17816869505"),
+                ReUtil.isMatch(RegularConstant.phone.getRegex(), "178168695052"),
+                ReUtil.isMatch(RegularConstant.phone.getRegex(), "13646615640")
         );
     }
 

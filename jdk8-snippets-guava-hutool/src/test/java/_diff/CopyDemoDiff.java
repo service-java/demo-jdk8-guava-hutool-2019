@@ -1,7 +1,7 @@
 package _diff;
 
 import cn.hutool.core.lang.Console;
-import model.Teacher;
+import entity.classic.Teacher;
 import org.springframework.beans.BeanUtils;
 
 public class CopyDemoDiff {

@@ -1,6 +1,6 @@
 package _oop;
 
-import model.SpecialRectangle;
+import entity.poly.SpecialRectangle;
 
 public class SpecialRectangleTest {
 
