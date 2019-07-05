@@ -20,7 +20,7 @@ class Dog extends Animal {
     @Override
     public void move() {
         super.move(); // 应用super类的方法, 会输?
-        System.out.println("狗也是动?,狗还可以边跑边叫");
+        System.out.println("狗也是动物,狗还可以边跑边叫");
     }
 }
 
