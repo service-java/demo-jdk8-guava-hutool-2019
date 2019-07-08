@@ -1,4 +1,4 @@
-package vo;
+package controller.vo;
 
 import lombok.Data;
 import lombok.experimental.Accessors;

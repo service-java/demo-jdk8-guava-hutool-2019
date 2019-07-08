@@ -1,4 +1,4 @@
-package _str;
+package _string;
 
 import cn.hutool.core.lang.Console;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package _str;
+package _string;
 
 /*
  * 骆金参
@@ -64,10 +64,9 @@ public class StringMethodDemo {
 
         // substring方法
         String s1_child1 = s1.substring(1);
-        Console.log("s1子串1： " + s1_child1);
-        // 下标1到4，包括4
         String s1_child2 = s1.substring(1, 5);
-        Console.log("s1子串2： " + s1_child2);
+        Console.log("s1子串1：{}\ns1子串2：{}", s1_child1, s1_child2);
+
     }
 
     @Test

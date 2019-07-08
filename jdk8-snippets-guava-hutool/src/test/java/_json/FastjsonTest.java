@@ -10,7 +10,7 @@ import entity.school.Student;
 import org.junit.Before;
 import org.junit.Test;
 import util.BeanCopyUtils;
-import vo.UserVo;
+import controller.vo.UserVo;
 
 
 import java.util.ArrayList;

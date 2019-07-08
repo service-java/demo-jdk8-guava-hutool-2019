@@ -1,4 +1,4 @@
-var results = [];
+.0var results = [];
 
 var Context = function () {
     this.foo = 'bar';

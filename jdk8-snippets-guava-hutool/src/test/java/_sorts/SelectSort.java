@@ -1,4 +1,4 @@
-package _sort;
+package _sorts;
 
 public class SelectSort {
     /*
