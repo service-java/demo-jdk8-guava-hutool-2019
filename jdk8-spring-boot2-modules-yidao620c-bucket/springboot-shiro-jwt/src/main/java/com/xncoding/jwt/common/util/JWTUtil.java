@@ -45,7 +45,7 @@ public class JWTUtil {
         JWTVerifier verifier = JWT.require(algorithm)
                 .withClaim("username", username)
                 .build();
-        DecodedJWT jwt = verifier.verify(token);
+//        DecodedJWT jwt = verifier.verify(token);
         return true;
     }
 

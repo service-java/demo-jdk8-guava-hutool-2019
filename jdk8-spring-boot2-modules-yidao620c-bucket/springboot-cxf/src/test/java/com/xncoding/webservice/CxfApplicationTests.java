@@ -8,7 +8,7 @@ import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
 import org.junit.Before;
 import org.junit.Test;
 
-public class ApplicationTests {
+public class CxfApplicationTests {
 
     private Integer port;
     /**

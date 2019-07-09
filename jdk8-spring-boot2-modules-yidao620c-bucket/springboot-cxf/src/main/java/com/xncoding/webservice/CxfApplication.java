@@ -1,15 +1,12 @@
-package com.xncoding.trans;
+package com.xncoding.webservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cache.annotation.EnableCaching;
 
 @SpringBootApplication
-@EnableCaching
-public class Application {
-
+public class CxfApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(CxfApplication.class, args);
     }
 
 }

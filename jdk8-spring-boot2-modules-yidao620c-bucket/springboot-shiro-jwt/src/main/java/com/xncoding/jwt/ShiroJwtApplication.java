@@ -1,12 +1,12 @@
-package com.xncoding.pos;
+package com.xncoding.jwt;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class ShiroJwtApplication {
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ShiroJwtApplication.class, args);
     }
 
 }
