@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="gb2312"?>
-<?xml:stylesheet type="text/xsl" href="resume.xsl"?>
-<resume>
-<name>张三</name>
-<sex>男</sex>
-<birthday>1991.8.12</birthday>
-<major>软件开发</major>
-</resume>

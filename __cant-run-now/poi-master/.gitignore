@@ -1,8 +1,0 @@
-/build/
-target
-.settings
-.springBeans
-.classpath
-.project
-.idea
-*.iml

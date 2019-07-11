@@ -1,5 +1,0 @@
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/springboot_socks?useSSL=false
-    username: root
-    password: 123456

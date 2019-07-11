@@ -1,9 +1,0 @@
-drop database liuyan;
-create database liuyan;
-use liuyan;
-create table message(title varchar(100),name varchar(20),time datetime,content varchar(2000),mail varchar(50));
-insert into message(title,name ,time ,content ,mail ) values ('welcome','cherry','2013-07-20','welcome every one!','cherry@126.com');
-insert into message(title,name ,time ,content ,mail ) values ('hello','rich','2013-07-20','hello every one!','rich@126.com');
-insert into message(title,name ,time ,content ,mail ) values ('thank you','rich','2013-07-20','thank you!','cherry@126.com');
-insert into message(title,name ,time ,content ,mail ) values ('rich','rich','2013-07-20','I am tich!','rich@126.com');
-
