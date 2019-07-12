@@ -1,2 +1,0 @@
-var orderId = pathVars[0];
-var json = {"id":"abc",name:"订单12"+orderId};

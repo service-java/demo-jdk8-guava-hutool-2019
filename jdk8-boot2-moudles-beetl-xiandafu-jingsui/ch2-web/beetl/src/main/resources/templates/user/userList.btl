@@ -1,5 +1,0 @@
-@ for(user in users){
- <span>${user.name}</span> 
-@}
-
-<!--<span>${view}</span>-->

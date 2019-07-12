@@ -1,8 +1,14 @@
 package _guava;
 
 import cn.hutool.core.lang.Console;
+import com.google.common.base.Joiner;
+import com.google.common.collect.Maps;
 import com.google.common.collect.Sets;
+import org.junit.Test;
 
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
+import java.util.Map;
 import java.util.Set;
 
 public class CollectionsDemo {
@@ -26,6 +32,31 @@ public class CollectionsDemo {
                 inter,
                 diff, diff2,
                 union);
+    }
+
+
+    @Test
+    public void translateUrlParams () {
+        Map<String, String> map = Maps.newHashMap();
+        map.put("key", "123");
+        map.put("key1", "luo0412");
+        map.put("key2", "骆锦灿");
+        map.put("key3", "test");
+
+
+        Map<String, String> newMap = Maps.newHashMap();
+        map.forEach((k,v) -> {
+            if (v != null) {
+                try {
+                    newMap.put(k, URLEncoder.encode(v, "utf-8"));
+                } catch (UnsupportedEncodingException e) {
+
+                }
+            }
+        });
+
+        String join = Joiner.on("&").useForNull("").withKeyValueSeparator("=").join(newMap);
+        Console.log(join);
     }
 
 }
