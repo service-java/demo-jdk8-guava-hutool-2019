@@ -5,7 +5,7 @@ import org.junit.Test;
 import java.util.Scanner;
 
 /*
- * 骆金参
+ *
  * Java programming Autumn 2016
  * Lab 4-6  加密
  */

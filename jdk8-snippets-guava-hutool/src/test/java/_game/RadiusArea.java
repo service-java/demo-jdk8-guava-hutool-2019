@@ -2,7 +2,7 @@ package _game;
 
 import java.util.Scanner;
 /*
- * @author  骆金参
+ * @author
  * 计算圆面积
  */
 

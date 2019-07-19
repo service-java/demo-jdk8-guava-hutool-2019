@@ -11,7 +11,7 @@ import java.util.Date;
  *
  * @author Luo_0412
  */
-public class FileDemo {
+public class FileBasicsDemo {
 
     @Test
     public void createDir() {
@@ -149,9 +149,9 @@ public class FileDemo {
     /**
      * 主方法
      *
-     * @param args
      */
-    public static void main(String[] args) {
+    @Test
+    public void main() {
         String filePath = "d:/tmp";
 
         String fileName = "test.txt";

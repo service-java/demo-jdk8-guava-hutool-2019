@@ -1,4 +1,4 @@
-package controller.vo;
+package vo;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -11,7 +11,7 @@ import lombok.experimental.Accessors;
  */
 
 @Data
-@Accessors(chain = true)
+
 public class UserVo {
     String name;
     Integer age;

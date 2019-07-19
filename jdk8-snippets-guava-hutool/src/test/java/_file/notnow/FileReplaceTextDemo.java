@@ -1,15 +1,18 @@
-package _file;
+package _file.notnow;
 /**
- * 骆金参
+ *
  * 附加题
  * 参考 http://wenku.baidu.com/link?url=I1gcFiUnG2_DX-gkEbYuOuoDIf55QJRhzFGjLW0hOLsyjJ8XfuIt-zUGFq6iAAnnSqWTxy7f9ZH-XXej827Xitev3NL-NbZutaeCtEpjzZK
  */
+
+import org.junit.Test;
 
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
 public class FileReplaceTextDemo {
+
     public static void main(String[] args) throws Exception {
         // Check command line parameter usage
         if (args.length != 4) {

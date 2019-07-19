@@ -3,7 +3,7 @@ package _lab.lab7;
 /**
  * Circle类
  *
- * @author Luo_0412 骆金参
+ * @author Luo_0412
  */
 public class Circle {
     private double radius;

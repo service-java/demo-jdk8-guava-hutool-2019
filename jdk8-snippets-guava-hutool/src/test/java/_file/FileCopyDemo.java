@@ -16,19 +16,22 @@ public class FileCopyDemo {
     // https://www.cnblogs.com/lishuo/p/5786842.html
 
     @Test
-    public void demo() {
+    public void copyDemo() {
         String filePath = "d:/tmp";
 
         String fileName1 = "test.txt";
         String fileName2 = "test2.txt";
+
         String txtContent = "Hello Java";
-        FileInputStream in = null;
-        FileOutputStream out = null;
+
 
         // 创建文件对象
+        FileInputStream in = null;
+        FileOutputStream out = null;
         File file = new File(filePath, fileName1);
         File file2 = new File(filePath, fileName2);
 
+        // 创建文件
         try {
             file.createNewFile();
 //            file2.createNewFile();

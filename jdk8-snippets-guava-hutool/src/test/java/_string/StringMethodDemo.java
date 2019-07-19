@@ -1,7 +1,7 @@
 package _string;
 
 /*
- * 骆金参
+ *
  * Java programming Autumn 2016
  * Lab 4-1  常用字符串方法练习
  */

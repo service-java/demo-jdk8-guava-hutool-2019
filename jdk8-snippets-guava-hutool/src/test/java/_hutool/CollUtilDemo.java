@@ -12,7 +12,9 @@ import java.util.List;
 import java.util.Map;
 
 public class CollUtilDemo {
-    public static void main(String[] args) {
+
+    @Test
+    public void main() {
 
         Map<Integer, Integer> map = new HashMap<>();
 //        map.put(1, 2);
@@ -23,6 +25,18 @@ public class CollUtilDemo {
                 CollUtil.isNotEmpty(list),
                 CollUtil.isNotEmpty(map),
                 MapUtils.isNotEmpty(map));
+    }
+
+
+    @Test
+    public void isEmpty () {
+        List l = null;
+
+        Console.log(CollUtil.isEmpty(l));
+        l = new ArrayList();
+        Console.log(CollUtil.isEmpty(l));
+        l.add(1);
+        Console.log(CollUtil.isEmpty(l));
     }
 
     @Test

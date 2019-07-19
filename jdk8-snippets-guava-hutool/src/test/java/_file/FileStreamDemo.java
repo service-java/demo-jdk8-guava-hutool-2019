@@ -1,56 +1,65 @@
 package _file;
 
+import cn.hutool.core.lang.Console;
 import org.junit.Test;
 
 import java.io.*;
 
+
 public class FileStreamDemo {
 
-    public static void main(String args[]) {
+    @Test
+    public void writeAndRead() {
 
         try {
+            // 文件乱码
             byte bWrite[] = {11, 21, 3, 40, 5};
             OutputStream os = new FileOutputStream("test.txt");
+
+            // writes the bytes
             for (int x = 0; x < bWrite.length; x++) {
-                os.write(bWrite[x]); // writes the bytes
+                os.write(bWrite[x]);
             }
             os.close();
 
+
             InputStream is = new FileInputStream("test.txt");
             int size = is.available();
-
             for (int i = 0; i < size; i++) {
-                System.out.print((char) is.read() + "  ");
+                Console.log(is.read());
             }
             is.close();
+
         } catch (IOException e) {
-            System.out.print("Exception");
+            Console.log("Exception");
         }
     }
 
     @Test
-    public void demo() throws IOException {
+    public void writeTextAndRead() throws IOException {
 
+        // 构建FileOutputStream对象,
+        // 文件不存在会自动新建
         File f = new File("a.txt");
-
-        // 构建FileOutputStream对象,文件不存在会自动新建
         FileOutputStream fop = new FileOutputStream(f);
 
-        // 构建OutputStreamWriter对象,参数可以指定编码,默认为操作系统默认编码,windows上是gbk
+        // 构建OutputStreamWriter对象,
+        // 参数可以指定编码,
+        // 默认为操作系统默认编码,
+        // windows上是gbk
         OutputStreamWriter writer = new OutputStreamWriter(fop, "UTF-8");
 
+        // 写入内容
         writer.append("中文输入");
-        // 写入到缓冲区
-
         writer.append("\r\n");
-        //换行
 
+        // 刷新缓存冲,写入到文件,
+        // 如果下面已经没有写入的内容了,直接close也会写入
         writer.append("English");
-        // 刷新缓存冲,写入到文件,如果下面已经没有写入的内容了,直接close也会写入
 
+
+        //关闭写入流, 同时会把缓冲区内容写入文件, 所以上面的注释掉
         writer.close();
-        //关闭写入流,同时会把缓冲区内容写入文件,所以上面的注释掉
-
         // 关闭输出流,释放系统资源
         fop.close();
 
@@ -65,6 +74,7 @@ public class FileStreamDemo {
         while (reader.ready()) {
             sb.append((char) reader.read());
         }
+
         System.out.println(sb.toString());
         // 关闭读取流
         reader.close();

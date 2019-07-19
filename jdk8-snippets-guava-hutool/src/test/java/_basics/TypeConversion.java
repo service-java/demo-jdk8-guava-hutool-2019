@@ -1,6 +1,9 @@
 package _basics;
 
+import cn.hutool.core.lang.Console;
 import org.junit.Test;
+
+import java.time.LocalDate;
 
 /**
  * 类型转换
@@ -8,13 +11,9 @@ import org.junit.Test;
  * @author Luo_0412
  */
 public class TypeConversion {
-    /**
-     * 主函数
-     *
-     * @param args
-     */
+
     @Test
-    public static void main(String[] args) {
+    public void main() {
         // 浮点数加减并不准确
         System.out.println(1.0D - 0.9D);
 
@@ -35,4 +34,12 @@ public class TypeConversion {
         int i = 'a';
         System.out.println("a的ASCII码： " + i);
     }
+
+    @Test
+    public void hello2 () {
+        Integer integer = Integer.valueOf(LocalDate.now().getYear());
+        Console.log(integer);
+    }
+
+
 }

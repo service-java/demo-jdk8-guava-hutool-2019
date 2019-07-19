@@ -3,7 +3,7 @@ package _lab.lab7;
 /**
  * Cylinder类  继承自Circle类
  *
- * @author Luo_0412 骆金参
+ * @author Luo_0412
  */
 public class Cylinder extends Circle {
     private double doubleheight;

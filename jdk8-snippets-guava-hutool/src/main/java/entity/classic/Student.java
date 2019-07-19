@@ -8,7 +8,7 @@ import org.hibernate.validator.constraints.NotBlank;
 @Getter
 @Setter
 @ToString
-@Accessors(chain = true)
+
 public class Student {
     private String name;
     private String job;

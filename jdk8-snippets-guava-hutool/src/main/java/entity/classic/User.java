@@ -8,7 +8,7 @@ import lombok.experimental.Accessors;
 
 @Getter
 @Setter
-@Accessors(chain = true)
+
 @ToString
 public class User {
     String name;

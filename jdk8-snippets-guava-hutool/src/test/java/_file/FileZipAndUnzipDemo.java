@@ -9,15 +9,16 @@ import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
-public class FileZipDemo {
+public class FileZipAndUnzipDemo {
 
 
     @Test
-    public void zipDemo() {
+    public void startZipNovel() {
         // 获得保存txt文件的文件夹
-        File root = new File("d:\\hello");
+        File root = new File("tmp");
+
         // 创建压缩完成后生成的文件
-        File target = new File("d:\\hello.zip");
+        File target = new File("tmp.zip");
 
         // 使用匿名内部类进行文件过滤
         File[] txtFiles = root.listFiles(pathname -> {
@@ -27,7 +28,6 @@ public class FileZipDemo {
             }
             return false;
         });
-
 
         FileOutputStream fos = null;
         ZipOutputStream zos = null;
@@ -88,13 +88,13 @@ public class FileZipDemo {
     }
 
     @Test
-    public void unzipDemo() {
+    public void startUnzipNovel() {
 
-        String zipPath = "d:\\hello.zip";
+        String zipPath = "tmp.zip";
         // 获得需要解压缩的zip文件
         File root = new File(zipPath);
         // 创建保存解压缩后生成文件的文件夹
-        File target = new File("d:\\hello");
+        File target = new File("hello");
         // 如果保存文件的文件夹不存在，则进行创建
         if (!target.exists()) {
             target.mkdir();

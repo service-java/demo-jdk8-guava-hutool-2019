@@ -28,11 +28,13 @@ public class FileConcatenationDemo {
                 return false;
             }
         });
+
         FileReader fr = null;
         FileWriter fw = null;
         BufferedReader br = null;
+
         try {
-            fw = new FileWriter("E://java-test.txt");
+            fw = new FileWriter("E://hello.txt");
             for (File txtFile : txtFiles) {
                 // 创建FileInputStream对象
                 fr = new FileReader(txtFile);
