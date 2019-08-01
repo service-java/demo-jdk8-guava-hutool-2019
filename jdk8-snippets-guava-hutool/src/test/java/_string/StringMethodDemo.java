@@ -8,6 +8,7 @@ package _string;
 
 
 import cn.hutool.core.lang.Console;
+import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 
 public class StringMethodDemo {
@@ -132,6 +133,15 @@ public class StringMethodDemo {
         for (char val : nameArray) {
             System.out.print(val + " ");
         }
+    }
+
+
+    @Test
+    public void subString () {
+        String path = "d:/opts/upload";
+        int i = path.lastIndexOf("/") + 1;
+        String substring = StringUtils.substring(path, i);
+        Console.log(substring);
     }
 
 }

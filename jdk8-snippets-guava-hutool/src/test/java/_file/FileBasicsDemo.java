@@ -1,6 +1,7 @@
 package _file;
 
 import org.junit.Test;
+import org.springframework.util.ResourceUtils;
 
 import java.io.*;
 import java.net.URL;
@@ -177,6 +178,8 @@ public class FileBasicsDemo {
         FileInputStream fis = null;
         DataOutputStream dos = null;
         DataInputStream dis = null;
+
+
         try {
             fos = new FileOutputStream(file);// 创建FileOutputStream对象
             dos = new DataOutputStream(fos);// 创建DataOutputStream对象
@@ -314,6 +317,17 @@ public class FileBasicsDemo {
                     e.printStackTrace();
                 }
             }
+        }
+    }
+
+
+    @Test
+    public void h () {
+        try {
+            FileInputStream fileInputStream = new FileInputStream(ResourceUtils.getFile(ResourceUtils.CLASSPATH_URL_PREFIX + "excelTemplate"));
+
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         }
     }
 
