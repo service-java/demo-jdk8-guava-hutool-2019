@@ -42,4 +42,12 @@ public class TypeConversion {
     }
 
 
+    @Test
+    public void hello22 () {
+        Long i  = 11L;
+        Console.log(i);
+    }
+
+
+
 }

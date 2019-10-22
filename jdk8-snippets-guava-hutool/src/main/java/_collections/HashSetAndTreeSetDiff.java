@@ -2,11 +2,15 @@ package _collections;
 
 import cn.hutool.core.lang.Console;
 import entity.classic.Student;
+import org.junit.Test;
 
 import java.util.HashSet;
+import java.util.TreeSet;
 
-public class HashSetDiff {
-    public static void main(String[] args) {
+public class HashSetAndTreeSetDiff {
+
+    @Test
+    public void main() {
 
         HashSet<String> hs = new HashSet<>();
         hs.add("hello");
@@ -17,5 +21,12 @@ public class HashSetDiff {
         h.add(new Student().setName("asd").setAge(11));
 
         Console.log(h);
+    }
+
+    @Test
+    public  void tree() {
+        TreeSet<String> tree = new TreeSet<>();
+        // throw NullPointerException
+        tree.add(null);
     }
 }

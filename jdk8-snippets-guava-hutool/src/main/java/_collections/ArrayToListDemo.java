@@ -29,11 +29,14 @@ public class ArrayToListDemo {
 
     @Test
     public void simple() {
+        // declare an array
         int size = arrayList.size();
         String[] a = arrayList.toArray(new String[size]);
         Console.log(a);
 
+        // array -> list
         List<String> list = Arrays.asList(a);
+
         List<String> arrayList2 = new ArrayList<>();
         arrayList2.addAll(list);
         Console.log(list);
@@ -43,8 +46,6 @@ public class ArrayToListDemo {
     public void asListDemo() {
 //        int size = arrayList.size();
 //        String[] a = arrayList.toArray(new String[size]);
-
-
     }
 
 

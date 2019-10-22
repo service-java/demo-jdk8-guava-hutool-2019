@@ -16,7 +16,6 @@ import java.util.Map;
 public class HashMapDemo {
 
     Map<String, String> map = new HashMap<>();
-
     {
         map.put("1", "value");
         map.put("2", "hi");

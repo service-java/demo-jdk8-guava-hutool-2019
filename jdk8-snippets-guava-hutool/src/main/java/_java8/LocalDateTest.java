@@ -78,6 +78,12 @@ public class LocalDateTest {
         System.out.println(tomorrow);
         System.out.println(yesterday);
     }
+
+
+    @Test
+    public void period() {
+
+    }
 }
 
 
