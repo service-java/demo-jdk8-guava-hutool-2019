@@ -2,19 +2,19 @@ package _hutool;
 
 import cn.hutool.core.bean.DynaBean;
 import cn.hutool.core.lang.Console;
-import entity.classic.User;
+import entity.classic.UserEntity;
 import org.junit.Test;
 
 public class BeanUtilDemo {
 
     public static void main(String[] args) {
 
-        User user = new User();
-        user.setAge(10).setName("小花");
-        Console.log(user);
+        UserEntity userEntity = new UserEntity();
+        userEntity.setAge(10).setName("小花");
+        Console.log(userEntity);
 
         @Deprecated
-        DynaBean bean = DynaBean.create(user);
+        DynaBean bean = DynaBean.create(userEntity);
         Console.log(bean);
 //        Console.log(bean instanceof Object);
 
@@ -30,12 +30,12 @@ public class BeanUtilDemo {
 
     @Test
     public void hun() {
-        User user = new User();
-        user.setAge(10).setName("小花");
-        Console.log(user);
+        UserEntity userEntity = new UserEntity();
+        userEntity.setAge(10).setName("小花");
+        Console.log(userEntity);
 
         @Deprecated
-        DynaBean bean = DynaBean.create(user);
+        DynaBean bean = DynaBean.create(userEntity);
         Console.log(bean);
 //        Console.log(bean instanceof Object);
 

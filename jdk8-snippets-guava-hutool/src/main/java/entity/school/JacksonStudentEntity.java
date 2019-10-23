@@ -9,7 +9,7 @@ import lombok.Data;
  * Time: 10:30
  */
 @Data
-public class JacksonStudent {
+public class JacksonStudentEntity {
     private String name;
     private int age;
 }

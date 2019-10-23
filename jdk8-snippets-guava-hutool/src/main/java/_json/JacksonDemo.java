@@ -6,7 +6,7 @@ import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import entity.school.JacksonStudent;
+import entity.school.JacksonStudentEntity;
 import org.junit.Test;
 
 import java.io.IOException;
@@ -31,7 +31,7 @@ public class JacksonDemo {
 
         //map json to student
         try {
-            JacksonStudent student = mapper.readValue(jsonString, JacksonStudent.class);
+            JacksonStudentEntity student = mapper.readValue(jsonString, JacksonStudentEntity.class);
             System.out.println(student);
 
             // 没有实体

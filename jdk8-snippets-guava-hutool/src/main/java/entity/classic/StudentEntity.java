@@ -4,12 +4,13 @@ import lombok.*;
 import lombok.experimental.Accessors;
 import org.hibernate.validator.constraints.NotBlank;
 
-//@Data
+@Data
+//@AllArgsConstructor
 @Getter
 @Setter
 @ToString
 
-public class Student {
+public class StudentEntity {
     private String name;
     private String job;
     private Integer age;
@@ -17,6 +18,18 @@ public class Student {
 
     @NotBlank(message = "兴趣爱好不能为空")
     private String hobby;
+
+    public StudentEntity() {
+    }
+
+    public StudentEntity(String name) {
+        this.name = name;
+    }
+
+    public StudentEntity(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
 
 //    public String getName() {
 //        return name;

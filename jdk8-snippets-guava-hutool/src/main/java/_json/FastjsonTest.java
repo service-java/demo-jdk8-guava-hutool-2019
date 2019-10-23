@@ -5,13 +5,10 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
-import entity.classic.Person;
-import entity.classic.User;
-import entity.school.Student;
+import entity.classic.PersonEntity;
+import entity.school.StudentEntity;
 import org.junit.Before;
 import org.junit.Test;
-import util.BeanCopyUtils;
-import vo.UserVo;
 
 
 import java.util.ArrayList;
@@ -27,18 +24,18 @@ public class FastjsonTest {
     //复杂格式json字符串
     private static final String COMPLEX_JSON_STR = "{\"teacherName\":\"crystall\",\"teacherAge\":27,\"course\":{\"courseName\":\"english\",\"code\":1270},\"students\":[{\"studentName\":\"lily\",\"studentAge\":12},{\"studentName\":\"lucy\",\"studentAge\":15}]}";
 
-    private List<Person> listOfPersons = new ArrayList<>();
+    private List<PersonEntity> listOfPersonEntities = new ArrayList<>();
 
     @Before
     public void setUp() {
-        listOfPersons.add(new Person(15, "John Doe", new Date()));
-        listOfPersons.add(new Person(20, "Janette Doe", new Date()));
+        listOfPersonEntities.add(new PersonEntity(15, "John Doe", new Date()));
+        listOfPersonEntities.add(new PersonEntity(20, "Janette Doe", new Date()));
     }
 
     @Test
     public void whenJavaList_thanConvertToJsonCorrect() {
 //        Console.log(new Person(15, "John Doe", new Date()));
-        String jsonOutput = JSON.toJSONString(listOfPersons);
+        String jsonOutput = JSON.toJSONString(listOfPersonEntities);
 
         // 只会打印空的  [{},{}]
         Console.log(jsonOutput);
@@ -62,9 +59,9 @@ public class FastjsonTest {
     @Test
     @Deprecated
     public void readJSON() {
-        List listOfPersons = new ArrayList<Person>();
-        listOfPersons.add(new Person(15, "John Doe", new Date()));
-        listOfPersons.add(new Person(20, "Janette Doe", new Date()));
+        List listOfPersons = new ArrayList<PersonEntity>();
+        listOfPersons.add(new PersonEntity(15, "John Doe", new Date()));
+        listOfPersons.add(new PersonEntity(20, "Janette Doe", new Date()));
 
         String jsonOutput = JSON.toJSONString(listOfPersons);
 //        Console.log(JSON.toJSON(new Person(15, "John Doe", new Date())));
@@ -84,8 +81,8 @@ public class FastjsonTest {
         Console.log("age:{} name:{}", jsonObject.getString("studentAge"), jsonObject.getString("studentName"));
 
         // 给出具体
-        Student student = JSON.parseObject(JSON_OBJ_STR, Student.class);
-        Console.log("age:{} name:{}", student.getStudentAge(), student.getStudentName());
+        StudentEntity studentEntity = JSON.parseObject(JSON_OBJ_STR, StudentEntity.class);
+        Console.log("age:{} name:{}", studentEntity.getStudentAge(), studentEntity.getStudentName());
     }
 
     @Test

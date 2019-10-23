@@ -1,11 +1,11 @@
 package _oop;
 
-import entity.poly.SpecialRectangle;
+import entity.poly.SpecialRectangleEntity;
 
 public class SpecialRectangleTest {
 
     public static void main(String[] args) {
-        SpecialRectangle paper = new SpecialRectangle();
+        SpecialRectangleEntity paper = new SpecialRectangleEntity();
 
         paper.setWidth(15);
         paper.setWidth(5);

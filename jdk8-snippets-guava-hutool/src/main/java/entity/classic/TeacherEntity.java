@@ -12,7 +12,7 @@ import lombok.ToString;
 @Setter
 @Getter
 @ToString
-public class Teacher {
+public class TeacherEntity {
     //    @NotBlank(message = "不能为空")
     private String name;
     private String job;

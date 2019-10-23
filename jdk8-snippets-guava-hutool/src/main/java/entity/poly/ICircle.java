@@ -1,4 +1,4 @@
-package entity;
+package entity.poly;
 
 public interface ICircle {
     double PI = 3.14159;

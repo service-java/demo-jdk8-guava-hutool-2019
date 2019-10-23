@@ -1,13 +1,13 @@
 package entity.school;
 
-import entity.ICircle;
+import entity.poly.ICircle;
 
 /**
  * 面向对象的第?个例?
  *
  * @author Luo_0412
  */
-public class Book {
+public class BookEntity {
     private String title;
     private String press; // 出版?
     private String ISBN;
@@ -16,7 +16,7 @@ public class Book {
     /**
      * 无参构?函?
      */
-    public Book() {
+    public BookEntity() {
         this(null, null, null, 100); // 使用this调用另一个构造方???
     }
 
@@ -28,7 +28,7 @@ public class Book {
      * @param bookISBN
      * @param bookPrice
      */
-    public Book(String bookTitle, String bookPress, String bookISBN, double bookPrice) {
+    public BookEntity(String bookTitle, String bookPress, String bookISBN, double bookPrice) {
         // title = bookTitle;
         // press = bookPress;
         // ISBN = bookISBN;

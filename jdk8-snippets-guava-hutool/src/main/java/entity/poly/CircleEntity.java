@@ -5,7 +5,7 @@ package entity.poly;
  *
  * @author Luo_0412
  */
-public class Circle {
+public class CircleEntity {
     private int x;
     private int y;
 

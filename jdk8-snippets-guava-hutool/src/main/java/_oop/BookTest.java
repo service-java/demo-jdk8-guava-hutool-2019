@@ -1,6 +1,6 @@
 package _oop;
 
-import entity.school.Book;
+import entity.school.BookEntity;
 
 /**
  * Book类的测试
@@ -10,8 +10,8 @@ import entity.school.Book;
 public class BookTest {
 
     public static void main(String[] args) {
-        Book bk = new Book("《乖,摸摸头》", "人民邮电出版?", "123", 100);
-        Book bk2 = new Book();
+        BookEntity bk = new BookEntity("《乖,摸摸头》", "人民邮电出版?", "123", 100);
+        BookEntity bk2 = new BookEntity();
         System.out.println(bk.getTitle());
         System.out.println(bk2.getPrice());
 

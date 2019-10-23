@@ -11,9 +11,9 @@ import java.util.List;
  * Time: 11:03
  */
 @Data
-public class Teacher {
+public class TeacherEntity {
     private String teacherName;
     private Integer teacherAge;
-    private Course course;
-    private List<Student> students;
+    private CourseEntity courseEntity;
+    private List<StudentEntity> studentEntities;
 }

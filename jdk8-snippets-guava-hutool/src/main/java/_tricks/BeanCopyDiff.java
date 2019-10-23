@@ -2,8 +2,8 @@ package _tricks;
 
 
 import cn.hutool.core.lang.Console;
-import entity.classic.Student;
-import entity.classic.Teacher;
+import entity.classic.StudentEntity;
+import entity.classic.TeacherEntity;
 import util.BeanCopyUtils;
 import org.springframework.beans.BeanUtils;
 
@@ -14,21 +14,21 @@ public class BeanCopyDiff {
 
         // java~lombok里的Builder注解
         // https://www.cnblogs.com/lori/archive/2018/05/11/9024933.html
-        Teacher teacher = Teacher.builder().job("teacher").name(null).career("teach").build();
-        teacher = teacher.toBuilder().career("teach-long").build();
-        Student student = new Student().setJob("student").setHobby("study").setName("student");
+        TeacherEntity teacherEntity = TeacherEntity.builder().job("teacher").name(null).career("teach").build();
+        teacherEntity = teacherEntity.toBuilder().career("teach-long").build();
+        StudentEntity studentEntity = new StudentEntity().setJob("student").setHobby("study").setName("student");
 
-        Console.log(teacher);
-        Console.log(student);
+        Console.log(teacherEntity);
+        Console.log(studentEntity);
 
         // teacher copy to -> student
         // source -> target
-        BeanUtils.copyProperties(teacher, student);
-        Console.log(student);
+        BeanUtils.copyProperties(teacherEntity, studentEntity);
+        Console.log(studentEntity);
 
-        student = new Student().setJob("student").setHobby("study").setName("student");
-        BeanCopyUtils.copyNotNullBean(teacher, student);
-        Console.log(student);
+        studentEntity = new StudentEntity().setJob("student").setHobby("study").setName("student");
+        BeanCopyUtils.copyNotNullBean(teacherEntity, studentEntity);
+        Console.log(studentEntity);
 
     }
 }

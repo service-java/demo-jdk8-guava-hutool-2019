@@ -10,7 +10,7 @@ import lombok.experimental.Accessors;
 @Setter
 
 @ToString
-public class User {
+public class UserEntity {
     String name;
     Integer age;
     String password;

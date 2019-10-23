@@ -8,7 +8,7 @@ import java.util.Date;
 
 //@Data
 @ToString
-public class Person implements Serializable {
+public class PersonEntity implements Serializable {
 
     @JSONField(name = "AGE")
     private int age;
@@ -19,7 +19,7 @@ public class Person implements Serializable {
     @JSONField(name = "DATE OF BIRTH")
     private Date dateOfBirth;
 
-    public Person(int age, String fullName, Date dateOfBirth) {
+    public PersonEntity(int age, String fullName, Date dateOfBirth) {
         super();
         this.age = age;
         this.fullName = fullName;

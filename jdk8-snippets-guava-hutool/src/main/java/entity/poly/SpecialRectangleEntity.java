@@ -5,7 +5,7 @@ package entity.poly;
  *
  * @author Luo_0412
  */
-public class SpecialRectangle {
+public class SpecialRectangleEntity {
     private double width;
     private double length;
 

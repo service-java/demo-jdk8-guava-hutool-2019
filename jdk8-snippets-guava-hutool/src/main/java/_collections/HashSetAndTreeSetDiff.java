@@ -1,7 +1,7 @@
 package _collections;
 
 import cn.hutool.core.lang.Console;
-import entity.classic.Student;
+import entity.classic.StudentEntity;
 import org.junit.Test;
 
 import java.util.HashSet;
@@ -16,9 +16,9 @@ public class HashSetAndTreeSetDiff {
         hs.add("hello");
         hs.add("java");
 
-        HashSet<Student> h = new HashSet<>();
-        h.add(new Student().setName("asd").setAge(11));
-        h.add(new Student().setName("asd").setAge(11));
+        HashSet<StudentEntity> h = new HashSet<>();
+        h.add(new StudentEntity().setName("asd").setAge(11));
+        h.add(new StudentEntity().setName("asd").setAge(11));
 
         Console.log(h);
     }

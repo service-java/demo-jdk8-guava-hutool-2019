@@ -2,7 +2,7 @@ package _json;
 
 import cn.hutool.core.lang.Console;
 import com.google.gson.*;
-import entity.classic.Student;
+import entity.classic.StudentEntity;
 import org.junit.Test;
 
 /**
@@ -23,18 +23,18 @@ public class GsonDemo {
         // builder.serializeNulls();
 
         Gson gson = builder.create();
-        Student student = gson.fromJson(jsonString, Student.class);
-        Console.log(student);
+        StudentEntity studentEntity = gson.fromJson(jsonString, StudentEntity.class);
+        Console.log(studentEntity);
         // System.out.println(student);
 
-        jsonString = gson.toJson(student);
+        jsonString = gson.toJson(studentEntity);
         Console.log(jsonString);
 
 
-        student = new Student();
-        student.setName("o").setAge(12);
+        studentEntity = new StudentEntity();
+        studentEntity.setName("o").setAge(12);
 
-        jsonString = gson.toJson(student);
+        jsonString = gson.toJson(studentEntity);
         Console.log(jsonString);
     }
 

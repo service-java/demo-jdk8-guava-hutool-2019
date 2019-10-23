@@ -1,6 +1,6 @@
 package entity.tool;
 
-public class Logger {
+public class LoggerEntity {
     private String format;
 
     public String getFormat() {
