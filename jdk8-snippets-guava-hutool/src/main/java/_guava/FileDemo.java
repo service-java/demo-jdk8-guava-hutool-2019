@@ -13,7 +13,7 @@ public class FileDemo {
         File file = new File(System.getProperty("user.dir"));
 
         try {
-            writeFile("hello22222222222222222222222", file);
+            writeFile("hello content", file);
         } catch (Exception e) {
 
         }

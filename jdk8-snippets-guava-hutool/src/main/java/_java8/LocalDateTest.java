@@ -12,6 +12,8 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 import java.time.temporal.ChronoUnit;
 import java.time.temporal.TemporalAdjusters;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
 
 public class LocalDateTest {
@@ -82,8 +84,35 @@ public class LocalDateTest {
 
     @Test
     public void period() {
+//        LocalDate of = LocalDate.of(2014, 12, 1);
+//        LocalDate of2 = LocalDate.of(2014, 1, 1);
+//        Console.log("{}\n{}", of, of2);
 
+        LocalDate parse = LocalDate.parse("2014-12-01");
+        LocalDate parse2 = LocalDate.parse("2015-02-01");
+        Console.log(parse);
+        long months = parse.until(parse2, ChronoUnit.MONTHS);
+        Console.log("until: {}", months);
+        List<LocalDate> list = new ArrayList<>();
+        List<String> strList = new ArrayList<>();
+        LocalDate tempDate = parse;
+        for (long i = 0; i <= months; i++) {
+            list.add(tempDate);
+            strList.add(tempDate.toString().replaceAll("-", "").substring(0, 6));
+            tempDate = parse.plusMonths(i);
+        }
+        Console.log(list);
+        Console.log(strList);
+    }
+
+
+    @Test
+    public void temp() {
+        LocalDate now = LocalDate.now();
+        now.minusMonths(1);
+        Console.log(now);
     }
 }
+
 
 
