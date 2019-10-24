@@ -3,6 +3,7 @@ package _collections;
 import cn.hutool.core.lang.Console;
 import org.junit.Test;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -83,6 +84,13 @@ public class ArrayListDemo {
 //        Console.log("arrayList转数组 -> {}", objects);
         Console.log("数组转list -> {}", Arrays.asList(objects));
 
+    }
+
+
+    public static void main(String[] args) {
+
+        List<Integer> objects = Arrays.asList(1, 2);
+        Console.log(objects);
     }
 
 }

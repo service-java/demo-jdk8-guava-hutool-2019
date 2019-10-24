@@ -1,4 +1,4 @@
-package _oop.interface_test;
+package _oop.interfaceTest;
 
 public class User {
     public static void main(String[] args) {

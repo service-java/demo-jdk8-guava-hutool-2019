@@ -9,6 +9,7 @@ import java.util.Base64;
  * Date: 2019-10-23 11:11
  */
 public class Base64Demo {
+
     public static void main(String[] args) {
         String base64 = Base64.getEncoder().encodeToString("aaa".getBytes());
         System.out.println(base64);

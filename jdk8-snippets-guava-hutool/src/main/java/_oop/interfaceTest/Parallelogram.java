@@ -1,4 +1,4 @@
-package _oop.interface_test;
+package _oop.interfaceTest;
 
 // 调用父类方法 ===================================
 //class Quadrangle { // 四边形类

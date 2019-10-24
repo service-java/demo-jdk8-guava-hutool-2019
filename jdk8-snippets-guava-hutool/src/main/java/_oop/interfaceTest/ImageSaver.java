@@ -1,4 +1,4 @@
-package _oop.interface_test;
+package _oop.interfaceTest;
 
 public interface ImageSaver {
     void save(); // 可以存储方法和常?

@@ -1,4 +1,4 @@
-package _oop.constructor_test;
+package _oop.constructorTest;
 
 public class Record {
     @Field_Method_Parameter_Annotation(describe = "编号", type = int.class)

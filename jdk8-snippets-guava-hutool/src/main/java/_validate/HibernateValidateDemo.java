@@ -15,7 +15,7 @@ import javax.validation.Valid;
  * Date: 2019-03-21
  * Time: 17:33
  */
-public class HibernateValidateTest {
+public class HibernateValidateDemo {
 
     @Test
     public void main() {

@@ -1,4 +1,4 @@
-package _oop.interface_test;
+package _oop.interfaceTest;
 
 public abstract class Fruit {
     public String color; // 定义颜色成员变量

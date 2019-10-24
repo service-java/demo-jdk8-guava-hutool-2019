@@ -1,4 +1,4 @@
-package _oop.constructor_test;
+package _oop.constructorTest;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

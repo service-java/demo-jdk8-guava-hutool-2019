@@ -1,4 +1,4 @@
-package _oop.constructor_test;
+package _oop.constructorTest;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;

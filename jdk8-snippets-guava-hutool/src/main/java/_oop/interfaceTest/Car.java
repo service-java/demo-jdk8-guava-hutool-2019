@@ -1,4 +1,4 @@
-package _oop.interface_test;
+package _oop.interfaceTest;
 
 public abstract class Car {
     public abstract String getInfo();

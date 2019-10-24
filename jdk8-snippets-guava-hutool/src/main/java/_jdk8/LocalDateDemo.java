@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class LocalDateTest {
+public class LocalDateDemo {
     @Test
     public void methodsDemo() {
         LocalDate now = LocalDate.now();
