@@ -13,5 +13,6 @@ public class OptionalNullForbidTest {
         if (stu.isPresent()) {
             Console.log("Ok");
         }
+
     }
 }

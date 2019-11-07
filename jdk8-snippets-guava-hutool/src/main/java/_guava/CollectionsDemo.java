@@ -2,16 +2,12 @@ package _guava;
 
 import cn.hutool.core.lang.Console;
 import com.google.common.base.Joiner;
-import com.google.common.collect.Lists;
-import com.google.common.collect.Maps;
-import com.google.common.collect.Sets;
+import com.google.common.collect.*;
 import org.junit.Test;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
-import java.util.ArrayList;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class CollectionsDemo {
 
@@ -66,5 +62,42 @@ public class CollectionsDemo {
         objects.add("a");
         Console.log(objects);
     }
+
+    @Test
+    public void ArrayListMultimapDemo() {
+        ArrayListMultimap<String, String> hello = ArrayListMultimap.create();
+        hello.put("hello", "hu");
+        hello.put("hello", "hu2");
+        hello.put("hello", "hu3");
+        hello.put("hello", "hu2");
+        hello.put("hi", "hu2");
+
+        Console.log(hello);
+    }
+
+    @Test
+    public  void temp2() {
+        HashMultimap<String, String> hello = HashMultimap.create();
+        hello.put("hello", "2hu");
+        hello.put("hello", "3hu2");
+        hello.put("hello", "4hu3");
+        hello.put("hello", "1hu2");
+        hello.put("hi", "rrrhu2");
+        hello.put("hi", "shu2");
+        hello.put("hi", "hxu2");
+        hello.put("hi", "tthu2");
+        hello.put("hi", "xxshu2");
+
+        Console.log(hello);
+
+        for (String s : hello.keySet()) {
+//            Console.log(hello.get(s));
+            ArrayList<String> strings = new ArrayList<>(hello.get(s));
+            Collections.sort(strings);
+            Console.log(strings);
+        }
+
+    }
+
 
 }

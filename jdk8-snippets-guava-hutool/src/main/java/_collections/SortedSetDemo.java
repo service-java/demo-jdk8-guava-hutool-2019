@@ -1,4 +1,4 @@
-package _collections.other;
+package _collections;
 
 import cn.hutool.core.lang.Console;
 import org.junit.Test;
@@ -19,6 +19,7 @@ public class SortedSetDemo {
         t.add("3");
         Console.log(t);
 
+        // 异步处理
         SortedSet s = Collections.synchronizedSortedSet(t);
         Console.log(s);
     }

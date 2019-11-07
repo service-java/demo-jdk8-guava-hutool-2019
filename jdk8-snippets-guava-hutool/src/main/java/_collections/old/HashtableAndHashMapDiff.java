@@ -1,4 +1,4 @@
-package _collections.other;
+package _collections.old;
 
 import cn.hutool.core.lang.Console;
 import org.junit.Test;
@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.HashMap;
 import java.util.Hashtable;
 
-public class HashTableAndHashMapDiff {
+public class HashtableAndHashMapDiff {
 
     @Test
     public void main() {

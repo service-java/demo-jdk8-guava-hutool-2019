@@ -16,7 +16,6 @@ public class CollectionsOtherDemo {
     HashSet<Integer> integers1 = new HashSet<>();
     Map scores = new HashMap();
 
-
     {
         arrayList.add(-1);
         arrayList.add(3);
@@ -37,7 +36,6 @@ public class CollectionsOtherDemo {
     }
 
     {
-
         scores.put("语文" , 80);
         scores.put("Java" , 82);
         Console.log("scores: " + scores);

@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -47,6 +48,23 @@ public class ArrayToListDemo {
 //        int size = arrayList.size();
 //        String[] a = arrayList.toArray(new String[size]);
     }
+
+
+    @Test
+    public void bug() {
+        String [] s= new String[]{
+                "dog", "lazy", "a", "over", "jumps", "fox", "brown", "quick", "A"
+        };
+        List<String> list = Arrays.asList(s);
+        Collections.reverse(list);
+
+        // 没有指定类型的话会报错
+        s = list.toArray(new String[0]);
+        Console.log(s);
+
+        Integer i = 0;
+    }
+
 
 
 }

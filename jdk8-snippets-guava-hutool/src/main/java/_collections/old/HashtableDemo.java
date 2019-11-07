@@ -1,11 +1,11 @@
-package _collections.other;
+package _collections.old;
 
 import cn.hutool.core.lang.Console;
 import org.junit.Test;
 
 import java.util.*;
 
-public class HashTableDemo {
+public class HashtableDemo {
 
     @Test
     public void main() {
