@@ -1,4 +1,4 @@
-package _hutool.collection;
+package _hutool;
 
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.RandomUtil;

@@ -20,7 +20,7 @@ public class SimpleDBTest {
 
     @Test
     public void insert() throws SQLException {
-        Entity entity = Entity.create("user").set("name", "unitTestUser");
+        Entity entity = Entity.create("user").set("name", "visitor").set("age", 18);
         Db.use().insert(entity);
 //        Db.use().insertForGeneratedKey(
 //                Entity.create("user")
@@ -32,7 +32,7 @@ public class SimpleDBTest {
 
     @Test
     public void remove() throws SQLException {
-        //where条件
+        // where条件
         Entity entity = Entity.create("user").set("name", "unitTestUser");
         Db.use().del(entity);
     }
@@ -40,7 +40,7 @@ public class SimpleDBTest {
 
     @Test
     public void update() throws SQLException {
-        //where条件
+        // where条件
         Entity entity = Entity.create().set("age", 12);
         Entity query = Entity.create("user").set("name", "unitTestUser");
         Db.use().update(entity, query);
