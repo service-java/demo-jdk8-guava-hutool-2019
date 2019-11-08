@@ -1,4 +1,4 @@
-package _hutool;
+package _hutool.collection;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.lang.Console;

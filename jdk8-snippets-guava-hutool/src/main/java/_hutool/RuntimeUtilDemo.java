@@ -1,9 +1,8 @@
 package _hutool;
 
 import cn.hutool.core.lang.Console;
-import cn.hutool.core.util.ClipboardUtil;
+import cn.hutool.core.swing.clipboard.ClipboardUtil;
 import cn.hutool.core.util.RuntimeUtil;
-
 
 public class RuntimeUtilDemo {
     public static void main(String[] args) {

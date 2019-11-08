@@ -43,12 +43,22 @@ public class ConvertDemo {
         Console.log(price);
     }
 
+    /**
+     * double转String, 去掉0结尾的小数位
+     */
     @Test
     public void removeTailZero() {
+        // 反面示例
+        Console.log(1.20d);
+        Console.log(1.0d); // 1.0
+
         // 抹去尾部的0
         DecimalFormat decimalFormat = new DecimalFormat("#.###########");
-        String DJ = decimalFormat.format(012.09000);
-        Console.log("抹去尾部的0 -> " + DJ);
+
+        Console.log("抹去尾部的0 -> " + decimalFormat.format(012012.09000));
+        Console.log("抹去尾部的0 -> " + decimalFormat.format(001212.0));
+
+
     }
 
     @Test

@@ -32,7 +32,8 @@ public class AESDemo {
         // 解密为字符串
         // 默认pkcs5padding
         String encryptBase64 = aes.encryptBase64(content, CharsetUtil.UTF_8);
-        String decryptStr = aes.decryptStrFromBase64(encryptBase64, CharsetUtil.CHARSET_UTF_8);
+//        String decryptStr = aes.decryptStrFromBase64(encryptBase64, CharsetUtil.CHARSET_UTF_8);
+        String decryptStr = aes.decryptStr(encryptBase64, CharsetUtil.CHARSET_UTF_8);
 
         Console.log("原始内容:{}\n密钥:{}\n加密后的字符串:{}\n解密后:{}",
                 content,
@@ -50,7 +51,7 @@ public class AESDemo {
         AES aes = new AES(Mode.CBC, Padding.PKCS5Padding, keyStr.getBytes(), iv.getBytes());
 
         String encryptBase64 = aes.encryptBase64(content, CharsetUtil.UTF_8);
-        String decryptStr = aes.decryptStrFromBase64(encryptBase64, CharsetUtil.CHARSET_UTF_8);
+        String decryptStr = aes.decryptStr(encryptBase64, CharsetUtil.CHARSET_UTF_8);
 
         Console.log("原始内容:{}\n密钥:{}\n偏移量:{}\n加密后的字符串:{}\n解密后:{}",
                 content,
