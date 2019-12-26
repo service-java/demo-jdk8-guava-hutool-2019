@@ -9,7 +9,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.*;
 
-public class CollectionsDemo {
+public class CollectionsSimpleDemo {
 
     // 集合操作：交集、差集、并集
     public static void main(String[] args) {
