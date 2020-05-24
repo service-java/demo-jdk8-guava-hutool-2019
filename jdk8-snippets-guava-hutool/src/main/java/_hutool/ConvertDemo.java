@@ -12,59 +12,37 @@ import java.util.List;
 
 public class ConvertDemo {
 
-    public static void main(String[] args) {
+    @Test
+    public void convertDate() {
         // 小时转换
         String a = "2017-05-06 12:12:00";
         Date value = Convert.toDate(a);
-        Console.log("{} {} 小时 -> {}",
+        Console.log("{} \n时间戳 {} \n小时 {}",
                 value,
                 value.getTime(),
                 value.getHours());
-
-        Console.log("{}\n{}\n",
-                Convert.toInt("123123"),
-                Convert.toLong(123.12d));
     }
 
     @Test
-    public void hello2() {
+    public void sbc2DBC() {
         String a1 = "123456789";
 
-        //结果为："１２３４５６７８９"
+        // 结果为："１２３４５６７８９"
         String sbc = Convert.toSBC(a1);
 
         Console.log("{} \n{}", sbc, Convert.toDBC(sbc));
     }
 
     @Test
-    public void hello() {
+    public void roundStr() {
         BigDecimal price = (Convert.toBigDecimal(NumberUtil.roundStr("1213.298", 2)));
         Console.log(NumberUtil.roundStr("1213.298", 2));
         Console.log(price);
     }
 
-    /**
-     * double转String, 去掉0结尾的小数位
-     */
-    @Test
-    public void removeTailZero() {
-        // 反面示例
-        Console.log(1.20d);
-        Console.log(1.0d); // 1.0
-
-        // 抹去尾部的0
-        DecimalFormat decimalFormat = new DecimalFormat("#.###########");
-
-        Console.log("抹去尾部的0 -> " + decimalFormat.format(012012.09000));
-        Console.log("抹去尾部的0 -> " + decimalFormat.format(001212.0));
-
-
-    }
 
     @Test
-    public void h() {
-
-
+    public void arr2List() {
         Object[] a = {"a", "你", "好", "", 1};
 //        List<?> list = Convert.convert(List.class, a);
 
@@ -72,7 +50,22 @@ public class ConvertDemo {
         List<?> list = Convert.toList(a);
         Console.log(list);
 
+
+        long[] b = {1,2,3,4,5};
+        String bStr = Convert.toStr(b);
+        System.out.println(bStr); // "[1, 2, 3, 4, 5]"
+
+        String[] b2 = { "1", "2", "3", "4" };
+        Double[] doubleArray = Convert.toDoubleArray(b2);
+        Console.log(doubleArray); // [1.0, 2.0, 3.0, 4.0]
+
     }
 
+
+    @Test
+    public void digitToChinese() {
+        String digitUppercase = Convert.digitToChinese(67556.32);
+        System.out.println(digitUppercase); // 陆万柒仟伍佰伍拾陆元叁角贰分
+    }
 
 }

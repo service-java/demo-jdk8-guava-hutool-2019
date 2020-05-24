@@ -1,4 +1,4 @@
-package _hutool.office;
+package _hutool.media;
 
 import cn.hutool.extra.mail.MailUtil;
 import org.junit.Test;

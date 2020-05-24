@@ -12,7 +12,7 @@ import java.sql.SQLException;
  * Date: 2019-03-20
  * Time: 14:20
  */
-public class SimpleDBTest {
+public class DBSimpleTest {
 
     public static void main(String[] args) throws SQLException {
 

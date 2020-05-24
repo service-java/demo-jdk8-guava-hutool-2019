@@ -1,8 +1,6 @@
-package _apache;
+package _apache_common;
 
-import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.lang.Console;
-import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.junit.Test;
 

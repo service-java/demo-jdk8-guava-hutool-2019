@@ -1,4 +1,4 @@
-package _hutool.office;
+package _hutool.media;
 
 import org.junit.Test;
 

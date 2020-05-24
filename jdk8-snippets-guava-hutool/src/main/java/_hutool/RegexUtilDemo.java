@@ -1,6 +1,6 @@
 package _hutool;
 
-public class ReUtilDemo {
+public class RegexUtilDemo {
     public static void main(String[] args) {
 
 //        String t =  "{DJ}{{asd}}hello re【agsd】[[中文]]阿斯顿";
