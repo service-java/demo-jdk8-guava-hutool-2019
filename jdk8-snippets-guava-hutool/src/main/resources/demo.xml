@@ -4,6 +4,6 @@
     <returnstatus>Success（成功）</returnstatus>
     <message>ok</message>
     <remainpoint>1490</remainpoint>
-    <taskID>885</taskID>
+    <taskID id="uniq">885</taskID>
     <successCounts>1</successCounts>
 </returnsms>

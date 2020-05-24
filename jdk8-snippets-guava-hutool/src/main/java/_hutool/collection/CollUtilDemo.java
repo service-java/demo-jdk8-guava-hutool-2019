@@ -10,6 +10,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 public class CollUtilDemo {
 
@@ -40,8 +42,18 @@ public class CollUtilDemo {
     }
 
     @Test
-    public void h() {
+    public void isEmptyDemo() {
         ArrayList<Integer> a = new ArrayList<>();
         Console.log(CollectionUtils.isEmpty(a));
     }
+
+
+    @Test
+    public void varNewColl() {
+        ArrayList<Object> objects = CollUtil.newArrayList();
+        HashMap<Object, Object> objectObjectHashMap = CollUtil.newHashMap();
+        BlockingQueue<Object> objects1 = CollUtil.newBlockingQueue(10, false);
+        CopyOnWriteArrayList<Object> objects2 = CollUtil.newCopyOnWriteArrayList(null);
+    }
+
 }

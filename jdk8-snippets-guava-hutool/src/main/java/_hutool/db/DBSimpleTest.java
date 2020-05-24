@@ -1,4 +1,4 @@
-package _hutool;
+package _hutool.db;
 
 import cn.hutool.db.Db;
 import cn.hutool.db.Entity;

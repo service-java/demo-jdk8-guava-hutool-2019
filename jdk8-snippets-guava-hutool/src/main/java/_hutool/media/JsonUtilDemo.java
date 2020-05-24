@@ -27,10 +27,4 @@ public class JsonUtilDemo {
 
     }
 
-
-    @Test
-    public void hello2() {
-
-    }
-
 }
