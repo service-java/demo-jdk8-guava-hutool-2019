@@ -2,6 +2,8 @@ package _basics;
 
 import org.junit.Test;
 
+import java.math.BigDecimal;
+
 /**
  * 位运算
  *
@@ -52,6 +54,14 @@ public class BitwiseOperation {
         c = a >>> 2;
         // 15 = 0000 1111
         System.out.println("a >>> 2 = " + c);
+    }
+
+
+    @Test
+    public void hello2 () {
+        BigDecimal bigDecimal = new BigDecimal("0.132");
+        System.out.println(bigDecimal.multiply(new BigDecimal("100")));
+        System.out.println(0.132 * 1000);
     }
 
 }

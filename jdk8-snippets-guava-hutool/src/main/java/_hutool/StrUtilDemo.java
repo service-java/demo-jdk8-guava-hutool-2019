@@ -1,6 +1,8 @@
 package _hutool;
 
+import cn.hutool.core.convert.Convert;
 import cn.hutool.core.lang.Console;
+import cn.hutool.core.text.StrSpliter;
 import cn.hutool.core.util.HashUtil;
 import cn.hutool.core.util.StrUtil;
 import org.junit.Test;
@@ -42,8 +44,40 @@ public class StrUtilDemo {
 
 
     @Test
-    public void m() {
-        String trim = StrUtil.trim(" sadsa sadasd");
-        Console.log(trim);
+    public void trim() {
+//        String trim = StrUtil.trim(" sadsa sadasd");
+//        Console.log(trim);
+
+        Console.log((String)null);
+        Console.log(Convert.toStr(null));
+        Console.log(StrUtil.trim(Convert.toStr(null)));
+
+    }
+
+    @Test
+    public void nativeSplit() {
+        String demo = ",";
+        Console.log(demo.split(","));
+
+//        // Hutool的split
+//        Console.log(StrSpliter.split(demo, ','));
+    }
+
+
+    @Test
+    public void springSplit() {
+        String demo = ",";
+        String[] split = StringUtils.split(demo, ",");
+        Console.log("{}---{}---{}---", split, split[0], split[1]); // >> [, ]---------
+    }
+
+
+    @Test
+    public void apacheCommonSplit() {
+        String demo = ",";
+
+        // apache的切割方法和原生是一致的
+        String[] split = org.apache.commons.lang.StringUtils.split(demo, ",");
+        Console.log(split); // >> []
     }
 }

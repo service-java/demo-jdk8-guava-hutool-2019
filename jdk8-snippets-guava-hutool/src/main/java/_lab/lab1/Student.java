@@ -14,7 +14,7 @@ public class Student extends Person {
     private final static int JUNIOR = 3;
     private final static int SENIOR = 4;
 
-    Student(String name, String address, String phoneNum, String email) {
+    public Student(String name, String address, String phoneNum, String email) {
         super(name, address, phoneNum, email);
 
     }

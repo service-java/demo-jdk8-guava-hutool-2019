@@ -1,5 +1,10 @@
 package _regex;
 
+import cn.hutool.core.lang.Console;
+import org.junit.Test;
+
+import java.util.regex.Pattern;
+
 /**
  * regex校验的各种场景
  *
@@ -52,8 +57,7 @@ public class RegexDemo {
      * @param str
      * @return
      */
-    public static Boolean
-    regexValidate(String vType, String str) {
+    public static Boolean regexValidate(String vType, String str) {
 
         String regex = ""; // 校验规则
 
@@ -81,6 +85,17 @@ public class RegexDemo {
 
         return str.matches(regex); // 返回校验结果
     }
+
+
+    @Test
+    public void test () {
+        Pattern pattern = Pattern.compile("");
+        boolean matches = pattern.matcher("12.ss9").matches();
+        Console.log(matches);
+    }
+
+
+
 
 }
 

@@ -1,5 +1,9 @@
 package _date;
 
+import cn.hutool.core.lang.Console;
+import org.apache.commons.lang.time.DateFormatUtils;
+import org.junit.Test;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -66,6 +70,12 @@ public class DateUtilTest {
         SimpleDateFormat ft =
                 new SimpleDateFormat("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
         System.out.println("Current Date: " + ft.format(dNow));
+    }
+
+    @Test
+    public  void test() {
+        String format = DateFormatUtils.format(new Date(), "yyyy/MM/dd");
+        Console.log(format);
     }
 
 }

@@ -2,6 +2,7 @@ package _hutool.crypto;
 
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.CharsetUtil;
+import cn.hutool.core.util.URLUtil;
 import cn.hutool.crypto.Mode;
 import cn.hutool.crypto.Padding;
 import cn.hutool.crypto.SecureUtil;
@@ -60,5 +61,22 @@ public class AESDemo {
                 encryptBase64,
                 decryptStr);
     }
+
+
+    @Test
+    public void aesCBCDemo2() {
+        // 原始内容
+        AES aes = new AES(Mode.CBC, Padding.PKCS5Padding, keyStr.getBytes(), iv.getBytes());
+
+        String decryptStr = aes.decryptStr(URLUtil.encode("JZJ5QiVuFHFi4C9Uh2VJoXCBaIBEFXvv621jK5/nNv8="), CharsetUtil.CHARSET_UTF_8);
+
+        Console.log("密钥:{}\n偏移量:{}\n解密后:{}",
+                keyStr,
+                iv,
+                decryptStr);
+    }
+
+
+
 
 }
