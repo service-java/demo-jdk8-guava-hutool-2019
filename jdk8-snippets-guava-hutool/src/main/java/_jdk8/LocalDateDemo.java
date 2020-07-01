@@ -2,6 +2,7 @@ package _jdk8;
 
 
 import cn.hutool.core.lang.Console;
+import com.google.common.collect.Lists;
 import org.junit.Test;
 
 import java.time.DayOfWeek;
@@ -71,16 +72,27 @@ public class LocalDateDemo {
 
 
     @Test
-    public void plusTomorrow() {
-        LocalDate today = LocalDate.now();
-        LocalDate tomorrow = today.plus(1, ChronoUnit.DAYS);
-        LocalDate yesterday = tomorrow.minusDays(2);
-
-        System.out.println(today);
-        System.out.println(tomorrow);
-        System.out.println(yesterday);
+    public void format() {
+//        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYYYMM");
+//
+//        String string = LocalDate.now().format(formatter);
+//        System.out.println(string);
+        System.out.println(getLatestYearMonthCode(5));
     }
 
+
+    private List<String> getLatestYearMonthCode(Integer limitNum) {
+        List<String> yearMonthCodeList = Lists.newArrayList();
+        LocalDate localDate = LocalDate.now();
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("YYYYMM");
+
+        for (Integer i = 0; i < limitNum; i++) {
+            String format = localDate.minusMonths(i).format(formatter);
+            yearMonthCodeList.add(format);
+        }
+
+        return yearMonthCodeList;
+    }
 
     @Test
     public void period() {
