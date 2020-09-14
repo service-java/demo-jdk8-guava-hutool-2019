@@ -1,7 +1,10 @@
 package _hutool;
 
+import cn.hutool.core.date.BetweenFormater;
 import cn.hutool.core.date.DateTime;
+import cn.hutool.core.date.DateUnit;
 import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.date.format.FastDateFormat;
 import cn.hutool.core.lang.Console;
 import org.junit.Test;
 
@@ -39,6 +42,38 @@ public class DateUtilDemo {
         String format1 = DateUtil.format(new Date(), "hh:mm yyyy/MM/dd");
 //        String format = DateUtil.format(new Date(), "hh:ss yyyy/MM/dd");
         Console.log(format1);
+    }
+
+
+    @Test
+    public void fastDateFormatDemo() {
 
     }
+
+    @Test
+    public void between() {
+        String dateStr1 = "2017-03-01 22:33:23";
+        Date date1 = DateUtil.parse(dateStr1);
+
+        String dateStr2 = "2017-04-01 23:33:23";
+        Date date2 = DateUtil.parse(dateStr2);
+
+        // 相差一个月，31天
+        long betweenDay = DateUtil.between(date1, date2, DateUnit.DAY);
+        String formatBetween = DateUtil.formatBetween(betweenDay, BetweenFormater.Level.MINUTE); // @todo
+        Console.log("{} {}", betweenDay, formatBetween);
+    }
+
+    @Test
+    public void getDatePart() {
+        Date date = DateUtil.date();
+        System.out.println(DateUtil.year(date));
+
+        // 获得月份，从0开始计数!!!
+        System.out.println(DateUtil.month(date));
+
+        // 获得月份枚举
+        System.out.println(DateUtil.monthEnum(date));
+    }
+
 }

@@ -4,8 +4,11 @@ package _tricks;
 import cn.hutool.core.lang.Console;
 import entity.classic.StudentEntity;
 import entity.classic.TeacherEntity;
+import org.junit.Test;
 import util.BeanCopyUtils;
 import org.springframework.beans.BeanUtils;
+
+import java.util.HashMap;
 
 public class BeanCopyDiff {
 
@@ -31,4 +34,15 @@ public class BeanCopyDiff {
         Console.log(studentEntity);
 
     }
+
+
+    @Test
+    public  void demo() {
+        StudentEntity studentEntity = new StudentEntity();
+        studentEntity.setAge(12).setHobby("123");
+        HashMap<String, Object> map = new HashMap<>();
+        BeanUtils.copyProperties(studentEntity, map);
+        Console.log(map);
+    }
+
 }

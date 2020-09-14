@@ -18,5 +18,4 @@ public class IdUtilDemo {
         Console.log(id); // eg. 1192679264126898176
     }
 
-
 }

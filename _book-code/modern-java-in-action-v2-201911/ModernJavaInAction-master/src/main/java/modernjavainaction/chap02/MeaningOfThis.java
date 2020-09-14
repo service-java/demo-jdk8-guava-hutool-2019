@@ -8,6 +8,7 @@ public class MeaningOfThis {
     int value = 6;
     Runnable r = new Runnable() {
       public final int value = 5;
+
       @Override
       public void run() {
         int value = 10;

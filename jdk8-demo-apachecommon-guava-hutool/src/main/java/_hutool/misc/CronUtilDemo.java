@@ -1,10 +1,12 @@
-package _hutool.media;
+package _hutool.misc;
 
 import cn.hutool.core.lang.Console;
 import cn.hutool.cron.CronUtil;
 import cn.hutool.cron.task.Task;
 
-public class ScheduleTaskDemo {
+public class CronUtilDemo {
+
+
     public static void main(String[] args) {
         CronUtil.schedule("*/2 * * * * *", new Task() {
             @Override
@@ -17,4 +19,5 @@ public class ScheduleTaskDemo {
         CronUtil.setMatchSecond(true);
         CronUtil.start();
     }
+
 }

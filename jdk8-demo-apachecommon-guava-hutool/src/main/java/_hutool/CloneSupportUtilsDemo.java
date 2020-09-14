@@ -23,27 +23,31 @@ public class CloneSupportUtilsDemo {
     @AllArgsConstructor
     @NoArgsConstructor
     private static class Cat extends CloneSupport<Cat> implements Serializable {
+        // CloneSupport实现了Cloneable
+        // 前提是没有继承任何的类
         private String name = "miao";
         private int age = 0;
         private Cat children = null;
     }
 
+
+
     public static void main(String[] args) {
         Cat cat = new Cat();
         Cat clone = cat.clone();
-        clone.setAge(12);
-        Console.log("origin --> {}", clone);
+        clone.setAge(12).setChildren(new Cat("miaomiao", 123, null));
+        Console.log("clone --> {}", clone);
 
-        clone.setChildren(new Cat("miaomiao", 123, null));
-        Cat clone1 = clone.clone();
         // 浅拷贝
+        Cat clone1 = clone.clone();
         clone1.getChildren().setAge(888);
-        System.out.println("clone --> " + clone1);
+        System.out.println("clone1 --> " + clone1);
 
         // 深拷贝
         Cat deepClone = ObjectUtil.cloneByStream(clone1);
-        clone1.getChildren().setAge(999);
+        deepClone.getChildren().setAge(999);
         System.out.println("deepClone --> " + deepClone);
+        System.out.println("clone1 --> " + clone1);
 
 /*
 origin --> CloneSupportUtilsDemo.Cat(name=miao, age=12, children=null)

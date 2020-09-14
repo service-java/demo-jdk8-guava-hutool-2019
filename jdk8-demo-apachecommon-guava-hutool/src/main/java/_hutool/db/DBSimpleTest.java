@@ -22,6 +22,7 @@ public class DBSimpleTest {
     public void insert() throws SQLException {
         Entity entity = Entity.create("user").set("name", "visitor").set("age", 18);
         Db.use().insert(entity);
+
 //        Db.use().insertForGeneratedKey(
 //                Entity.create("user")
 //                        .set("name", "unitTestUser")

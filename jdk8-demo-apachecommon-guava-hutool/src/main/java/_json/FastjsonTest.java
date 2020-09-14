@@ -118,4 +118,9 @@ public class FastjsonTest {
         Console.log(JSON.toJSONString(new Date(), SerializerFeature.WriteDateUseDateFormat)); // --> "2019-09-03"
     }
 
+    @Test
+    public void demoxx() {
+
+    }
+
 }

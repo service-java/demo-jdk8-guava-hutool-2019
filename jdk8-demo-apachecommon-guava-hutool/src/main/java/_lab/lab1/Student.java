@@ -6,6 +6,7 @@ package _lab.lab1;
  * Lab 6-4 Student?  继承Person?
  */
 
+
 public class Student extends Person {
     // 班级状?? 定义为常?
     // 能用  但不能被继承
@@ -16,7 +17,6 @@ public class Student extends Person {
 
     public Student(String name, String address, String phoneNum, String email) {
         super(name, address, phoneNum, email);
-
     }
 
     @Override

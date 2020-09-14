@@ -60,4 +60,6 @@ public class Java8SortTest {
 //        Collections.sort(names, (s1, s2) -> s1.compareTo(s2));
         Collections.sort(names, String::compareTo);
     }
+
+
 }

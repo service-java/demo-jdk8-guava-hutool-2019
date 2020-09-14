@@ -1,4 +1,4 @@
-package _hutool;
+package _hutool.misc;
 
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.extra.tokenizer.Result;

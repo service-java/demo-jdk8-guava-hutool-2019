@@ -1,4 +1,4 @@
-package _hutool.media;
+package _hutool;
 
 import cn.hutool.core.lang.Console;
 import cn.hutool.system.SystemUtil;

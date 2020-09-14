@@ -1,14 +1,14 @@
 package _jdk8;
 
 import cn.hutool.core.lang.Console;
+import com.google.common.collect.Lists;
+import com.google.common.collect.Sets;
 import entity.classic.StudentEntity;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
+import vo.CodePriceVo;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -112,5 +112,46 @@ public class StreamDemo {
                         .collect(Collectors.toList());
         Console.log(uniqueCharacters);
     }
+
+    @Test
+    public void sortSet() {
+        Set<CodePriceVo> set = Sets.newTreeSet(Comparator.comparing(CodePriceVo::getFillinCode));
+        set.add(new CodePriceVo("202012", 2100d));
+        set.add(new CodePriceVo("201805", null));
+        set.add(new CodePriceVo("201605", 0d));
+        set.add(new CodePriceVo("201702", 2100d));
+//        System.out.println(set);
+
+//        for (CodePriceVo codePriceVo : set) {
+//            System.out.println(codePriceVo);
+//        }
+
+        ArrayList<CodePriceVo> codePriceVos = new ArrayList<>(set);
+        for (CodePriceVo codePriceVo : codePriceVos) {
+            System.out.println(codePriceVo);
+        }
+
+        double sum = codePriceVos.stream().filter(p -> p.getPrice() != null).mapToDouble(CodePriceVo::getPrice).sum();
+        double avg = codePriceVos.stream().filter(p -> p.getPrice() != null).collect(Collectors.averagingDouble(CodePriceVo::getPrice));
+
+        System.out.println(sum);
+        System.out.println(avg);
+    }
+
+
+    @Test
+    public void streamDemo() {
+        List<StudentEntity> list = Lists.newArrayList();
+        StudentEntity studentEntity = new StudentEntity();
+        studentEntity.setName("luo0412");
+        studentEntity.setAge(null);
+
+        list.add(studentEntity);
+        Map<String, Integer> collect = list.stream().collect(Collectors.toMap(StudentEntity::getName, StudentEntity::getAge));
+        System.out.println(collect);
+
+    }
+
+
 
 }

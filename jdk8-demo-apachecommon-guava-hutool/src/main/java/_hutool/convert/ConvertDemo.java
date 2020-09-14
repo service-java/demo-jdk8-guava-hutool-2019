@@ -1,4 +1,4 @@
-package _hutool;
+package _hutool.convert;
 
 import cn.hutool.core.convert.Convert;
 import cn.hutool.core.lang.Console;
@@ -23,7 +23,7 @@ public class ConvertDemo {
                 value.getHours());
     }
 
-    @Test
+/*    @Test
     public void sbc2DBC() {
         String a1 = "123456789";
 
@@ -31,7 +31,8 @@ public class ConvertDemo {
         String sbc = Convert.toSBC(a1);
 
         Console.log("{} \n{}", sbc, Convert.toDBC(sbc));
-    }
+    }*/
+
 
     @Test
     public void roundStr() {
