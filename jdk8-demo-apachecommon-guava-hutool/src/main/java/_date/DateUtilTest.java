@@ -5,6 +5,7 @@ import org.apache.commons.lang.time.DateFormatUtils;
 import org.junit.Test;
 
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -73,9 +74,46 @@ public class DateUtilTest {
     }
 
     @Test
-    public  void test() {
+    public void test() {
         String format = DateFormatUtils.format(new Date(), "yyyy/MM/dd");
         Console.log(format);
+    }
+
+
+    @Test
+    public void calender() {
+        Calendar from = Calendar.getInstance();
+        from.setTime(new Date());
+        String str = null;
+        from.add(Calendar.MONTH, -1);
+
+        for (int i=1; i<=12; i++) {
+            from.add(Calendar.MONTH, -1);
+            str = from.get(Calendar.YEAR) + "-" + (from.get(Calendar.MONTH) + 1);
+            Console.log(str);
+        }
+
+        Console.log("===");
+
+        for (int i=1; i<=12; i++) {
+            from.add(Calendar.MONTH, -1);
+            str = from.get(Calendar.YEAR) + "-" + (from.get(Calendar.MONTH) + 1);
+            Console.log(str);
+        }
+
+    }
+
+
+    @Test
+    public void calenderCopy() {
+        Calendar from = Calendar.getInstance();
+        from.setTime(new Date());
+        Calendar copy = (Calendar) from.clone();
+
+        from.add(Calendar.MONTH, 2);
+
+        Console.log(from.get(Calendar.MONTH) + 1);
+        Console.log(copy.get(Calendar.MONTH) + 1);
     }
 
 }

@@ -48,6 +48,13 @@ public class TypeConversion {
         Console.log(i);
     }
 
+    @Test
+    public void hello2223 () {
+        int a = 5, b = 4;
+        double d;
+        d = a / b;
+        System.out.println(d); // 1.0
+    }
 
 
 }

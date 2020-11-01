@@ -10,8 +10,7 @@ public class ProxyTest {
         IAnimal cat = ProxyUtil.proxy(new CatEntity(), TimeIntervalAspect.class);
 
         cat.eat();
-        cat.eat();
-        cat.eat();
+
 
     }
 }

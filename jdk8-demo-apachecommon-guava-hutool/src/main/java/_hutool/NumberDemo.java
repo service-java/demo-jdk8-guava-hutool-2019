@@ -17,4 +17,11 @@ public class NumberDemo {
     public void hello() {
 
     }
+
+    @Test
+    public void add() {
+        // 转成BigDecimal后计算
+        double add = NumberUtil.add(23121231312.23123d, 1212312312.123f);
+        Console.log(add);
+    }
 }

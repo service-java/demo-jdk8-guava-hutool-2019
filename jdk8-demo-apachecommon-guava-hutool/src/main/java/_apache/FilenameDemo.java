@@ -1,4 +1,4 @@
-package _apache_common;
+package _apache;
 
 import cn.hutool.core.lang.Console;
 import org.apache.commons.io.FilenameUtils;
