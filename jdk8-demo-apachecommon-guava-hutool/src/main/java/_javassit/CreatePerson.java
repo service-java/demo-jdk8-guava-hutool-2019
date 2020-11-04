@@ -53,7 +53,7 @@ public class CreatePerson {
         //这里会将这个创建的类对象编译为.class文件
         cc.writeFile("d:/upload/");
 
-//        D:\upload\_javassit\entity\Person.class
+// D:\upload\_javassit\entity\Person.class
     }
 
     public static void main(String[] args) {
