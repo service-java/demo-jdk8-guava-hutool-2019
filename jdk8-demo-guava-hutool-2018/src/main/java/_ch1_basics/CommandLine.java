@@ -6,11 +6,9 @@ package _ch1_basics;
  * @author Luo_0412
  */
 public class CommandLine {
-    /**
-     * 主方法
-     *
-     * @param args
-     */
+
+
+    // @todo 暂时啥也显示不了
     public static void main(String[] args) {
         for (int index = 0; index < args.length; index++) {
             System.out.println(args[index]);

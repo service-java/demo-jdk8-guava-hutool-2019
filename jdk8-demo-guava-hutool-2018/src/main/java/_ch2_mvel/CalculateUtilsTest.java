@@ -27,6 +27,7 @@ public class CalculateUtilsTest {
         variables.put("G", "20");
         variables.put("H", "2");
 
+        // @adjust 会报空指针
         BigDecimal result = CalculateUtils.calculate(formula, variables);
         Console.log(new BigDecimal("10000.0").compareTo(result) == 0);
     }

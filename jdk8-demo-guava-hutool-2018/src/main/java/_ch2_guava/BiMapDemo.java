@@ -56,6 +56,7 @@ public class BiMapDemo {
     public void sthAfterInverseNotOk() {
         // 它实现了一种视图关联，这样你对于反转后的map的所有操作都会影响原先的map对象
         BiMap<Integer, String> logfileMap = HashBiMap.create();
+
         logfileMap.put(1, "a.log");
         logfileMap.put(2, "b.log");
         logfileMap.put(3, "c.log");

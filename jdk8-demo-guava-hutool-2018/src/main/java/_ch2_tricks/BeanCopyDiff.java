@@ -37,12 +37,25 @@ public class BeanCopyDiff {
 
 
     @Test
-    public  void demo() {
+    public void copy2MapIsNotOk() {
         StudentEntity studentEntity = new StudentEntity();
         studentEntity.setAge(12).setHobby("123");
+
         HashMap<String, Object> map = new HashMap<>();
         BeanUtils.copyProperties(studentEntity, map);
         Console.log(map);
     }
+
+
+    @Test
+    public void test() {
+        TeacherEntity th1 = TeacherEntity.builder().name("Tony").build();
+        TeacherEntity th2 = TeacherEntity.builder().job("理发").build();
+        BeanUtils.copyProperties(th1, th2);
+        Console.log(th2);
+
+//        TeacherEntity(name=Tony, job=null, career=null)
+    }
+
 
 }

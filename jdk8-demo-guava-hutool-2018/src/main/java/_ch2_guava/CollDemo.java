@@ -22,7 +22,6 @@ public class CollDemo {
         List<Integer> list = Arrays.asList(1, 2, 6, 7, 11, 9, 10, 4);
         System.out.println("原始集合:" + list);
 
-
         // 有空元素放置到最后
         System.out.println("自然正序:" + Ordering.natural().nullsLast().sortedCopy(list));
         // 按照自然排序然后翻转, 有空元素排到最后

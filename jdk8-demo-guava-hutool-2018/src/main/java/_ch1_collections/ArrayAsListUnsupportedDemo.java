@@ -1,4 +1,4 @@
-package _ch1_faq;
+package _ch1_collections;
 
 import cn.hutool.core.lang.Console;
 import org.junit.Test;
@@ -21,7 +21,7 @@ public class ArrayAsListUnsupportedDemo {
 
         Console.log(list);
 
-        // UnsupportedOperationException
+        // 会报UnsupportedOperationException
         // 这个list只是像list 假的???
         list.add("hello");
 

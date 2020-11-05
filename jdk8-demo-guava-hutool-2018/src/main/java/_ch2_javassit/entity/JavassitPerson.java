@@ -6,7 +6,7 @@ package _ch2_javassit.entity;
  * User: luo0412
  * Date: 2020-11-01 20:33
  */
-public class Person {
+public class JavassitPerson {
     private String name = "xiaoming";
 
     public void setName(String var1) {
@@ -17,11 +17,11 @@ public class Person {
         return this.name;
     }
 
-    public Person() {
+    public JavassitPerson() {
         this.name = "xiaohong";
     }
 
-    public Person(String var1) {
+    public JavassitPerson(String var1) {
         this.name = var1;
     }
 

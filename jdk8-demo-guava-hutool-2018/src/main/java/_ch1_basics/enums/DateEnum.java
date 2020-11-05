@@ -1,4 +1,4 @@
-package constant;
+package _ch1_basics.enums;
 
 import lombok.Getter;
 

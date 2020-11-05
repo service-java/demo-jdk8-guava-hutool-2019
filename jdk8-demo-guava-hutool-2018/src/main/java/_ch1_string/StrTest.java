@@ -1,4 +1,4 @@
-package _ch1_basics;
+package _ch1_string;
 
 import cn.hutool.core.lang.Console;
 

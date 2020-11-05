@@ -1,7 +1,7 @@
 package _ch1_basics;
 
 import cn.hutool.core.lang.Console;
-import constant.DateEnum;
+import _ch1_basics.enums.DateEnum;
 import org.junit.Test;
 
 /**

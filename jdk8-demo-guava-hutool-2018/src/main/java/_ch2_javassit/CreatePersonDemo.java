@@ -8,7 +8,7 @@ import javassist.*;
  * User: luo0412
  * Date: 2020-11-01 20:31
  */
-public class CreatePerson {
+public class CreatePersonDemo {
 
     /**
      * 创建一个Person 对象
@@ -19,7 +19,7 @@ public class CreatePerson {
         ClassPool pool = ClassPool.getDefault();
 
         // 1. 创建一个空类
-        CtClass cc = pool.makeClass("_javassit.entity.Person");
+        CtClass cc = pool.makeClass("JavassitPerson");
 
         // 2. 新增一个字段 private String name;
         // 字段名为name
@@ -51,7 +51,7 @@ public class CreatePerson {
         cc.addMethod(ctMethod);
 
         //这里会将这个创建的类对象编译为.class文件
-        cc.writeFile("d:/upload/");
+        cc.writeFile("F:\\workspace-summer\\summer-demo-guava-hutool\\jdk8-demo-guava-hutool-2018\\src\\main\\java\\_ch2_javassit\\entity");
 
 
     }
