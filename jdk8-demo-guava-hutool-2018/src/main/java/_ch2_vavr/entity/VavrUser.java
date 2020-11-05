@@ -11,7 +11,7 @@ import lombok.Data;
  */
 @Data
 @Builder
-public class User {
+public class VavrUser {
     private Long id;
     private String name;
     private Integer age;
