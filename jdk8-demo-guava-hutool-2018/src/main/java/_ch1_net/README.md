@@ -1,6 +1,6 @@
 # README
 
-- 运行
+- 运行 @notok
 
 ```
 javac GreetingServer.java 

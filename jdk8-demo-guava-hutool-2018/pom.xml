@@ -145,7 +145,7 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <!--            <version>26.0-jre</version>-->
-            <version>28.1-jre</version>
+            <version>30.0-jre</version>
         </dependency>
 
 
@@ -209,18 +209,6 @@
             <version>6.0.9.Final</version>
         </dependency>
 
-<!--        <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>javax.el-api</artifactId>
-            <version>3.0.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.glassfish</groupId>
-            <artifactId>javax.el</artifactId>
-            <version>3.0.0</version>
-        </dependency>-->
-
-
         <!-- https://mvnrepository.com/artifact/com.hankcs/hanlp -->
         <dependency>
             <groupId>com.hankcs</groupId>
@@ -239,6 +227,13 @@
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
             <version>3.25.0-GA</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.vavr/vavr -->
+        <dependency>
+            <groupId>io.vavr</groupId>
+            <artifactId>vavr</artifactId>
+            <version>1.0.0-alpha-3</version>
         </dependency>
 
 
