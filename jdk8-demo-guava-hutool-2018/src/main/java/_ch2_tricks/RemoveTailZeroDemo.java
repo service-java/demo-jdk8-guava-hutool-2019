@@ -20,16 +20,16 @@ public class RemoveTailZeroDemo {
     @Test
     public void removeTailZero() {
         // 反面示例
-        Console.log("=============\n");
-        Console.log(1.20d);
+        Console.log(1.20d); // 输出显示是1.2
         Console.log(1.0d); // 1.0
 
-        // 抹去尾部的0
-        Console.log("=============\n");
+        // 1) 常规抹去尾部的0
         DecimalFormat decimalFormat = new DecimalFormat("#.###########");
-        Console.log("抹去尾部的0 -> " + decimalFormat.format(012012.09000));
-        Console.log("抹去尾部的0 -> " + decimalFormat.format(001212.0));
-        Console.log("hutool抹去尾部的0 -> " + NumberUtil.decimalFormat("#.############", 012012.09000));
+        Console.log("抹去尾部的0 -> " + decimalFormat.format(012012.09000)); // 12012.09
+        Console.log("抹去尾部的0 -> " + decimalFormat.format(001212.0)); // 1212
+
+        // 2) 偷懒用Hutool来试试
+        Console.log("hutool抹去尾部的0 -> " + NumberUtil.decimalFormat("#.############", 012012.09000)); // 12012.09
     }
 
 }
