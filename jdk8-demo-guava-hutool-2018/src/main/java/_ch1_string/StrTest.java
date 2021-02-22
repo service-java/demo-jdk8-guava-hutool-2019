@@ -1,6 +1,11 @@
 package _ch1_string;
 
 import cn.hutool.core.lang.Console;
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 /**
  * Description: 模块功能描述
@@ -25,4 +30,31 @@ public class StrTest {
 
 
     }
+
+    @Test
+    public  void hello() {
+        String a = "2020-01";
+        String b = "2019-08";
+        String c = "2020-08";
+        System.out.println(a.compareTo(b));
+        System.out.println(a.compareTo(c));
+
+
+    }
+
+    @Test
+    public  void hello1() {
+        ArrayList<String> list = new ArrayList<>();
+        list.add("2020-9");
+        list.add("2020-7");
+        list.add("2020-12");
+        list.add("2020-11");
+
+        Comparator<String> comparator = (s1, s2) -> {
+            return s1.compareTo(s2);
+        };
+        Collections.sort(list,comparator);
+        System.out.println(list.get(0));
+    }
+
 }

@@ -81,10 +81,10 @@
             <scope>runtime</scope>
         </dependency>
 
-<!--        <dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>-->
+        </dependency>
 
 
         <dependency>
@@ -107,6 +107,7 @@
             <groupId>org.springframework</groupId>
             <artifactId>spring-jms</artifactId>
         </dependency>
+
 
         <!-- mvel -->
         <!-- https://mvnrepository.com/artifact/org.mvel/mvel2 -->
@@ -236,6 +237,18 @@
             <version>1.0.0-alpha-3</version>
         </dependency>
 
+        <!-- @fix 解决图片压缩出现Unsupported Image Type的问题
+           https://www.cnblogs.com/ncyhl/p/7681080.html -->
+        <dependency>
+            <groupId>com.twelvemonkeys.imageio</groupId>
+            <artifactId>imageio-jpeg</artifactId>
+            <version>3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.twelvemonkeys.imageio</groupId>
+            <artifactId>imageio-tiff</artifactId>
+            <version>3.3</version>
+        </dependency>
 
     </dependencies>
 

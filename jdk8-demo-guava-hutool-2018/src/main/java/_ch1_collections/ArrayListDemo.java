@@ -1,12 +1,10 @@
 package _ch1_collections;
 
 import cn.hutool.core.lang.Console;
+import org.apache.commons.collections.CollectionUtils;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 /**
  * ArrayList方法测试
@@ -90,6 +88,28 @@ public class ArrayListDemo {
 
         List<Integer> objects = Arrays.asList(1, 2);
         Console.log(objects);
+    }
+
+    @Test
+    public void retainDemo() {
+        List listA = new ArrayList<String>();
+        listA.add("2020-03");
+        listA.add("2020-09");
+        listA.add("2020-08");
+        listA.add("2020-07");
+
+        List listB = new ArrayList<String>();
+        listB.add("2020-08");
+        listB.add("2020-01");
+        listB.add("2020-07");
+        listB.add("2020-03");
+
+
+        List intersection = (ArrayList<String>) CollectionUtils.intersection(listA, listB);
+        Collections.sort(intersection);
+        System.out.println(intersection);
+
+
     }
 
 }

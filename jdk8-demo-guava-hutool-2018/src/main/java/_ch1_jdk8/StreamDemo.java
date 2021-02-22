@@ -1,9 +1,11 @@
 package _ch1_jdk8;
 
+import _ch1_jdk8.lambda.Person;
 import cn.hutool.core.lang.Console;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 import entity.classic.StudentEntity;
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang.StringUtils;
 import org.junit.Test;
 import vo.CodePriceVo;
@@ -28,6 +30,8 @@ public class StreamDemo {
         Set<Integer> ids = idsList.stream()
                 .collect(Collectors.toSet());
         Console.log(ids);
+
+
     }
 
     /**
@@ -56,6 +60,19 @@ public class StreamDemo {
 
         Console.log("{} 个数: {}", filtered, filtered.size());
 
+    }
+
+    @Test
+    public void keyConflict() {
+        // 声明一个List集合
+        List<Person> list = new ArrayList();
+        list.add(new Person("1001", "小A"));
+        list.add(new Person("1001", "小B"));
+        list.add(new Person("1003", "小C"));
+        System.out.println(list);
+
+        // 将list转换map
+        list.stream().map(Person::getFirstName).collect(Collectors.toSet());
     }
 
     /**
