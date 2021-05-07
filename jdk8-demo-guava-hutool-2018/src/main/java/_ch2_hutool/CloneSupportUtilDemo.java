@@ -16,7 +16,7 @@ import java.io.Serializable;
  * User: luo0412
  * Date: 2020-05-24 12:59
  */
-public class CloneSupportUtilsDemo {
+public class CloneSupportUtilDemo {
 
     @ToString
     @Data

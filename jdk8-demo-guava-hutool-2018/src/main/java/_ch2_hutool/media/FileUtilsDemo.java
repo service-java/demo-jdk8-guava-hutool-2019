@@ -21,6 +21,27 @@ public class FileUtilsDemo {
     }
 
     @Test
+    public void ls() {
+        reFn("d:/upload");
+    }
+
+    public void reFn(File ll) {
+      this.reFn(ll.getPath());
+    }
+
+    public void reFn(String path) {
+        File[] ls = FileUtil.ls(path);
+        for (File l : ls) {
+            if (l.isDirectory()) {
+                this.reFn(l);
+            } else {
+                Console.log(l.getAbsolutePath());
+            }
+        }
+
+    }
+
+    @Test
     public void appendTxt() {
         FileWriter writer = new FileWriter("test.properties");
         writer.append("追加内容");

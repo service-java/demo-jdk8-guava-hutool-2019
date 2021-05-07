@@ -15,7 +15,7 @@ public class IdUtilDemo {
     public static void main(String[] args) {
         Snowflake snowflake = IdUtil.createSnowflake(1, 1);
         long id = snowflake.nextId();
-        Console.log(id); // eg. 1192679264126898176
+        Console.log(id); // @eg 1192679264126898176
     }
 
 }

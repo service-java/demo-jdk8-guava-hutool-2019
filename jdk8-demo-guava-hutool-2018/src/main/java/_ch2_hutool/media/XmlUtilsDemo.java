@@ -1,4 +1,4 @@
-package _ch2_hutool;
+package _ch2_hutool.media;
 
 import cn.hutool.core.util.XmlUtil;
 import org.w3c.dom.Document;
