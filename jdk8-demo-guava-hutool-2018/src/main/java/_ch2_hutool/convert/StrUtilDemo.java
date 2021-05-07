@@ -17,7 +17,10 @@ public class StrUtilDemo {
         //str -> 我爱你，就像老鼠爱大米
         String str = StrUtil.format(template, "我", "你");
         Console.log(str);
-//
+
+        String sub = StrUtil.sub("12312312", 0, 100);
+        Console.log(sub);
+        //
     }
 
 

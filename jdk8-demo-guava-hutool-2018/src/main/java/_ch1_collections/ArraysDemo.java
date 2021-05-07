@@ -20,8 +20,10 @@ public class ArraysDemo {
 
     char[] e = {'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B'};
     char[] f = {'a', 'f', 'b', 'c', 'e', 'A', 'C', 'B'};
+
     int[] g = { 1, 2, 3, 3, 3, 3, 6, 6, 6 };
     int[] h = { 1, 2, 3, 3, 3, 3, 6, 6, 6, };
+
 
     @Test
     public void sort() {
@@ -30,13 +32,14 @@ public class ArraysDemo {
     }
 
     @Test
-    public void sort2() {
+    public void sortLimitIndex() {
         Arrays.sort(b, 2, 6);
         Console.log(b);
     }
 
     @Test
     public void parallelSort() {
+        // ForkJoinPool
         Arrays.parallelSort(c);
         Console.log(c);
 
@@ -46,9 +49,11 @@ public class ArraysDemo {
 
     @Test
     public void binarySearch() {
-        Console.log(e);
+        // Console.log(e);
+
         Arrays.sort(e);
         Console.log(e);
+
         int s = Arrays.binarySearch(e, 'c');
         Console.log(s);
     }
@@ -59,6 +64,7 @@ public class ArraysDemo {
          * 元素数量相同，并且相同位置的元素相同。
          * 另外，如果两个数组引用都是null，则它们被认为是相等的 。
          */
+
         Console.log(Arrays.equals(e, f)); // true
     }
 
@@ -92,7 +98,5 @@ public class ArraysDemo {
         // [6, 6, 6, 0, 0]
         Console.log(j);
     }
-
-
 
 }
